@@ -1,6 +1,5 @@
 ---
 
-title: ScriptBlock
 Alias: 
 - ScriptBlocks
 - Script Block
@@ -9,7 +8,7 @@ Alias:
 - PowerShell Script Blocks
 - PowerShell ScriptBlocks
 - PowerShell ScriptBlock
-
+title: ScriptBlock
 
 layout: default
 ---
