@@ -40,7 +40,7 @@ The [PowerShell](/PowerShell) Guide aims to be the standard repository for all k
 Here are some topics that may help you get started:
 
 * [What Is PowerShell](/PowerShell)
-* Variables
+* [Variables](/PowerShell/Variables)
 * [Conditionals](/PowerShell/Conditionals)
 * [Loops](/PowerShell/Loops)
 * [PowerShell](/PowerShell) Scripts
