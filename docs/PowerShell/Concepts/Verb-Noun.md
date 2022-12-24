@@ -1,7 +1,7 @@
 ---
 
-Alias: Verb-Noun Pairing
 title: Verb Noun
+Alias: Verb-Noun Pairing
 
 layout: default
 ---
