@@ -19,6 +19,12 @@ $topicData    =
 if (-not $topicData["title"]) {
     $topicData["title"] = $this.TopicName
 }
+elseif ($topicData.Keys -inotcontains 'title') {
+    $title = $topicData["title"]
+    $topicData.Remove("Title")
+    $topicData["title"] = $title
+}
+
 
 $this | Add-Member NoteProperty _CachedMetadata $topicData -Force
 return $topicData
