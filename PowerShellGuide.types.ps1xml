@@ -93,6 +93,20 @@ foreach ($match in $anyMatches.Matches($content)) {
                     </Script>
       </ScriptMethod>
       <ScriptProperty>
+        <Name>Aliases</Name>
+        <GetScriptBlock>
+                        @(
+    ($this.Name -replace '[_-]', ' ' -replace '\.md$')
+    if ($this.Metadata.Alias) {
+        $this.Metadata.Alias -replace '[_-]', ' '
+    }    
+    if ($this.Metadata.Aliases) {
+        $this.Metadata.Aliases -replace '[_-]', ' '
+    }    
+)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
         <Name>Content</Name>
         <GetScriptBlock>
                         [IO.File]::ReadAllText($this.Fullname)
@@ -245,6 +259,20 @@ foreach ($match in $anyMatches.Matches($content)) {
 }
                     </Script>
       </ScriptMethod>
+      <ScriptProperty>
+        <Name>Aliases</Name>
+        <GetScriptBlock>
+                        @(
+    ($this.Name -replace '[_-]', ' ' -replace '\.md$')
+    if ($this.Metadata.Alias) {
+        $this.Metadata.Alias -replace '[_-]', ' '
+    }    
+    if ($this.Metadata.Aliases) {
+        $this.Metadata.Aliases -replace '[_-]', ' '
+    }    
+)
+                    </GetScriptBlock>
+      </ScriptProperty>
       <ScriptProperty>
         <Name>Content</Name>
         <GetScriptBlock>
