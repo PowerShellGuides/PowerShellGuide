@@ -1,12 +1,13 @@
 ---
 
+title: Extending Types
 Alias: 
 - Extended Types System
 - types.ps1xml
 - types file
 - Extending Types in PowerShell
 - Extend Types
-title: Extending Types
+
 
 layout: default
 ---
