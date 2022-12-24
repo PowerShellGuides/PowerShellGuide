@@ -10,7 +10,7 @@ In [PowerShell](/PowerShell), everything is an object.
 
 Every command you run may produce objects.
 
-Every variable you set will store an object.
+Every [variable](/PowerShell/Variables) you set will store an object.
 
 Each object will have properties.  These are also objects.
 
