@@ -37,8 +37,8 @@ Within these curly braces, we can define (in order):
 
 * [Inline Help](/PowerShell/Help/Inline-Help)
 * [Attributes](/PowerShell/Attributes)
-* Parameters
-* Dynamic Parameters (with the dynamicParam block)
+* [Parameters](/PowerShell/Parameters)
+* Dynamic [Parameters](/PowerShell/Parameters) (with the dynamicParam block)
 * What happens when the [command](/PowerShell/Commands) starts (with the begin block)
 * When happens when an object comes thru the [pipeline](/PowerShell/Concepts/The-Object-Pipeline) (with the process block)
 * When happens when the [command](/PowerShell/Commands) ends (with the end block)
