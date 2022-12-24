@@ -7,7 +7,7 @@ layout: default
 
 PowerShell's built-in help system is quite nice.
 
-Any module can include any number of [about topics](/PowerShell/Help/About-Topics), which can help people figure out how to use that module.
+Any [module](/PowerShell/Modules) can include any number of [about topics](/PowerShell/Help/About-Topics), which can help people figure out how to use that [module](/PowerShell/Modules).
 
 Perhaps more importantly, any [function](/PowerShell/Functions) or script can include inline help.
 
