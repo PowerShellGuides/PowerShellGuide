@@ -49,4 +49,4 @@ Let's start simple:
 
 Switch statements can get a lot more complicated than that, of course.
 
-You should keep reading your trust [PowerShell Guide](/PowerShell/Guide), or consult the about topics.
+You should keep reading your trust [PowerShell Guide](/PowerShell/Guide), or consult the [about topics](/PowerShell/Help/About-Topics).
