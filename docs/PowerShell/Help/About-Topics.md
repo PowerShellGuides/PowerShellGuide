@@ -1,0 +1,39 @@
+---
+
+title: About Topics
+
+layout: default
+---
+
+PowerShell has all sorts of wonderful little bells and whistles, but, perhaps the best one is that it comes with quite the manual.
+
+If you want help in [PowerShell](/PowerShell), simply Get-Help.
+
+Say we wanted to find out about variables.  We'd just run:
+
+<pre><br/><span class='Warning'>Get-Help</span><br/></pre>
+
+You can also get help about a particular topic.
+
+For example, to understand variables, we would say:
+
+<pre><br/><span class='Warning'>Get-Help</span>&nbsp;<span class='Verbose'>about_variables</span><br/></pre>
+
+There are _lots_ of built in about topics.
+
+To see them all, use:
+
+<pre><br/><span class='Warning'>Get-Help</span>&nbsp;<span class='Verbose'>about_*</span><br/></pre>
+
+## About Topic Files
+
+These topics are either written by Microsoft or the authors of a particular module, and are stored in a `.help.txt` file.
+
+`.help.txt` files take the form of:
+
+~~~
+HEADER
+    Content
+HEADER
+    Content
+~~~
