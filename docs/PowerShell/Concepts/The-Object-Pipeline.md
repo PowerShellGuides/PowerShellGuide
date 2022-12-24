@@ -16,13 +16,13 @@ In the real world, a pipeline will let a liquid or a gas flow through it effecie
 
 In [PowerShell](/PowerShell), the object pipeline allows objects to flow thru from step to step, so we can use [PowerShell](/PowerShell) fluidly.
 
-Pipelines are a series of expressions or commands, separted by a pipe character `|`, and you'd be positively amazed how much you can string together with one little pipeline.
+Pipelines are a series of expressions or [commands](/PowerShell/Commands), separted by a pipe character `|`, and you'd be positively amazed how much you can string together with one little pipeline.
 
-For instance, let's get all commands, pick a random one, and get help:
+For instance, let's get all [commands](/PowerShell/Commands), pick a random one, and get help:
 
 <pre><br/><span class='Warning'>Get-Command</span>&nbsp;<span class='Magenta'>|</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Warning'>Get-Random</span>&nbsp;<span class='Magenta'>|</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Warning'>Get-Help</span><br/></pre> 
 
-[PowerShell](/PowerShell) includes many built-in -Object commands that will help you manipulate any object, no matter what produced it.
+[PowerShell](/PowerShell) includes many built-in -Object [commands](/PowerShell/Commands) that will help you manipulate any object, no matter what produced it.
 
 You'll probably use two of these more than any other:  Foreach-Object (aliased to `%`) and Where-Object (aliased to `?`).
 
