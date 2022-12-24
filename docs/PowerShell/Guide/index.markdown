@@ -46,7 +46,7 @@ Here are some topics that may help you get started:
 * [PowerShell](/PowerShell) Scripts
 * [PowerShell Functions](/PowerShell/Functions)
 * [PowerShell](/PowerShell) Parameters
-* Commands
+* [Commands](/PowerShell/Commands)
 * Modules
 
 You can browse the guide online or download the [PowerShell](/PowerShell) Guide as a module.
