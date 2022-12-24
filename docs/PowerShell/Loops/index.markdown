@@ -20,7 +20,7 @@ A loop simply does things again and again.
 
 ## foreach loops
 
-foreach loops are the easiest type of loop to understand.
+foreach loops are the easiest [type](/PowerShell/Types) of loop to understand.
 
 foreach basically says: "do this once on every item", for example:
 
@@ -52,7 +52,7 @@ For instance, if we wanted to skip even numbers, we'd simply say:
 
 <pre><br/><span class='Verbose'>for</span>&nbsp;<span class='Magenta'>(</span><span class='Warning'>$n</span>&nbsp;<span class='Magenta'>=</span>&nbsp;<span class='Output'>1</span><span class='Output'>;</span>&nbsp;<span class='Warning'>$n</span>&nbsp;<span class='Magenta'>-le</span>&nbsp;<span class='Output'>10</span><span class='Output'>;</span>&nbsp;<span class='Warning'>$n</span><span class='Magenta'>+=</span><span class='Output'>2</span><span class='Magenta'>)</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>if</span>&nbsp;<span class='Magenta'>(</span><span class='Warning'>$n</span>&nbsp;<span class='Magenta'>%</span>&nbsp;<span class='Output'>2</span><span class='Magenta'>)</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>"$n is odd"</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Magenta'>}</span>&nbsp;<span class='Verbose'>else</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>"$n is even"</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Magenta'>}</span><br/><span class='Magenta'>}</span><br/></pre>
 
-For loops are the most primitive form of loop.  All other loop types, including foreach, are basically a for loop under the hood.
+For loops are the most primitive form of loop.  All other loop [types](/PowerShell/Types), including foreach, are basically a for loop under the hood.
 
 ## while loops
 
@@ -68,7 +68,7 @@ While loops are wonderful, just watch out to ensure that their condition can be 
 
 ## do loops
 
-As an alternative to _while_, [PowerShell](/PowerShell) has one more type of loop.
+As an alternative to _while_, [PowerShell](/PowerShell) has one more [type](/PowerShell/Types) of loop.
 
 A _do_ loop.
 
@@ -76,7 +76,7 @@ Do loops will always run at least once.
 
 When they get to the end of each loop, their condition will be checked and the loop might stop.
 
-There are two types of do loops in [PowerShell](/PowerShell).
+There are two [types](/PowerShell/Types) of do loops in [PowerShell](/PowerShell).
 
 There's `do while`, which will run while the condition is true:
 
