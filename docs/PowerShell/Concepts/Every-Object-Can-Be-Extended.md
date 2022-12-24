@@ -11,7 +11,7 @@ In [PowerShell](/PowerShell), _every object can be extended_.
 
 This is because [everything is an object](/PowerShell/Concepts/Everything-Is-An-Object) in [PowerShell](/PowerShell), and [PowerShell](/PowerShell) objects are very flexible.
 
-To add information to an instance of an object, you can use the Add-Member command.
+To add information to an instance of an object, you can use the Add-Member [command](/PowerShell/Commands).
 
 For instance, suppose we wanted to add a timestamp to each process, we could do something like:
 
