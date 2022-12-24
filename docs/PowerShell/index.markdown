@@ -37,7 +37,7 @@ Features like:
 
 PowerShell is written in C#, and anything in .NET can be used in PowerShell.
 
-PowerShell scripts are written in `.ps1` files, and can be run inside or outside of the [shell](/Shells).
+[PowerShell scripts](/PowerShell/Scripts) are written in `.ps1` files, and can be run inside or outside of the [shell](/Shells).
 
 ---
 
