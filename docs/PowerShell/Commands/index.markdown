@@ -38,5 +38,5 @@ In addition to having more command [types](/PowerShell/Types) than your operatin
 
 * Every command that runs can produce one or more objects, which can flow into [the object pipeline](/PowerShell/Concepts/The-Object-Pipeline).
 * Commands have rich command metadata.
-* [PowerShell](/PowerShell) Commands have rich parameters and parameter metadata.
+* [PowerShell](/PowerShell) Commands have rich [parameters](/PowerShell/Parameters) and [parameter](/PowerShell/Parameters) metadata.
 * Commands in [PowerShell](/PowerShell) can be stopped (often without summarilly executing the process).
