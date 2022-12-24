@@ -14,7 +14,7 @@ Perhaps more importantly, any [function](/PowerShell/Functions) or script can in
 This help will be easy to access for anyone with [PowerShell](/PowerShell), using Get-Help.
 
 
-Inline help is defined in comments at the start of a [function](/PowerShell/Functions) or script, and can also be defined above each parameter.
+Inline help is defined in comments at the start of a [function](/PowerShell/Functions) or script, and can also be defined above each [parameter](/PowerShell/Parameters).
 
 
 Let's write a completely useless example to show how this works
