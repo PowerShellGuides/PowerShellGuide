@@ -42,4 +42,4 @@ And we can find all commands with the Process noun to see what we could do to a 
 <pre><br/><span class='Warning'>Get-Command</span>&nbsp;<span class='Magenta'>-Noun</span>&nbsp;<span class='Verbose'>Process</span><br/></pre>
 
 
-This verb-noun convention helps keep [PowerShell](/PowerShell) a great high level language.
+This verb-noun convention helps keep [PowerShell](/PowerShell) a great [high level language](/Languages/High-Level-Languages).
