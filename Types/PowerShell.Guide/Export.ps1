@@ -61,6 +61,7 @@ foreach ($topic in $this.AllTopics) {
     Get-Item $topicMarkdownFile
 }
 
+return
 $topicMetadataPath = Join-Path $OutputPath -ChildPath "guide.json"
 $allTopicMetadata | ConvertTo-Json -Depth 100 |
     Set-Content -Path $topicMetadataPath
