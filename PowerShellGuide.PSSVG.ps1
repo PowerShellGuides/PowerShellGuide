@@ -11,6 +11,7 @@ if (-not (Test-Path $docsRoot)) {
     $null = New-Item -ItemType Directory -Path $docsRoot
 }
 
+$guideLogo = 
 =<svg> -ViewBox 200, 100 -Content @(
     =<svg.defs> @(
         =<svg.style> -Type 'text/css' @'
@@ -32,7 +33,11 @@ if (-not (Test-Path $docsRoot)) {
     =<svg.use> -Href '#psChevron' -Width 100% -Height 100% -Fill '#4488ff' -X 10% -Class foreground-fill
     =<svg.text> -Content 'PowerShell' -DominantBaseline 'middle' -TextAnchor 'end' -X 55% -Y 50% -Fill '#4488ff' -Style "font-family: 'Righteous';"  -Class foreground-fill
     =<svg.text> -Content 'Guide' -DominantBaseline 'middle' -TextAnchor 'guide' -X 67.5% -Y 50% -Fill '#4488ff' -Style "font-family: 'Righteous';"  -Class foreground-fill
-) -OutputPath (Join-Path $assetsRoot .\PowerShellGuide.svg) |
+) -OutputPath (Join-Path $assetsRoot .\PowerShellGuide.svg) 
+
+$guideLogo
+
+$guideLogo |
     Copy-Item -Destination (Join-Path $PSScriptRoot docs) -PassThru
 
 Pop-Location
