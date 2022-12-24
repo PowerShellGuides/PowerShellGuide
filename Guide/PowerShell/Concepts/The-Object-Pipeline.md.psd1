@@ -1,0 +1,3 @@
+@{
+    Alias = 'Object Pipeline', 'Pipeline'
+}
