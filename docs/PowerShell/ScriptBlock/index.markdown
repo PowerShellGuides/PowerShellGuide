@@ -39,6 +39,6 @@ Within these curly braces, we can define (in order):
 * [Attributes](/PowerShell/Attributes)
 * Parameters
 * Dynamic Parameters (with the dynamicParam block)
-* What happens when the command starts (with the begin block)
+* What happens when the [command](/PowerShell/Commands) starts (with the begin block)
 * When happens when an object comes thru the [pipeline](/PowerShell/Concepts/The-Object-Pipeline) (with the process block)
-* When happens when the command ends (with the end block)
+* When happens when the [command](/PowerShell/Commands) ends (with the end block)
