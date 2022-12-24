@@ -1,7 +1,7 @@
 ---
 
-title: Everything Is An Object
 Alias: Everything in PowerShell is An Object
+title: Everything Is An Object
 
 layout: default
 ---
