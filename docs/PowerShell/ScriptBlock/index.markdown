@@ -36,7 +36,7 @@ ScriptBlocks start and end with curly braces.
 Within these curly braces, we can define (in order):
 
 * [Inline Help](/PowerShell/Help/Inline-Help)
-* Attributes
+* [Attributes](/PowerShell/Attributes)
 * Parameters
 * Dynamic Parameters (with the dynamicParam block)
 * What happens when the command starts (with the begin block)
