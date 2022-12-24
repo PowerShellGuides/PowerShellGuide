@@ -5,7 +5,7 @@ title: Get-Member
 layout: default
 ---
 
-Get-Member may be the most technically named of the trinity of discoverability, but it is still quite indispensible.
+Get-Member may be the most technically named of the [trinity of discoverability](/PowerShell/Concepts/Trinity-Of-Discoverability), but it is still quite indispensible.
 
 In programming parlance, "members" are the properties, methods, or events of an object.
 
