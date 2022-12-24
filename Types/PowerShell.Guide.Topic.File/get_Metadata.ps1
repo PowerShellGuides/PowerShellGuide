@@ -19,7 +19,7 @@ $topicData    =
 if (-not $topicData["title"]) {
     $topicData["title"] = $this.TopicName
 }
-elseif ($topicData.Keys -inotcontains 'title') {
+elseif ($topicData.Keys -cnotcontains 'title') {
     $title = $topicData["title"]
     $topicData.Remove("Title")
     $topicData["title"] = $title
