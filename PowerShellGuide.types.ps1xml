@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-16"?>
+<!-- Generated with EZOut 1.9.9: Install-Module EZOut or https://github.com/StartAutomating/EZOut -->
+<Types>
+  <Type>
+    <Name>PowerShell.Guide</Name>
+    <Members>
+      <ScriptMethod>
+        <Name>Export</Name>
+        <Script>
+                        &lt;#
+.SYNOPSIS
+    Exports the PowerShell guide.
+.DESCRIPTION
+    Export all files in the PowerShell guide.
+#&gt;  
+param(
+$OutputPath
+)
+
+if (-not $OutputPath) {
+    $OutputPath = 
+        Get-Module PowerShellGuide |
+            Select-Object -first 1 |
+            Split-Path |
+            Join-Path -ChildPath 'docs'
+}
+
+$allTopicMetadata = @()
+
+foreach ($topic in $this.AllTopics) {
+    $relativePathParts = @($topic.RelativePath.Split([IO.Path]::DirectorySeparatorChar))
+    $targetPathRoot = $OutputPath    
+    if ($relativePathParts.Length -gt 1) {
+        for (
+            $pathPartIndex = 0;
+            $pathPartIndex -lt ($relativePathParts.Length - 1);
+            $pathPartIndex++
+        ) {
+            $pathPart = $relativePathParts[$pathPartIndex]            
+            $targetPathRoot = Join-Path $targetPathRoot $pathPart
+        }        
+    }
+
+    if (-not (Test-Path $targetPathRoot)) {
+        $null = New-Item -ItemType Directory -Path $targetPathRoot -Force
+    }
+
+    if ($topic.Link.Length -ne ($topic.RelativePath.Length - 3)) {
+        $topicMarkdownFile = Join-Path $OutputPath $topic.Link | 
+            Join-Path -ChildPath "index.markdown"
+        
+    } else {        
+        $topicMarkdownFile = Join-Path $targetPathRoot "$($topic.TopicName -replace '[_\-\s]', '-').md"
+    }
+    
+    $allTopicMetadata += [PSCustomObject]@{
+        Name = $topic.TopicName
+        Aliases = $topic.Aliases
+        Link = $topic.Link
+    }
+
+    $($topic |
+        Add-Member NoteProperty FrontMatter @{
+            layout    ='default'
+        } -PassThru -Force |
+        Format-Custom -View Markdown |
+        Out-String -Width 1mb).Trim() |
+        Set-Content -Path $topicMarkdownFile
+    
+    Get-Item $topicMarkdownFile
+}
+
+$topicMetadataPath = Join-Path $OutputPath -ChildPath "guide.json"
+$allTopicMetadata | ConvertTo-Json -Depth 100 |
+    Set-Content -Path $topicMetadataPath
+Get-Item $topicMetadataPath
+                    </Script>
+      </ScriptMethod>
+      <ScriptProperty>
+        <Name>TopicCount</Name>
+        <GetScriptBlock>
+                        $this.AllTopics.Length
+                    </GetScriptBlock>
+      </ScriptProperty>
+    </Members>
+  </Type>
+  <Type>
+    <Name>PowerShell Guide Topic File</Name>
+    <Members>
+      <ScriptMethod>
+        <Name>ColorizeCode</Name>
+        <Script>
+                        param($code)
+
+$codeTokens = [Management.Automation.PSParser]::Tokenize($code, [ref]$null)
+$PreviousToken = $null
+foreach ($_ in $codeTokens) {   
+    $content = $_.Content
+    if ($_.Type -in 'Variable', 'String') {
+        $content = $code.Substring($_.Start, $_.Length)
+    }
+    if ($PreviousToken) {
+        $token = $_
+        $prevEnd = $PreviousToken.Start + $PreviousToken.Length
+        $substring = $code.Substring($prevEnd, $token.Start -  $prevEnd)
+        if ($substring) {
+            @{InputObject=$substring}
+        }
+    }
+    
+    if ($_.Type -eq 'Comment') {
+        @{
+            ForegroundColor='Success'
+            InputObject = $content
+        }
+    }
+    elseif ($_.Type -in 'Keyword', 'String', 'CommandArgument') {
+        @{
+            ForegroundColor='Verbose'
+            InputObject = $Content
+        }
+    }
+    elseif ($_.Type -in 'Variable', 'Command') {
+        @{
+            ForegroundColor='Warning'
+            InputObject = $Content
+        }   
+    }
+    elseif ($_.Type -in 'CommandParameter') {
+        @{
+            ForegroundColor='Magenta'
+            InputObject = $Content
+        }        
+    }
+    elseif (
+        $_.Type -in 'Operator','GroupStart', 'GroupEnd'
+    ) {
+        @{
+            ForegroundColor='Magenta'
+            InputObject = $Content
+        }
+    }
+    elseif (
+        $_.Type -in 'Type'
+    ) {
+        @{
+            ForegroundColor='Progress'
+            InputObject = $Content
+        }
+    }
+    elseif (
+        $_.Type -notin 'Comment', 
+            'Keyword', 'String', 'CommandArgument',
+            'Variable', 'Command',
+            'CommandParameter',
+            'Operator','GroupStart', 'GroupEnd'
+    )  {
+        @{
+            ForegroundColor='Output'
+            InputObject=$Content
+        }
+    } else {
+        @{
+            ForegroundColor='Output'
+            InputObject=$Content
+        }
+    }
+    $PreviousToken = $_
+}
+                    </Script>
+      </ScriptMethod>
+      <ScriptMethod>
+        <Name>FindCodeBlocks</Name>
+        <Script>
+                        $codeFenceRegex = [Regex]::new(@'
+(?&gt;
+    (?&lt;FenceChar&gt;[`\~]){3}    # Code fences start with tildas or backticks, repeated at least 3 times
+(?&lt;Language&gt;                  # Match a specific language
+PowerShell
+)
+[\s-[\r\n]]{0,}               # Match but do not capture initial whitespace.
+(?&lt;Code&gt;                      # Capture the &lt;Code&gt; block
+    (?:.|\s){0,}?             # This is anything until
+    (?=\z|\k&lt;FenceChar&gt;{3})   # the end of the string or the same matching fence chars
+)
+(?&gt;\z|\k&lt;FenceChar&gt;{3})
+)
+'@, 'IgnoreCase,IgnorePatternWhitespace,Singleline')
+
+$codeFenceRegex.Matches($this.Content)
+                    </Script>
+      </ScriptMethod>
+      <ScriptMethod>
+        <Name>FindHyperlinks</Name>
+        <Script>
+                        &lt;#
+.SYNOPSIS
+    Matches a Markdown Link
+.DESCRIPTION
+    Matches a Markdown Link.  Can customize the link text and link url.
+.NOTES
+    This only matches simple markdown links.  It does not currently match links with titles.
+#&gt;
+param(
+# The text of the link.
+$LinkText  = '[^\]\r\n]+',
+
+# The link URI.
+[Alias('LinkUrl')]
+$LinkUri   = '[^\)\r\n]+'
+)
+
+[Regex]::new(@"
+(?&lt;IsImage&gt;\!)?    # If there is an exclamation point, then it is an image link
+\[                 # Markdown links start with a bracket
+(?&lt;Text&gt;$LinkText)
+\]                 # anything until the end bracket is the link text.
+\(                 # The link uri is within parenthesis
+(?&lt;Uri&gt;$LinkUri)
+\)                 # anything until the closing parenthesis is the link uri.
+"@, 'IgnoreCase, IgnorePatternWhitespace').Matches($this.Content)
+                    </Script>
+      </ScriptMethod>
+      <ScriptMethod>
+        <Name>FindReferences</Name>
+        <Script>
+                        $content = $this.Content
+$PowerShellGuide  = Get-PowerShellGuide
+$topicReference   = @{}
+foreach ($guideTopic in $PowerShellGuide.AllTopics) {
+    if ($guideTopic.Fullname -eq $this.Fullname) { continue } # avoid self-references
+    foreach ($alias in $guideTopic.Aliases) {
+        $topicReference[$alias] = $guideTopic
+    }
+}
+
+$sortedKeys = $topicReference.Keys | Sort-Object Length, { $_ } -Descending
+
+
+
+$anyMatches = [Regex]::new("(?&lt;=[\s\&gt;'`"_])(?&gt;$(
+    @(foreach ($k in $sortedKeys) {
+        [Regex]::Escape($k) -replace '\\\s', '[\s\-_]'
+    }) -join '|'
+))(?=[\s\&gt;'`"_\.,])", 'IgnoreCase')
+
+
+
+foreach ($match in $anyMatches.Matches($content)) {
+    $topicAlias = $match -replace '[\s\-_]',' '
+    [PSCustomObject]@{
+        PSTypeName = 'PowerShell.Guide.Reference'
+        Match      = $match
+        TopicName  = $topicReference["$topicAlias"].TopicName
+        TopicFile  = $topicReference["$topicAlias"]
+    }
+}
+                    </Script>
+      </ScriptMethod>
+      <ScriptMethod>
+        <Name>ToMarkdown</Name>
+        <Script>
+                        $content = $this.Content
+
+$avoidRange = @()
+$avoidRange += @(foreach ($cb in $this.FindCodeBlocks()) {
+    $cb.Index..($cb.Index+$cb.Length)
+})
+
+$avoidRange += @(foreach ($hyperlink in $this.FindHyperLinks()) {
+    $hyperlink.Index..$($hyperlink.Index + $hyperlink.Length)
+})
+
+$newText = ''
+$index   = 0
+@(
+foreach ($ref in $this.FindReferences()) {
+    if ($ref.Match.Index -in $avoidRange) { continue }
+    $refStart = $ref.Match.Index
+    if ($refStart -gt $index) {
+        $content.Substring($index, $refStart - $index)
+    }    
+    "[$($ref.Match)](/$($ref.TopicFile.Link))"
+    $index = $ref.Match.Index + $ref.Match.Length                
+}
+
+if ($index -lt $content.Length) {
+    $content.Substring($index)
+}
+) -join ''
+                    </Script>
+      </ScriptMethod>
+      <ScriptProperty>
+        <Name>Aliases</Name>
+        <GetScriptBlock>
+                        @(
+    ($this.Name -replace '[_-]', ' ' -replace '\.md$')
+    if ($this.Metadata.Alias) {
+        $this.Metadata.Alias -replace '[_-]', ' '
+    }    
+    if ($this.Metadata.Aliases) {
+        $this.Metadata.Aliases -replace '[_-]', ' '
+    }    
+)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>Content</Name>
+        <GetScriptBlock>
+                        [IO.File]::ReadAllText($this.Fullname)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>Link</Name>
+        <GetScriptBlock>
+                        $link = $this.RelativePath -replace '[\-_\s]', '-' -replace '\.md$', ''
+if ($link -match '[\\/]') {
+    $linkParts = @($link -split '[\\/]')
+    if ($linkParts[-1] -eq $linkParts[-2]) {
+        $linkParts[0..$($linkParts.Length - 2)] -join '/'
+    } else {
+        $linkParts -join '/'
+    }
+} else {
+    $link
+}
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>Metadata</Name>
+        <GetScriptBlock>
+                        if ($this.psobject.properties['_CachedMetadata']) {
+    return $this._CachedMetadata
+}
+
+$psd1FileName = $this.Name     + '.psd1'
+$psd1File     = $this.Fullname + '.psd1'
+$topicData    = 
+    if (Test-Path $psd1File) {
+        try {
+            Import-LocalizedData -BaseDirectory $this.Directory.Fullname -FileName $psd1FileName
+        } catch {
+            Write-Warning "$_"
+            @{}
+        }
+    } else {
+        @{}
+    }
+
+if (-not $topicData["title"]) {
+    $topicData["title"] = $this.TopicName
+}
+elseif ($topicData.Keys -cnotcontains 'title') {
+    $title = $topicData["title"]
+    $topicData.Remove("Title")
+    $topicData["title"] = $title
+}
+
+
+$this | Add-Member NoteProperty _CachedMetadata $topicData -Force
+return $topicData
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>RelativePath</Name>
+        <GetScriptBlock>
+                        @($this.Fullname -split '[\\/]Guide[\\/]', 2)[1]
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>TopicName</Name>
+        <GetScriptBlock>
+                        $this.Name -replace '[_-]', ' ' -replace '\.md$'
+                    </GetScriptBlock>
+      </ScriptProperty>
+    </Members>
+  </Type>
+  <Type>
+    <Name>PowerShell.Guide.Topic.File</Name>
+    <Members>
+      <ScriptMethod>
+        <Name>ColorizeCode</Name>
+        <Script>
+                        param($code)
+
+$codeTokens = [Management.Automation.PSParser]::Tokenize($code, [ref]$null)
+$PreviousToken = $null
+foreach ($_ in $codeTokens) {   
+    $content = $_.Content
+    if ($_.Type -in 'Variable', 'String') {
+        $content = $code.Substring($_.Start, $_.Length)
+    }
+    if ($PreviousToken) {
+        $token = $_
+        $prevEnd = $PreviousToken.Start + $PreviousToken.Length
+        $substring = $code.Substring($prevEnd, $token.Start -  $prevEnd)
+        if ($substring) {
+            @{InputObject=$substring}
+        }
+    }
+    
+    if ($_.Type -eq 'Comment') {
+        @{
+            ForegroundColor='Success'
+            InputObject = $content
+        }
+    }
+    elseif ($_.Type -in 'Keyword', 'String', 'CommandArgument') {
+        @{
+            ForegroundColor='Verbose'
+            InputObject = $Content
+        }
+    }
+    elseif ($_.Type -in 'Variable', 'Command') {
+        @{
+            ForegroundColor='Warning'
+            InputObject = $Content
+        }   
+    }
+    elseif ($_.Type -in 'CommandParameter') {
+        @{
+            ForegroundColor='Magenta'
+            InputObject = $Content
+        }        
+    }
+    elseif (
+        $_.Type -in 'Operator','GroupStart', 'GroupEnd'
+    ) {
+        @{
+            ForegroundColor='Magenta'
+            InputObject = $Content
+        }
+    }
+    elseif (
+        $_.Type -in 'Type'
+    ) {
+        @{
+            ForegroundColor='Progress'
+            InputObject = $Content
+        }
+    }
+    elseif (
+        $_.Type -notin 'Comment', 
+            'Keyword', 'String', 'CommandArgument',
+            'Variable', 'Command',
+            'CommandParameter',
+            'Operator','GroupStart', 'GroupEnd'
+    )  {
+        @{
+            ForegroundColor='Output'
+            InputObject=$Content
+        }
+    } else {
+        @{
+            ForegroundColor='Output'
+            InputObject=$Content
+        }
+    }
+    $PreviousToken = $_
+}
+                    </Script>
+      </ScriptMethod>
+      <ScriptMethod>
+        <Name>FindCodeBlocks</Name>
+        <Script>
+                        $codeFenceRegex = [Regex]::new(@'
+(?&gt;
+    (?&lt;FenceChar&gt;[`\~]){3}    # Code fences start with tildas or backticks, repeated at least 3 times
+(?&lt;Language&gt;                  # Match a specific language
+PowerShell
+)
+[\s-[\r\n]]{0,}               # Match but do not capture initial whitespace.
+(?&lt;Code&gt;                      # Capture the &lt;Code&gt; block
+    (?:.|\s){0,}?             # This is anything until
+    (?=\z|\k&lt;FenceChar&gt;{3})   # the end of the string or the same matching fence chars
+)
+(?&gt;\z|\k&lt;FenceChar&gt;{3})
+)
+'@, 'IgnoreCase,IgnorePatternWhitespace,Singleline')
+
+$codeFenceRegex.Matches($this.Content)
+                    </Script>
+      </ScriptMethod>
+      <ScriptMethod>
+        <Name>FindHyperlinks</Name>
+        <Script>
+                        &lt;#
+.SYNOPSIS
+    Matches a Markdown Link
+.DESCRIPTION
+    Matches a Markdown Link.  Can customize the link text and link url.
+.NOTES
+    This only matches simple markdown links.  It does not currently match links with titles.
+#&gt;
+param(
+# The text of the link.
+$LinkText  = '[^\]\r\n]+',
+
+# The link URI.
+[Alias('LinkUrl')]
+$LinkUri   = '[^\)\r\n]+'
+)
+
+[Regex]::new(@"
+(?&lt;IsImage&gt;\!)?    # If there is an exclamation point, then it is an image link
+\[                 # Markdown links start with a bracket
+(?&lt;Text&gt;$LinkText)
+\]                 # anything until the end bracket is the link text.
+\(                 # The link uri is within parenthesis
+(?&lt;Uri&gt;$LinkUri)
+\)                 # anything until the closing parenthesis is the link uri.
+"@, 'IgnoreCase, IgnorePatternWhitespace').Matches($this.Content)
+                    </Script>
+      </ScriptMethod>
+      <ScriptMethod>
+        <Name>FindReferences</Name>
+        <Script>
+                        $content = $this.Content
+$PowerShellGuide  = Get-PowerShellGuide
+$topicReference   = @{}
+foreach ($guideTopic in $PowerShellGuide.AllTopics) {
+    if ($guideTopic.Fullname -eq $this.Fullname) { continue } # avoid self-references
+    foreach ($alias in $guideTopic.Aliases) {
+        $topicReference[$alias] = $guideTopic
+    }
+}
+
+$sortedKeys = $topicReference.Keys | Sort-Object Length, { $_ } -Descending
+
+
+
+$anyMatches = [Regex]::new("(?&lt;=[\s\&gt;'`"_])(?&gt;$(
+    @(foreach ($k in $sortedKeys) {
+        [Regex]::Escape($k) -replace '\\\s', '[\s\-_]'
+    }) -join '|'
+))(?=[\s\&gt;'`"_\.,])", 'IgnoreCase')
+
+
+
+foreach ($match in $anyMatches.Matches($content)) {
+    $topicAlias = $match -replace '[\s\-_]',' '
+    [PSCustomObject]@{
+        PSTypeName = 'PowerShell.Guide.Reference'
+        Match      = $match
+        TopicName  = $topicReference["$topicAlias"].TopicName
+        TopicFile  = $topicReference["$topicAlias"]
+    }
+}
+                    </Script>
+      </ScriptMethod>
+      <ScriptMethod>
+        <Name>ToMarkdown</Name>
+        <Script>
+                        $content = $this.Content
+
+$avoidRange = @()
+$avoidRange += @(foreach ($cb in $this.FindCodeBlocks()) {
+    $cb.Index..($cb.Index+$cb.Length)
+})
+
+$avoidRange += @(foreach ($hyperlink in $this.FindHyperLinks()) {
+    $hyperlink.Index..$($hyperlink.Index + $hyperlink.Length)
+})
+
+$newText = ''
+$index   = 0
+@(
+foreach ($ref in $this.FindReferences()) {
+    if ($ref.Match.Index -in $avoidRange) { continue }
+    $refStart = $ref.Match.Index
+    if ($refStart -gt $index) {
+        $content.Substring($index, $refStart - $index)
+    }    
+    "[$($ref.Match)](/$($ref.TopicFile.Link))"
+    $index = $ref.Match.Index + $ref.Match.Length                
+}
+
+if ($index -lt $content.Length) {
+    $content.Substring($index)
+}
+) -join ''
+                    </Script>
+      </ScriptMethod>
+      <ScriptProperty>
+        <Name>Aliases</Name>
+        <GetScriptBlock>
+                        @(
+    ($this.Name -replace '[_-]', ' ' -replace '\.md$')
+    if ($this.Metadata.Alias) {
+        $this.Metadata.Alias -replace '[_-]', ' '
+    }    
+    if ($this.Metadata.Aliases) {
+        $this.Metadata.Aliases -replace '[_-]', ' '
+    }    
+)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>Content</Name>
+        <GetScriptBlock>
+                        [IO.File]::ReadAllText($this.Fullname)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>Link</Name>
+        <GetScriptBlock>
+                        $link = $this.RelativePath -replace '[\-_\s]', '-' -replace '\.md$', ''
+if ($link -match '[\\/]') {
+    $linkParts = @($link -split '[\\/]')
+    if ($linkParts[-1] -eq $linkParts[-2]) {
+        $linkParts[0..$($linkParts.Length - 2)] -join '/'
+    } else {
+        $linkParts -join '/'
+    }
+} else {
+    $link
+}
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>Metadata</Name>
+        <GetScriptBlock>
+                        if ($this.psobject.properties['_CachedMetadata']) {
+    return $this._CachedMetadata
+}
+
+$psd1FileName = $this.Name     + '.psd1'
+$psd1File     = $this.Fullname + '.psd1'
+$topicData    = 
+    if (Test-Path $psd1File) {
+        try {
+            Import-LocalizedData -BaseDirectory $this.Directory.Fullname -FileName $psd1FileName
+        } catch {
+            Write-Warning "$_"
+            @{}
+        }
+    } else {
+        @{}
+    }
+
+if (-not $topicData["title"]) {
+    $topicData["title"] = $this.TopicName
+}
+elseif ($topicData.Keys -cnotcontains 'title') {
+    $title = $topicData["title"]
+    $topicData.Remove("Title")
+    $topicData["title"] = $title
+}
+
+
+$this | Add-Member NoteProperty _CachedMetadata $topicData -Force
+return $topicData
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>RelativePath</Name>
+        <GetScriptBlock>
+                        @($this.Fullname -split '[\\/]Guide[\\/]', 2)[1]
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>TopicName</Name>
+        <GetScriptBlock>
+                        $this.Name -replace '[_-]', ' ' -replace '\.md$'
+                    </GetScriptBlock>
+      </ScriptProperty>
+    </Members>
+  </Type>
+</Types>

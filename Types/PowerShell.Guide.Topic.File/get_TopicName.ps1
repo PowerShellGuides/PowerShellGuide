@@ -1,0 +1,1 @@
+$this.Name -replace '[_-]', ' ' -replace '\.md$'

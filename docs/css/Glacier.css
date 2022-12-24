@@ -1,0 +1,98 @@
+:root {
+  --name: Glacier;
+  --black: #2e343c;
+  --red: #bd0f2f;
+  --green: #35a770;
+  --yellow: #fb9435;
+  --blue: #1f5872;
+  --purple: #bd2523;
+  --cyan: #778397;
+  --white: #ffffff;
+  --brightBlack: #404a55;
+  --brightRed: #bd0f2f;
+  --brightGreen: #49e998;
+  --brightYellow: #fddf6e;
+  --brightBlue: #2a8bc1;
+  --brightPurple: #ea4727;
+  --brightCyan: #a0b6d3;
+  --brightWhite: #ffffff;
+  --background: #0c1115;
+  --foreground: #ffffff;
+  --cursorColor: #6c6c6c;
+  --selectionBackground: #bd2523
+}
+
+.foreground, .Foreground { color: var(--foreground);            }
+.background, .Background { background-color: var(--background); }
+
+.output   , .Output      { color: var(--foreground)   }
+.success  , .Success     { color: var(--brightGreen)  }
+.failure  , .Failure     { color: var(--red)          }
+.error    , .Error       { color: var(--brightRed)    }
+.warning  , .Warning     { color: var(--brightYellow) }
+.debug    , .Debug       { color: var(--yellow)       }
+.verbose  , .Verbose     { color: var(--brightCyan)   }
+.progress , .Progress    { color: var(--cyan)         }
+.link     , .Link        { color: var(--cyan)         }
+
+.black   ,  .Black   , .ANSI0  { color: var(--black)  }
+.red     ,  .Red     , .ANSI1  { color: var(--red)    }
+.green   ,  .Green   , .ANSI2  { color: var(--green)  }
+.yellow  ,  .Yellow  , .ANSI3  { color: var(--yellow) }
+.blue    ,  .Blue    , .ANSI4  { color: var(--blue)   }
+.magenta ,  .Magenta , .ANSI5  { color: var(--purple) }
+.cyan    ,  .Cyan    , .ANSI6  { color: var(--cyan)   }
+.white   ,  .White   , .ANSI7  { color: var(--white)  }
+
+.brightblack   ,  .bright-black   , .BrightBlack   , .ANSI8   { color: var(--brightBlack)  }
+.brightred     ,  .bright-red     , .BrightRed     , .ANSI9   { color: var(--brightRed)    }
+.brightgreen   ,  .bright-green   , .BrightGreen   , .ANSI10  { color: var(--brightGreen)  }
+.brightyellow  ,  .bright-yellow  , .BrightYellow  , .ANSI11  { color: var(--brightYellow) }
+.brightblue    ,  .bright-blue    , .BrightBlue    , .ANSI12  { color: var(--brightBlue)   }
+.brightmagenta ,  .bright-magenta , .BrightMagenta , .ANSI13  { color: var(--brightPurple) }
+.brightcyan    ,  .bright-cyan    , .BrightCyan    , .ANSI14  { color: var(--brightCyan)   }
+.brightwhite   ,  .bright-white   , .BrightWhite   , .ANSI15  { color: var(--brightWhite)  }
+
+.purple       ,  .Purple  { color: var(--purple) }
+
+.brightpurple ,  .bright-purple , .BrightPurple  { color: var(--brightPurple) }
+
+.foreground-border , .Foreground-Border   { border-color: var(--foreground)  }
+.foreground-fill   , .Foreground-Fill     { fill: var(--foreground)          }
+.foreground-stroke , .Foreground-Stroke   { stroke: var(--foreground)        }
+
+.background-border , .Background-Border  { border-color: var(--background)   }
+.background-fill   , .Background-Fill    { fill: var(--background)           }
+.background-stroke , .Background-Stroke  { stroke: var(--background)         }
+
+.error-border      , .Error-Border       { border-color: var(--brightRed)    }
+.error-fill        , .Error-Fill         { fill: var(--brightRed)            }
+.error-stroke      , .Error-Stroke       { stroke: var(--brightRed)          }
+
+.success-border    , .Success-Border     { border-color: var(--brightGreen)  }
+.success-fill      , .Sucesss-Fill       { fill: var(--brightGreen)          } 
+.sucesss-stroke    , .Success-Stroke     { stroke: var(--brightGreen)        }
+
+.warning-border    , .Warning-Border     { border-color: var(--brightYellow) }
+.warning-fill      , .Warning-Fill       { fill: var(--brightYellow)         }
+.warning-stroke    , .Warning-Stroke     { stroke: var(--brightYellow)       }
+
+a, a:visited, a:hover  { color: var(--cyan); }
+::selection, ::-moz-selection {
+    color: var(--cursorColor);
+    background-color: var(--selectionBackground);
+}
+   
+form input[type="text"], form input[type="checkbox"], input[type="button"], textarea, select, option {
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+form input[type="text"], textarea, select {
+    border : 1px solid var(--foreground);
+    outline: 1px solid var(--foreground);
+}
+
+hr {
+    color: var(--foreground)
+}

@@ -1,0 +1,33 @@
+---
+permalink: /404.html
+layout: default
+---
+
+<style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+  <h3>Is not the answer to life, the universe, or everything.</h3>
+  <h4>Let's see if we have any idea what you're looking for:</h4>
+  <div id="SearchResults">
+
+  </div>
+  <script type="text/javascript">
+    var replacedPath = window.location.pathname.replace(/^\//, '').replace(/\//, '|');
+    urlSegments = window.location.pathname.replace(/^\//).split('/')
+    
+    SearchGuide(replacedPath);
+  </script>
+</div>

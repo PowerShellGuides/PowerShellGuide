@@ -1,0 +1,1 @@
+@($this.Fullname -split '[\\/]Guide[\\/]', 2)[1]

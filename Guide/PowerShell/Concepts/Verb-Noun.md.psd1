@@ -1,0 +1,3 @@
+@{
+    Alias = 'Verb-Noun Pairing'
+}

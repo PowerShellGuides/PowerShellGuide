@@ -1,0 +1,1 @@
+[IO.File]::ReadAllText($this.Fullname)
