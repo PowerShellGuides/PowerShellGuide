@@ -6,9 +6,9 @@ title: Scripting Languages
 layout: default
 ---
 
-Scripting languages are programming languages that are interpreted when they run.
+Scripting languages are [programming languages](/Languages/Programming-Languages) that are interpreted when they run.
 
-This is unlike a compiled programming language, which is turned into machine code and run.
+This is unlike a compiled [programming language](/Languages/Programming-Languages), which is turned into machine code and run.
 
 Nobody ever wants to deal with machine code.
 
