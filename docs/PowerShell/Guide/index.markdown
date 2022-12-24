@@ -1,10 +1,9 @@
 ---
 
-title: Guide
 Alias: 
 - PowerShell Guide
 - PowerShellGuide
-
+title: Guide
 
 layout: default
 ---
@@ -48,11 +47,11 @@ Here are some topics that may help you get started:
 * [PowerShell Functions](/PowerShell/Functions)
 * [PowerShell](/PowerShell) Parameters
 * [Commands](/PowerShell/Commands)
-* Modules
+* [Modules](/PowerShell/Modules)
 
-You can browse the guide online or download the [PowerShell](/PowerShell) Guide as a module.
+You can browse the guide online or download the [PowerShell](/PowerShell) Guide as a [module](/PowerShell/Modules).
 
-What's a module, you ask?
+What's a [module](/PowerShell/Modules), you ask?
 
 Why not ask the [PowerShell](/PowerShell) Guide?
 
