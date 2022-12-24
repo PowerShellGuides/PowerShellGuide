@@ -32,7 +32,7 @@ Features like:
   * An Extended [Types](/PowerShell/Types) System that allows you to customize existing [types](/PowerShell/Types).
   * Cmdlets that let you easily run anything built in PowerShell.
   * Extensible [Commands](/PowerShell/Commands) that let you run anything else.
-  * Splatting which allows you to easily pass parameters around.
+  * Splatting which allows you to easily pass [parameters](/PowerShell/Parameters) around.
   * An Events Engine that lets you script asynchronously.
 
 PowerShell is written in C#, and anything in .NET can be used in PowerShell.
@@ -58,6 +58,6 @@ PowerShell (the [shell](/Shells) part) can do some nifty things, like:
 * Display progress
 * Prompt for input (including credentials)
 * Confirm impactful decisions
-* Tab through [commands](/PowerShell/Commands) and parameters
+* Tab through [commands](/PowerShell/Commands) and [parameters](/PowerShell/Parameters)
 
 ---
