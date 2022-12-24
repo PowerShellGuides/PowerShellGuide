@@ -11,7 +11,7 @@ Any [module](/PowerShell/Modules) can include any number of [about topics](/Powe
 
 Perhaps more importantly, any [function](/PowerShell/Functions) or script can include inline help.
 
-This help will be easy to access for anyone with [PowerShell](/PowerShell), using Get-Help.
+This help will be easy to access for anyone with [PowerShell](/PowerShell), using [Get-Help](/PowerShell/Commands/Get-Help).
 
 
 Inline help is defined in comments at the start of a [function](/PowerShell/Functions) or script, and can also be defined above each [parameter](/PowerShell/Parameters).
