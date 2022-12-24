@@ -21,4 +21,4 @@ Then we could come back next week and see not just what processes were running t
 
 You may find it's exactly these sort of scenarios where you want to extend an object, and this is when you will find [PowerShell](/PowerShell) quite adept.
 
-You can also extend [types](/PowerShell/Types) in [PowerShell](/PowerShell), so that any similar object would be treated in the same way.
+You can also [extend types](/PowerShell/Types/Extending-Types) in [PowerShell](/PowerShell), so that any similar object would be treated in the same way.
