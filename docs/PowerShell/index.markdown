@@ -12,7 +12,7 @@ PowerShell is a [scripting language](/Languages/Scripting-Languages) and a shell
 
 Of course neither of these things mean much without context.
 
-[Scripting languages](/Languages/Scripting-Languages) are programming languages that are interpreted when they run.
+[Scripting languages](/Languages/Scripting-Languages) are [programming languages](/Languages/Programming-Languages) that are interpreted when they run.
 
 Shells are the surface layer of a language or operating system.
 
