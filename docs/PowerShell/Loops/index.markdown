@@ -7,7 +7,7 @@ layout: default
 
 All of this has happenned before, and all of this will happen again.
 
-Loops are a part of existence, and all programming languages.
+Loops are a part of existence, and all [programming languages](/Languages/Programming-Languages).
 
 A loop simply does things again and again.
 
