@@ -22,7 +22,7 @@ If it's the only one you know, you may potentially die happpy (not that we have 
 
 Here are a few of the reasons we believe that [PowerShell](/PowerShell) is quite a programming language:
 
-* It's a [Scripting Language](/Languages/Scripting-Languages) with a Shell, which makes it easy to try
+* It's a [Scripting Language](/Languages/Scripting-Languages) with a [Shell](/Shells), which makes it easy to try
 * It has things other languages lack (like the object pipeline)
 * It talks to many other languages easily
 * You can use [PowerShell](/PowerShell) as a very [high level language](/Languages/High-Level-Languages)
