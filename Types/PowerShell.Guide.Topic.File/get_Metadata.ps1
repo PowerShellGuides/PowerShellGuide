@@ -16,6 +16,9 @@ $topicData    =
         @{}
     }
 
-$topicData["title"] = $this.TopicName
+if (-not $topicData["title"]) {
+    $topicData["title"] = $this.TopicName
+}
+
 $this | Add-Member NoteProperty _CachedMetadata $topicData -Force
 return $topicData
