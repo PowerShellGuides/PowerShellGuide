@@ -1,10 +1,9 @@
 ---
 
-title: Guide
 Alias: 
 - PowerShell Guide
 - PowerShellGuide
-
+title: Guide
 
 layout: default
 ---
@@ -45,7 +44,7 @@ Here are some topics that may help you get started:
 * [Conditionals](/PowerShell/Conditionals)
 * [Loops](/PowerShell/Loops)
 * [PowerShell](/PowerShell) Scripts
-* [PowerShell](/PowerShell) Functions
+* [PowerShell Functions](/PowerShell/Functions)
 * [PowerShell](/PowerShell) Parameters
 * Commands
 * Modules
