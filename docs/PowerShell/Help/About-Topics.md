@@ -27,7 +27,7 @@ To see them all, use:
 
 ## About Topic Files
 
-These topics are either written by Microsoft or the authors of a particular module, and are stored in a `.help.txt` file.
+These topics are either written by Microsoft or the authors of a particular [module](/PowerShell/Modules), and are stored in a `.help.txt` file.
 
 `.help.txt` files take the form of:
 
