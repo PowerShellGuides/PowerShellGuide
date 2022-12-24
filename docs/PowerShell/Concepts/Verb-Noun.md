@@ -1,7 +1,7 @@
 ---
 
-Alias: Verb-Noun Pairing
 title: Verb Noun
+Alias: Verb-Noun Pairing
 
 layout: default
 ---
@@ -22,7 +22,7 @@ For example, we list all of the loaded [commands in PowerShell](/PowerShell/Comm
 
 By having a standard set of verbs, the whole universe of [PowerShell](/PowerShell) is more likely to be discoverable and understandable.
 
-For instance, we can use Get-Command to see all that we can Get:
+For instance, we can use [Get-Command](/PowerShell/Commands/Get-Command) to see all that we can Get:
 
 <pre><br/><span class='Warning'>Get-Command</span>&nbsp;<span class='Magenta'>-Verb</span>&nbsp;<span class='Verbose'>Get</span><br/></pre>
 
