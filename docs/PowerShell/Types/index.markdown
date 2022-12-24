@@ -18,7 +18,7 @@ A strongly defined type has a very particular idea of what it is and what it can
 
 This definition is written in an object oriented [programming language](/Languages/Programming-Languages).
 
-It is often compiled into a file so that other programs and scripts can reference it.
+It is often compiled into a file so that other programs and [scripts](/PowerShell/Scripts) can reference it.
 
 Most object oriented [programming languages](/Languages/Programming-Languages) allow you to strongly define a type in a class.
 
