@@ -9,12 +9,12 @@ PowerShell's built-in help system is quite nice.
 
 Any module can include any number of [about topics](/PowerShell/Help/About-Topics), which can help people figure out how to use that module.
 
-Perhaps more importantly, any function or script can include inline help.
+Perhaps more importantly, any [function](/PowerShell/Functions) or script can include inline help.
 
 This help will be easy to access for anyone with [PowerShell](/PowerShell), using Get-Help.
 
 
-Inline help is defined in comments at the start of a function or script, and can also be defined above each parameter.
+Inline help is defined in comments at the start of a [function](/PowerShell/Functions) or script, and can also be defined above each parameter.
 
 
 Let's write a completely useless example to show how this works
