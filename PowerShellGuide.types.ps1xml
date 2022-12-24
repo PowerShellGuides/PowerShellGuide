@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-16"?>
+<!-- Generated with EZOut 1.9.9: Install-Module EZOut or https://github.com/StartAutomating/EZOut -->
+<Types>
+  <Type>
+    <Name>PowerShell.Guide.Topic.File</Name>
+    <Members>
+      <ScriptMethod>
+        <Name>FindReferences</Name>
+        <Script>
+                        $content = $this.Content
+$PowerShellGuide  = Get-PowerShellGuide
+$topicReference   = @{}
+foreach ($guideTopic in $PowerShellGuide.AllTopics) {
+    if ($guideTopic.Fullname -eq $this.Fullname) { continue } # avoid self-references
+    foreach ($alias in $guideTopic.Aliases) {
+        $topicReference[$alias] = $guideTopic
+    }
+}
+
+$sortedKeys = $topicReference.Keys | Sort-Object Length, { $_ } -Descending
+
+
+
+$anyMatches = [Regex]::new("(?&lt;=[\s\&gt;'`"_])(?&gt;$(
+    @(foreach ($k in $sortedKeys) {
+        [Regex]::Escape($k) -replace '\\\s', '[\s\-_]'
+    }) -join '|'
+))(?=[\s\&gt;'`"_\.,])", 'IgnoreCase')
+
+
+
+foreach ($match in $anyMatches.Matches($content)) {
+    $topicAlias = $match -replace '[\s\-_]',' '
+    [PSCustomObject]@{
+        PSTypeName = 'PowerShell.Guide.Reference'
+        Match      = $match
+        TopicName  = $topicReference["$topicAlias"].TopicName
+        TopicFile  = $topicReference["$topicAlias"]
+    }
+}
+                    </Script>
+      </ScriptMethod>
+      <ScriptProperty>
+        <Name>Content</Name>
+        <GetScriptBlock>
+                        [IO.File]::ReadAllText($this.Fullname)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>Link</Name>
+        <GetScriptBlock>
+                        $link = $this.RelativePath -replace '[\-_\s]', '-' -replace '\.md$', ''
+if ($link -match '[\\/]') {
+    $linkParts = @($link -split '[\\/]')
+    if ($linkParts[-1] -eq $linkParts[-2]) {
+        $linkParts[0..$($linkParts.Length - 2)] -join '/'
+    } else {
+        $linkParts -join '/'
+    }
+} else {
+    $link
+}
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>RelativePath</Name>
+        <GetScriptBlock>
+                        @($this.Fullname -split '[\\/]Guide[\\/]', 2)[1]
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>TopicName</Name>
+        <GetScriptBlock>
+                        $this.Name -replace '[_-]', ' ' -replace '\.md$'
+                    </GetScriptBlock>
+      </ScriptProperty>
+    </Members>
+  </Type>
+</Types>
