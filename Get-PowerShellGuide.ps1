@@ -15,11 +15,7 @@ function Get-PowerShellGuide {
                         Get-ChildItem -Recurse |
                         Where-Object Extension -in '.md' |
                         Where-Object FullName -notlike '*_site*'
-                
-                $guideDemos =
-                    Get-ChildItem -Path $PSScriptRoot -Filter Demos |
-                        Get-ChildItem -Recurse -Filter *.demo.ps1
-                
+                                
                 $guideTopics = @($(
                                  # Collect all items into an input collection
                                  $inputCollection =$($guideTopics)
@@ -44,30 +40,6 @@ function Get-PowerShellGuide {
                                              
                                  }   
                                  ))
-                $guideDemos  = @($(
-                                 # Collect all items into an input collection
-                                 $inputCollection =$($guideDemos)
-                                 # 'unroll' the collection by iterating over it once.
-                                 $filteredCollection = $inputCollection =
-                                     @(foreach ($in in $inputCollection) {
-                                         $in
-                                     })
-                                 # Walk over each item in the filtered collection
-                                 foreach ($item in $filteredCollection) {
-                                     # we set $this, $psItem, and $_ for ease-of-use.
-                                     $this = $_ = $psItem = $item
-                                 if ($item.value -and $item.value.pstypenames.insert) {
-                                     if ($item.value.pstypenames -notcontains 'PowerShell Guide Demo File') {
-                                         $item.value.pstypenames.insert(0, 'PowerShell Guide Demo File')
-                                     }
-                                 }
-                                 elseif ($item.pstypenames.insert -and $item.pstypenames -notcontains 'PowerShell Guide Demo File') {
-                                     $item.pstypenames.insert(0, 'PowerShell Guide Demo File')
-                                 }
-                                 $item
-                                             
-                                 }   
-                                 ) )
                 $myModuleVersion = $MyInvocation.MyCommand.ScriptBlock.Module.Version
                 
                 $script:CachedPowerShellGuide = [PSCustomObject]@{
