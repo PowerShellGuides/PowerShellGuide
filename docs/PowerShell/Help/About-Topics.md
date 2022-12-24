@@ -9,13 +9,13 @@ PowerShell has all sorts of wonderful little bells and whistles, but, perhaps th
 
 If you want help in [PowerShell](/PowerShell), simply Get-Help.
 
-Say we wanted to find out about variables.  We'd just run:
+Say we wanted to find out about [variables](/PowerShell/Variables).  We'd just run:
 
 <pre><br/><span class='Warning'>Get-Help</span><br/></pre>
 
 You can also get help about a particular topic.
 
-For example, to understand variables, we would say:
+For example, to understand [variables](/PowerShell/Variables), we would say:
 
 <pre><br/><span class='Warning'>Get-Help</span>&nbsp;<span class='Verbose'>about_variables</span><br/></pre>
 
