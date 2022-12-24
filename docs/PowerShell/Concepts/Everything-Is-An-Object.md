@@ -8,7 +8,7 @@ layout: default
 
 In [PowerShell](/PowerShell), everything is an object.
 
-Every command you run may produce objects.
+Every [command](/PowerShell/Commands) you run may produce objects.
 
 Every [variable](/PowerShell/Variables) you set will store an object.
 
