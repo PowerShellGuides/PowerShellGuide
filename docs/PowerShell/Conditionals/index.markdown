@@ -11,19 +11,19 @@ For instance, _if_ it's cold outside, you might wear a coat.
 
 Every language has conditionals.
 
-In PowerShell, as in many languages, a conditional is represented by the keyword "if".
+In [PowerShell](/PowerShell), as in many languages, a conditional is represented by the keyword "if".
 
 <pre><br/><span class='Verbose'>if</span>&nbsp;<span class='Magenta'>(</span><span class='Warning'>$ItsColdOutside</span><span class='Magenta'>)</span><br/><span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>"I just can't stay"</span><br/><span class='Magenta'>}</span><br/></pre>
 
 Coniditionals are a basic part of programming.  As in _if_ you don't learn conditionals, you'll never learn to code.
 
-In PowerShell, If will be followed by a condition (in parenthesis), and an action (in curly braces).
+In [PowerShell](/PowerShell), If will be followed by a condition (in parenthesis), and an action (in curly braces).
 
 ## What else?
 
 Coniditionals wouldn't be too much use if you could only handle one condition.
 
-So, PowerShell (and almost every language), if can be followed by an _else_ keyword.
+So, [PowerShell](/PowerShell) (and almost every language), if can be followed by an _else_ keyword.
 
 <pre><br/><span class='Verbose'>if</span>&nbsp;<span class='Magenta'>(</span><span class='Warning'>$ItsColdOutside</span><span class='Magenta'>)</span><br/><span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>"I just can't stay"</span><br/><span class='Magenta'>}</span><br/><span class='Verbose'>else</span><br/><span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>"I can stay"</span><br/><span class='Magenta'>}</span><br/></pre>
 
@@ -37,9 +37,9 @@ In a given _if_, you can have as many _elseif_ conditions as you'd like.
 
 ## Switching it up
 
-If isn't the only conditional in PowerShell (or most languages).
+If isn't the only conditional in [PowerShell](/PowerShell) (or most languages).
 
-PowerShell also has a _switch_ keyword.
+[PowerShell](/PowerShell) also has a _switch_ keyword.
 
 A switch is followed by an expression.  We switch what we do based off of the output of the expression.
 
