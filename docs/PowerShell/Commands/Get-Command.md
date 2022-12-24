@@ -9,4 +9,4 @@ Get-Command gives you all of the loaded [commands in PowerShell](/PowerShell/Com
 
 It is truly an indispensible cmdlet.
 
-Get-Command is part of the trinity of discoverability.
+Get-Command is part of the [trinity of discoverability](/PowerShell/Concepts/Trinity-Of-Discoverability).
