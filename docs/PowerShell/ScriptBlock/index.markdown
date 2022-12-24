@@ -1,6 +1,5 @@
 ---
 
-title: ScriptBlock
 Alias: 
 - ScriptBlocks
 - Script Block
@@ -9,14 +8,14 @@ Alias:
 - PowerShell Script Blocks
 - PowerShell ScriptBlocks
 - PowerShell ScriptBlock
-
+title: ScriptBlock
 
 layout: default
 ---
 
 ScriptBlocks are, well, blocks of [PowerShell](/PowerShell).
 
-Getting a little nerdy, ScriptBlocks are the type [PowerShell](/PowerShell) uses to store its code before it runs.
+Getting a little nerdy, ScriptBlocks are the [type](/PowerShell/Types) [PowerShell](/PowerShell) uses to store its code before it runs.
 
 Let's start by defining a variable containing a ScriptBlock that says "Don't Panic!":
 
