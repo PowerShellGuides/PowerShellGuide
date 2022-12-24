@@ -31,7 +31,7 @@ Features like:
   * An [Object Pipeline](/PowerShell/Concepts/The-Object-Pipeline) that lets you send data from step to step.
   * An Extended [Types](/PowerShell/Types) System that allows you to customize existing [types](/PowerShell/Types).
   * Cmdlets that let you easily run anything built in PowerShell.
-  * Extensible Commands that let you run anything else.
+  * Extensible [Commands](/PowerShell/Commands) that let you run anything else.
   * Splatting which allows you to easily pass parameters around.
   * An Events Engine that lets you script asynchronously.
 
@@ -58,6 +58,6 @@ PowerShell (the [shell](/Shells) part) can do some nifty things, like:
 * Display progress
 * Prompt for input (including credentials)
 * Confirm impactful decisions
-* Tab through commands and parameters
+* Tab through [commands](/PowerShell/Commands) and parameters
 
 ---
