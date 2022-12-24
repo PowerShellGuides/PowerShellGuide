@@ -42,7 +42,7 @@ Here are some topics that may help you get started:
 * [What Is PowerShell](/PowerShell)
 * Variables
 * [Conditionals](/PowerShell/Conditionals)
-* Loops
+* [Loops](/PowerShell/Loops)
 * [PowerShell](/PowerShell) Scripts
 * [PowerShell](/PowerShell) Functions
 * [PowerShell](/PowerShell) Parameters
