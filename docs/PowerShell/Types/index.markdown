@@ -1,7 +1,7 @@
 ---
 
-Alias: Type
 title: Types
+Alias: Type
 
 layout: default
 ---
