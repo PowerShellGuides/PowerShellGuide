@@ -1,0 +1,128 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: 'en' }}">
+<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="/css/WarmNeon.css" id="4bitcss" />
+<script type="text/javascript" src="/js/4bit.js"></script>
+<script type="text/javascript" src="/js/searchGuide.js"></script>
+<style>
+  .monospace {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre;
+    max-width: 90%;
+  }
+  
+  .flexible {
+    display: flex;
+  }
+  .centeredFlex {
+    justify-content: center;    
+  }
+
+  .centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flexRow {
+    flex-direction: row;
+  }
+  .flexColumn {
+    flex-direction: column;
+  }
+  .halfWidth {
+    width: 50%;
+  }
+
+  .halfOrWholeWidth {
+    width: 50%;
+  }
+
+  .collapsible {
+    visibility: visible;
+  }
+  
+
+  .rowOrColumn {
+    flex-direction: row;
+  }
+
+  @media (max-width: 960px) {
+    .collapsible {
+        visibility: collapse;
+    }
+    .rowOrColumn {
+        flex-direction: column;
+    }
+    .halfOrWholeWidth {
+      width: 100%;
+    }
+  }
+
+
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Righteous';
+    letter-spacing: 0.15em;
+  }
+
+  pre, code {
+    font-family: monospace;
+    letter-spacing: normal;
+    font-size: 1.5em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+</style>
+<body class="background foreground">    
+    {% if site.ghRepo %}
+      <div>
+        
+      </div>
+    {% endif %}
+    <div class="centered halfOrWholeWidth flexible centered centeredFlex">      
+      <!--{
+"<svg viewbox='0 0 200 200' width='33%' height='33%' class='centered'><a href='/'>" + $(
+$path = Split-Path $pwd |
+  Join-Path -ChildPath 'PowerShellGuide.svg'
+Get-Content -Path $path -Raw
+) + "</a></svg>"
+      }-->
+    </div>
+
+    {% if page.title %}
+    <h1 class="centered halfOrWholeWidth flexible centered centeredFlex">{{ page.title }}</h1>
+    {% endif %}
+    <div class="flexible centered centeredFlex halfOrWholeWidth">
+      <div class="flexRow">
+        {{ content }}
+      </div>
+    </div>
+    <div class="flexible centered centeredFlex wholeWidth" style="position:fixed;bottom:0;width:100%">
+      <div class="flexRow centered halfOrWholeWidth">        
+        Color Scheme :
+        <select id="themeSelector" onchange="switchTheme(document.getElementById('themeSelector').value); ">
+        </select>
+        <input type="button" onclick="feelingLucky(document.getElementById('themeSelector'));" value="Feeling Lucky" />
+        <input type="button" onclick="saveTheme();" value="Save Theme" />
+        <input type="button" onclick="loadTheme(document.getElementById('themeSelector'));" value="Load Theme" />
+        <script type="text/javascript">
+          var themeSelector = document.getElementById("themeSelector");
+          var themes = themeList();
+          for (theme in themes) {
+            var opt = document.createElement("option")
+            opt.value = themes[theme];
+            opt.innerHTML = themes[theme];
+            themeSelector.append(opt);            
+          }      
+          loadTheme(document.getElementById('themeSelector'))
+        </script>        
+      </div>
+    </div>
+</body>
+</html>
