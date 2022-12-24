@@ -1,7 +1,7 @@
 ---
 
-title: Scripting Languages
 Alias: Scripting_Language
+title: Scripting Languages
 
 layout: default
 ---
