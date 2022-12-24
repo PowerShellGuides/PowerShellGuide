@@ -7,13 +7,13 @@ layout: default
 
 PowerShell has all sorts of wonderful little bells and whistles, but, perhaps the best one is that it comes with quite the manual.
 
-If you want help in [PowerShell](/PowerShell), simply Get-Help.
+If you want help in [PowerShell](/PowerShell), simply [Get-Help](/PowerShell/Commands/Get-Help).
 
 Say we wanted to find out about [variables](/PowerShell/Variables).  We'd just run:
 
 <pre><br/><span class='Warning'>Get-Help</span><br/></pre>
 
-You can also get help about a particular topic.
+You can also [get help](/PowerShell/Commands/Get-Help) about a particular topic.
 
 For example, to understand [variables](/PowerShell/Variables), we would say:
 
