@@ -17,14 +17,8 @@ function Get-PowerShellGuide
                         Get-ChildItem -Recurse |
                         Where-Object Extension -in '.md' |
                         Where-Object FullName -notlike '*_site*'
-                
-                $guideDemos =
-                    Get-ChildItem -Path $PSScriptRoot -Filter Demos |
-                        Get-ChildItem -Recurse -Filter *.demo.ps1
-                
-
+                                
                 $guideTopics = @(all in $guideTopics are 'PowerShell Guide Topic File')
-                $guideDemos  = @(all in $guideDemos are 'PowerShell Guide Demo File' )
 
                 $myModuleVersion = $MyInvocation.MyCommand.ScriptBlock.Module.Version
                 
