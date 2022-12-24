@@ -1,9 +1,10 @@
 ---
 
+Title: PowerShell Guide
 Alias: 
 - PowerShell Guide
 - PowerShellGuide
-title: Guide
+
 
 layout: default
 ---
