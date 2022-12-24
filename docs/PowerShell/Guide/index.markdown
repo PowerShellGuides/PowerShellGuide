@@ -43,7 +43,7 @@ Here are some topics that may help you get started:
 * [Variables](/PowerShell/Variables)
 * [Conditionals](/PowerShell/Conditionals)
 * [Loops](/PowerShell/Loops)
-* [PowerShell](/PowerShell) Scripts
+* [PowerShell Scripts](/PowerShell/Scripts)
 * [PowerShell Functions](/PowerShell/Functions)
 * [PowerShell Parameters](/PowerShell/Parameters)
 * [Commands](/PowerShell/Commands)
