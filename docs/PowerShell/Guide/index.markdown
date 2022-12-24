@@ -45,7 +45,7 @@ Here are some topics that may help you get started:
 * [Loops](/PowerShell/Loops)
 * [PowerShell](/PowerShell) Scripts
 * [PowerShell Functions](/PowerShell/Functions)
-* [PowerShell](/PowerShell) Parameters
+* [PowerShell Parameters](/PowerShell/Parameters)
 * [Commands](/PowerShell/Commands)
 * [Modules](/PowerShell/Modules)
 
