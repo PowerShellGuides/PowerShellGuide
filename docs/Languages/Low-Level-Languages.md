@@ -1,7 +1,7 @@
 ---
 
-title: Low Level Languages
 Alias: Low Level Language
+title: Low Level Languages
 
 layout: default
 ---
