@@ -1,9 +1,10 @@
 ---
 
+title: PowerShell
 Alias: 
 - PowerShell
 - What Is PowerShell
-title: PowerShell
+
 
 layout: default
 ---
@@ -28,7 +29,7 @@ PowerShell, the [scripting language](/Languages/Scripting-Languages), is one of 
 PowerShell has many unique features, allowing it to do many things no other language can.
 
 Features like:
-  * An Object Pipeline that lets you send data from step to step.
+  * An [Object Pipeline](/PowerShell/Concepts/The-Object-Pipeline) that lets you send data from step to step.
   * An Extended Types System that allows you to customize existing types.
   * Cmdlets that let you easily run anything built in PowerShell.
   * Extensible Commands that let you run anything else.
