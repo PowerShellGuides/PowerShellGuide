@@ -17,7 +17,7 @@ ScriptBlocks are, well, blocks of [PowerShell](/PowerShell).
 
 Getting a little nerdy, ScriptBlocks are the [type](/PowerShell/Types) [PowerShell](/PowerShell) uses to store its code before it runs.
 
-Let's start by defining a variable containing a ScriptBlock that says "Don't Panic!":
+Let's start by defining a [variable](/PowerShell/Variables) containing a ScriptBlock that says "Don't Panic!":
 
 <pre><br/><span class='Warning'>$DontPanic</span>&nbsp;<span class='Magenta'>=</span>&nbsp;<span class='Magenta'>{</span>&nbsp;<span class='Verbose'>"Don't Panic!"</span>&nbsp;<span class='Magenta'>}</span><br/></pre>
 
