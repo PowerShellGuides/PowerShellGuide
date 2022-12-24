@@ -9,7 +9,7 @@ Get-Help is the most helpful [command](/PowerShell/Commands) there is.
 
 It exposes [inline help](/PowerShell/Help/Inline-Help) for [commands](/PowerShell/Commands) and [about topics](/PowerShell/Help/About-Topics) built into the system. 
 
-Get-Help is part of the trinity of discoverability.
+Get-Help is part of the [trinity of discoverability](/PowerShell/Concepts/Trinity-Of-Discoverability).
 
 ## General Help
 
