@@ -1,10 +1,9 @@
 ---
 
-title: The Object Pipeline
 Alias: 
 - Object Pipeline
 - Pipeline
-
+title: The Object Pipeline
 
 layout: default
 ---
