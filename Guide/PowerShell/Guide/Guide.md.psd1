@@ -1,0 +1,3 @@
+@{
+    Alias = 'PowerShell Guide', 'PowerShellGuide'
+}
