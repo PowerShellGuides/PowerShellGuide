@@ -571,27 +571,19 @@ jobs:
           }
           } @Parameters
   BuildPowerShellGuide: 
-    name: BuildPowerShellGuide
-    id: BuildPowerShellGuide
-    shell: pwsh
-    run: |
-      @{
-          "runs-on" = "ubuntu-latest"    
-          if = '${{ success() }}'
-          steps = @(
-              @{
-                  name = 'Check out repository'
-                  uses = 'actions/checkout@v2'
-              }, 
-              @{    
-                  name = 'Use PSSVG Action'
-                  uses = 'StartAutomating/PSSVG@main'
-                  id = 'PSSVG'
-              },
-              'RunPipeScript',
-              'RunEZOut',       
-              'RunHelpOut'
-          )
-      }
+    runs-on: ubuntu-latest
+    if: ${{ success() }}
+    steps: 
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Use PSSVG Action
+        uses: StartAutomating/PSSVG@main
+        id: PSSVG
+      - name: BuildPipeScript
+        uses: StartAutomating/PipeScript@main
+      - name: UseEZOut
+        uses: StartAutomating/EZOut@master
+      - name: UseHelpOut
+        uses: StartAutomating/HelpOut@master
 env: 
   NoCoverage: true
