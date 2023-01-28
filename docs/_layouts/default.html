@@ -2,84 +2,96 @@
 ---
 <!DOCTYPE html>
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
-<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
-<meta name="viewport" content="width=device-width" />
-<link rel="stylesheet" type="text/css" href="/css/Konsolas.css" id="4bitcss" />
-<script type="text/javascript" src="/js/4bit.js"></script>
-<script type="text/javascript" src="/js/searchGuide.js"></script>
-<style>
-  .monospace {
-    font-family: 'Courier New', Courier, monospace;
-    white-space: pre;
-    max-width: 90%;
-  }
-  
-  .flexible {
-    display: flex;
-  }
-  .centeredFlex {
-    justify-content: center;    
-  }
-
-  .centered {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .flexRow {
-    flex-direction: row;
-  }
-  .flexColumn {
-    flex-direction: column;
-  }
-  .halfWidth {
-    width: 50%;
-  }
-
-  .halfOrWholeWidth {
-    width: 50%;
-  }
-
-  .collapsible {
-    visibility: visible;
-  }
-  
-
-  .rowOrColumn {
-    flex-direction: row;
-  }
-
-  @media (max-width: 960px) {
-    .collapsible {
-        visibility: collapse;
-    }
-    .rowOrColumn {
+  <head>
+    {% if site.analyticsID %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{site.analyticsID}}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{site.analyticsID}}');
+    </script>
+    {% endif %}
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/css/Konsolas.css" id="4bitcss" />
+    <script type="text/javascript" src="/js/4bit.js"></script>
+    <script type="text/javascript" src="/js/searchGuide.js"></script>
+    <style>
+      .monospace {
+        font-family: 'Courier New', Courier, monospace;
+        white-space: pre;
+        max-width: 90%;
+      }
+      
+      .flexible {
+        display: flex;
+      }
+      .centeredFlex {
+        justify-content: center;    
+      }
+    
+      .centered {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .flexRow {
+        flex-direction: row;
+      }
+      .flexColumn {
         flex-direction: column;
-    }
-    .halfOrWholeWidth {
-      width: 100%;
-    }
-  }
-
-
-  body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Righteous';
-    letter-spacing: 0.15em;
-  }
-
-  pre, code {
-    font-family: monospace;
-    letter-spacing: normal;
-    font-size: 1.5em;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-</style>
+      }
+      .halfWidth {
+        width: 50%;
+      }
+    
+      .halfOrWholeWidth {
+        width: 50%;
+      }
+    
+      .collapsible {
+        visibility: visible;
+      }
+      
+    
+      .rowOrColumn {
+        flex-direction: row;
+      }
+    
+      @media (max-width: 960px) {
+        .collapsible {
+            visibility: collapse;
+        }
+        .rowOrColumn {
+            flex-direction: column;
+        }
+        .halfOrWholeWidth {
+          width: 100%;
+        }
+      }
+    
+    
+      body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Righteous';
+        letter-spacing: 0.15em;
+      }
+    
+      pre, code {
+        font-family: monospace;
+        letter-spacing: normal;
+        font-size: 1.5em;
+      }
+    
+      a {
+        text-decoration: none;
+      }
+    
+    </style>
+  </head>
 <body class="background foreground">    
     {% if site.ghRepo %}
       <div>
@@ -104,7 +116,8 @@
   <use href="#psChevron" width="100%" height="100%" fill="#4488ff" x="10%" class="foreground-fill" />
   <text dominant-baseline="middle" text-anchor="end" x="55%" y="50%" fill="#4488ff" style="font-family: 'Righteous';" class="foreground-fill">PowerShell</text>
   <text dominant-baseline="middle" text-anchor="guide" x="67.5%" y="50%" fill="#4488ff" style="font-family: 'Righteous';" class="foreground-fill">Guide</text>
-</svg></a></svg></div>
+</svg>
+</a></svg></div>
 
     {% if page.title %}
     <h1 class="centered halfOrWholeWidth flexible centered centeredFlex">{{ page.title }}</h1>
