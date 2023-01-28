@@ -1,5 +1,13 @@
 [
   {
+    "Name": "Shells",
+    "Aliases": [
+      "Shells",
+      "Shell"
+    ],
+    "Link": "Shells"
+  },
+  {
     "Name": "High Level Languages",
     "Aliases": [
       "High Level Languages",
@@ -32,14 +40,6 @@
     "Link": "Languages/Scripting-Languages"
   },
   {
-    "Name": "Shells",
-    "Aliases": [
-      "Shells",
-      "Shell"
-    ],
-    "Link": "Shells"
-  },
-  {
     "Name": "PowerShell",
     "Aliases": [
       "PowerShell",
@@ -49,61 +49,14 @@
     "Link": "PowerShell"
   },
   {
-    "Name": "Variables",
+    "Name": "Modules",
     "Aliases": [
-      "Variables",
-      "Variable"
+      "Modules",
+      "PowerShell Modules",
+      "PowerShell Modules",
+      "Module"
     ],
-    "Link": "PowerShell/Variables"
-  },
-  {
-    "Name": "Guide",
-    "Aliases": [
-      "Guide",
-      "PowerShell Guide",
-      "PowerShellGuide"
-    ],
-    "Link": "PowerShell/Guide"
-  },
-  {
-    "Name": "About Topics",
-    "Aliases": "About Topics",
-    "Link": "PowerShell/Help/About-Topics"
-  },
-  {
-    "Name": "Inline Help",
-    "Aliases": "Inline Help",
-    "Link": "PowerShell/Help/Inline-Help"
-  },
-  {
-    "Name": "Extending Types",
-    "Aliases": [
-      "Extending Types",
-      "Extended Types System",
-      "types.ps1xml",
-      "types file",
-      "Extending Types in PowerShell",
-      "Extend Types"
-    ],
-    "Link": "PowerShell/Types/Extending-Types"
-  },
-  {
-    "Name": "Types",
-    "Aliases": [
-      "Types",
-      "Type"
-    ],
-    "Link": "PowerShell/Types"
-  },
-  {
-    "Name": "Attributes",
-    "Aliases": "Attributes",
-    "Link": "PowerShell/Attributes"
-  },
-  {
-    "Name": "Loops",
-    "Aliases": "Loops",
-    "Link": "PowerShell/Loops"
+    "Link": "PowerShell/Modules"
   },
   {
     "Name": "Every Object Can Be Extended",
@@ -144,37 +97,6 @@
     "Link": "PowerShell/Concepts/Verb-Noun"
   },
   {
-    "Name": "Parameters",
-    "Aliases": [
-      "Parameters",
-      "Parameter",
-      "PowerShell Parameters",
-      "PowerShell Parameter",
-      "Parameter in PowerShell"
-    ],
-    "Link": "PowerShell/Parameters"
-  },
-  {
-    "Name": "Functions",
-    "Aliases": [
-      "Functions",
-      "Function",
-      "PowerShell Functions",
-      "Functions in PowerShell"
-    ],
-    "Link": "PowerShell/Functions"
-  },
-  {
-    "Name": "Modules",
-    "Aliases": [
-      "Modules",
-      "PowerShell Modules",
-      "PowerShell Modules",
-      "Module"
-    ],
-    "Link": "PowerShell/Modules"
-  },
-  {
     "Name": "ScriptBlock",
     "Aliases": [
       "ScriptBlock",
@@ -189,6 +111,30 @@
     "Link": "PowerShell/ScriptBlock"
   },
   {
+    "Name": "Loops",
+    "Aliases": "Loops",
+    "Link": "PowerShell/Loops"
+  },
+  {
+    "Name": "Variables",
+    "Aliases": [
+      "Variables",
+      "Variable"
+    ],
+    "Link": "PowerShell/Variables"
+  },
+  {
+    "Name": "Parameters",
+    "Aliases": [
+      "Parameters",
+      "Parameter",
+      "PowerShell Parameters",
+      "PowerShell Parameter",
+      "Parameter in PowerShell"
+    ],
+    "Link": "PowerShell/Parameters"
+  },
+  {
     "Name": "Scripts",
     "Aliases": [
       "Scripts",
@@ -196,6 +142,45 @@
       "Scripts In PowerShell"
     ],
     "Link": "PowerShell/Scripts"
+  },
+  {
+    "Name": "Guide",
+    "Aliases": [
+      "Guide",
+      "PowerShell Guide",
+      "PowerShellGuide"
+    ],
+    "Link": "PowerShell/Guide"
+  },
+  {
+    "Name": "Extending Types",
+    "Aliases": [
+      "Extending Types",
+      "Extended Types System",
+      "types.ps1xml",
+      "types file",
+      "Extending Types in PowerShell",
+      "Extend Types"
+    ],
+    "Link": "PowerShell/Types/Extending-Types"
+  },
+  {
+    "Name": "Types",
+    "Aliases": [
+      "Types",
+      "Type"
+    ],
+    "Link": "PowerShell/Types"
+  },
+  {
+    "Name": "Functions",
+    "Aliases": [
+      "Functions",
+      "Function",
+      "PowerShell Functions",
+      "Functions in PowerShell"
+    ],
+    "Link": "PowerShell/Functions"
   },
   {
     "Name": "Conditionals",
@@ -226,5 +211,20 @@
     "Name": "Get Member",
     "Aliases": "Get Member",
     "Link": "PowerShell/Commands/Get-Member"
+  },
+  {
+    "Name": "About Topics",
+    "Aliases": "About Topics",
+    "Link": "PowerShell/Help/About-Topics"
+  },
+  {
+    "Name": "Inline Help",
+    "Aliases": "Inline Help",
+    "Link": "PowerShell/Help/Inline-Help"
+  },
+  {
+    "Name": "Attributes",
+    "Aliases": "Attributes",
+    "Link": "PowerShell/Attributes"
   }
 ]
