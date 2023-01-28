@@ -1,7 +1,7 @@
 ---
 
-Alias: Discoverability
 title: Trinity Of Discoverability
+Alias: Discoverability
 
 layout: default
 ---
