@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
   <head>
+    {% if page.title %}
+    <title>{{page.title}}</title>
+    {% endif %}
     {% if site.analyticsID %}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{site.analyticsID}}"></script>
