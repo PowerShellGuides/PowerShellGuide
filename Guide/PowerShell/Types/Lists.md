@@ -4,7 +4,7 @@ However, many were increasingly of the opinion that they’d all made a big mist
 
 So, the List was created…and there was much rejoicing. 
 
-- But why is the List the better option? better memory allocation
+- Why is the List a better option? better memory allocation
 - Do Arrays still have a place in PowerShell? yes
 - Do ArrayLists still have a place in PowerShell? no
 
