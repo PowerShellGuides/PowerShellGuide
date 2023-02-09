@@ -1,0 +1,3 @@
+@{
+    Alias = 'Array','ArrayList'
+}
