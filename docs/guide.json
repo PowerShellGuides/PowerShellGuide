@@ -153,6 +153,15 @@
     "Link": "PowerShell/Guide"
   },
   {
+    "Name": "Arrays",
+    "Aliases": [
+      "Arrays",
+      "Array",
+      "ArrayList"
+    ],
+    "Link": "PowerShell/Types/Arrays"
+  },
+  {
     "Name": "Extending Types",
     "Aliases": [
       "Extending Types",
@@ -163,6 +172,11 @@
       "Extend Types"
     ],
     "Link": "PowerShell/Types/Extending-Types"
+  },
+  {
+    "Name": "Lists",
+    "Aliases": "Lists",
+    "Link": "PowerShell/Types/Lists"
   },
   {
     "Name": "Types",
