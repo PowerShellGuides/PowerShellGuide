@@ -156,8 +156,7 @@
     "Name": "Arrays",
     "Aliases": [
       "Arrays",
-      "Array",
-      "ArrayList"
+      "Array"
     ],
     "Link": "PowerShell/Types/Arrays"
   },
