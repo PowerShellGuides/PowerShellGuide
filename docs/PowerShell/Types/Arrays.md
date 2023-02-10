@@ -1,8 +1,6 @@
 ---
 
-Alias: 
-- Array
-- ArrayList
+Alias: Array
 title: Arrays
 
 layout: default
