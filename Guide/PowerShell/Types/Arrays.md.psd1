@@ -1,3 +1,3 @@
 @{
-    Alias = 'Array','ArrayList'
+    Alias = 'Array'
 }
