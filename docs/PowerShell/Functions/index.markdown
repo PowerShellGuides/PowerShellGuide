@@ -36,4 +36,4 @@ These are all examples of simple functions.
 
 It's not meant to be snide, it's just that [PowerShell](/PowerShell) functions can get much more advanced.
 
-Functions can bind to anything in [the Object Pipeline](/PowerShell/Concepts/The-Object-Pipeline), Prompt for Confirmation, and have rich [inline help](/PowerShell/Help/Inline-Help).
+Functions can bind to anything in [the Object Pipeline](/PowerShell/Concepts/The-Object-Pipeline), [Prompt for Confirmation](/PowerShell/Concepts/Prompt-For-Confirmation), and have rich [inline help](/PowerShell/Help/Inline-Help).
