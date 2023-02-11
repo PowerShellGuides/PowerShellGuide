@@ -72,6 +72,11 @@
     "Link": "PowerShell/Concepts/Everything-Is-An-Object"
   },
   {
+    "Name": "Prompt For Confirmation",
+    "Aliases": "Prompt For Confirmation",
+    "Link": "PowerShell/Concepts/Prompt-For-Confirmation"
+  },
+  {
     "Name": "The Object Pipeline",
     "Aliases": [
       "The Object Pipeline",
