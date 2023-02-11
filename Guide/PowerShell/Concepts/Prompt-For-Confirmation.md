@@ -80,5 +80,3 @@ if ($whatIfPreference) {
     <# Do Something that might be dangerous. #>
 }
 ~~~
-
-# 
