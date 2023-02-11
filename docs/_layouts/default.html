@@ -3,8 +3,40 @@
 <!DOCTYPE html>
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
   <head>
+    <title>{{site.title}}{% if page.title %} - {{page.title}}  {% elsif page.stylesheet %} - {{page.stylesheet}}{% endif %}</title>
+    <meta content="{{ site.title }}" property="og:site_name">
     {% if page.title %}
-    <title>{{page.title}}</title>
+    <meta content="{{ page.title }}" property="og:title" />
+    {% elsif page.stylesheet %}
+    <meta content="{{ page.stylesheet }}" property="og:title" />
+    {% else %}
+    <meta content="{{ site.title }}" property="og:title" />
+    {% endif %}
+    {% if page.description %}
+    <meta content="{{ page.description }}" property="og:description" />
+    <meta name="description" content="{{ page.description }}" />        
+    {% elsif page.excerpt %}
+    <meta content="{{ page.excerpt }}" property="og:description" />
+    <meta name="description" content="{{ page.excerpt }}" />
+    {% elsif site.description %}
+    <meta content="{{ site.description }}" property="og:description" />
+    <meta name="description" content="{{ site.description }}" />
+    {% endif %}
+    {% if page.date %}
+      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time" />
+    {% endif %}
+    {% if page.url %}
+      <meta content="{{ site.url }}{{ page.url }}" property="og:url" />
+      <meta content="{{ site.url }}{{ page.url }}" property="twitter:url" />
+      <meta content="{{ site.url }}" property="twitter:domain" />
+    {% endif %}
+
+    {% if page.image %}
+      <meta content="/{{ page.image }}" property="og:image" />
+      <meta content="/{{ page.image }}" property="twitter:image" />
+    {% elsif site.image %}
+      <meta content="/{{ site.image }}" property="og:image" />
+      <meta content="/{{ site.image }}" property="twitter:image" />
     {% endif %}
     {% if site.analyticsID %}
     <!-- Google tag (gtag.js) -->
