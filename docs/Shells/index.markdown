@@ -1,7 +1,7 @@
 ---
 
-Alias: Shell
 title: Shells
+Alias: Shell
 
 layout: default
 ---
