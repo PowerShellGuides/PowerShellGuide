@@ -14,9 +14,13 @@
     {% endif %}
     {% if page.description %}
     <meta content="{{ page.description }}" property="og:description" />
-    <meta name="description" content="{{ page.description }}" />    
+    <meta name="description" content="{{ page.description }}" />        
+    {% elsif page.excerpt %}
+    <meta content="{{ page.excerpt }}" property="og:description" />
+    <meta name="description" content="{{ page.excerpt }}" />
     {% elsif site.description %}
     <meta content="{{ site.description }}" property="og:description" />
+    <meta name="description" content="{{ site.description }}" />
     {% endif %}
     {% if page.date %}
       <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time" />
