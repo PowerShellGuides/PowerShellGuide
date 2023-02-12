@@ -21,9 +21,15 @@ Luckily, [PowerShell](/PowerShell) has a built in way to prompt for confirmation
 
 This is to say: [PowerShell](/PowerShell) has a safety.
 
-Any [command](/PowerShell/Commands) in [PowerShell](/PowerShell) can prompt for confirmation, by saying it SupportsShouldProcess.
+Any [command](/PowerShell/Commands) in [PowerShell](/PowerShell) can prompt for confirmation, by saying it SupportsShouldProcess in the [CmdletBinding Attribute](/PowerShell/Attributes/CmdletBinding-Attribute).
+
+This enables two [parameters](/PowerShell/Parameters), `-Confirm` and `-WhatIf`.
+
+That is to say: When designing dangerous [commands](/PowerShell/Commands), be sure to add the safety.
 
 ## -Confirm
+
+Plenty of built-in PowerShell [commands](/PowerShell/Commands) support should process.
 
 Let's see how this works with the [command](/PowerShell/Commands) New-Item:
 
