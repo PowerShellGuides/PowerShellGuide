@@ -75,5 +75,3 @@ Like many preference [variables](/PowerShell/Variables), it is set whenever you 
 Thus, if we are writing a [function](/PowerShell/Functions), and want to make a useful -WhatIf, we say:
 
 <pre><br/><span class='Verbose'>if</span>&nbsp;<span class='Magenta'>(</span><span class='Warning'>$whatIfPreference</span><span class='Magenta'>)</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Success'><# Output something about what you would do. #></span>&nbsp;<br/><span class='Magenta'>}</span>&nbsp;<span class='Verbose'>elseif</span>&nbsp;<span class='Magenta'>(</span><span class='Warning'>$psCmdlet</span><span class='Magenta'>.</span><span class='Output'>ShouldProcess</span><span class='Magenta'>(</span><span class='Verbose'>"Prompt for Confirmation"</span><span class='Magenta'>)</span><span class='Magenta'>)</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Success'><# Do Something that might be dangerous. #></span><br/><span class='Magenta'>}</span><br/></pre>
-
-#
