@@ -17,7 +17,10 @@
     <meta name="description" content="{{ page.description }}" />        
     {% elsif page.excerpt %}
     <meta content="{{ page.excerpt }}" property="og:description" />
-    <meta name="description" content="{{ page.excerpt }}" />
+    <meta name="description" content="{{ page.excerpt }}" />    
+    {% elsif content %}
+    <meta content="{{ content | strip_html | truncatewords: 20 }}" property="og:description" />
+    <meta name="description" content="{{ content | strip_html | truncatewords: 20 }}" />        
     {% elsif site.description %}
     <meta content="{{ site.description }}" property="og:description" />
     <meta name="description" content="{{ site.description }}" />
