@@ -1,11 +1,10 @@
 ---
 
-title: Modules
 Alias: 
 - PowerShell Modules
 - PowerShell Modules
 - Module
-
+title: Modules
 
 layout: default
 ---
