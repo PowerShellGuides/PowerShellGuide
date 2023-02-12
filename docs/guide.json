@@ -244,5 +244,15 @@
     "Name": "Attributes",
     "Aliases": "Attributes",
     "Link": "PowerShell/Attributes"
+  },
+  {
+    "Name": "CmdletBinding Attribute",
+    "Aliases": [
+      "CmdletBinding Attribute",
+      "Cmdlet Binding",
+      "CmdletBinding",
+      "Cmdlet Binding Attribute"
+    ],
+    "Link": "PowerShell/Attributes/CmdletBinding-Attribute"
   }
 ]
