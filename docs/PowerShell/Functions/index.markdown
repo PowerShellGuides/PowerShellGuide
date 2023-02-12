@@ -1,11 +1,10 @@
 ---
 
-title: Functions
 Alias: 
 - Function
 - PowerShell Functions
 - Functions in PowerShell
-
+title: Functions
 
 layout: default
 ---
