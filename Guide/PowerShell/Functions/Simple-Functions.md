@@ -66,3 +66,13 @@ function WhatDidIPipeAgain {
 1..2 | WhatDidIPipeAgain
 ~~~
 
+## Don't Keep it Simple
+
+Simple functions have their limited time and place.  If you want to handle input in an open-ended way, they may be for you.
+
+However, the Object Pipeline is a wonderful thing, and only advanced functions can make full use of what it has to offer.
+
+Advanced functions also make it easy to prompt for confirmation, which can prevent you from shooting yourself in the foot.
+
+In closing, try not to keep it simple.  Use advanced functions.
+
