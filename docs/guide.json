@@ -192,7 +192,11 @@
   },
   {
     "Name": "Advanced Functions",
-    "Aliases": "Advanced Functions",
+    "Aliases": [
+      "Advanced Functions",
+      "Script Cmdlets",
+      "Script Cmdlet"
+    ],
     "Link": "PowerShell/Functions/Advanced-Functions"
   },
   {
