@@ -201,6 +201,11 @@
     "Link": "PowerShell/Functions"
   },
   {
+    "Name": "Simple Functions",
+    "Aliases": "Simple Functions",
+    "Link": "PowerShell/Functions/Simple-Functions"
+  },
+  {
     "Name": "Conditionals",
     "Aliases": "Conditionals",
     "Link": "PowerShell/Conditionals"
