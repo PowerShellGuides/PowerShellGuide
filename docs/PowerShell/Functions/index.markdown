@@ -1,10 +1,11 @@
 ---
 
+title: Functions
 Alias: 
 - Function
 - PowerShell Functions
 - Functions in PowerShell
-title: Functions
+
 
 layout: default
 ---
@@ -35,4 +36,4 @@ These are all examples of [simple functions](/PowerShell/Functions/Simple-Functi
 
 It's not meant to be snide, it's just that [PowerShell](/PowerShell) functions can get much more advanced.
 
-Functions can bind to anything in [the Object Pipeline](/PowerShell/Concepts/The-Object-Pipeline), [Prompt for Confirmation](/PowerShell/Concepts/Prompt-For-Confirmation), and have rich [inline help](/PowerShell/Help/Inline-Help).
+[Advanced Functions](/PowerShell/Functions/Advanced-Functions) can bind to anything in [the Object Pipeline](/PowerShell/Concepts/The-Object-Pipeline), [Prompt for Confirmation](/PowerShell/Concepts/Prompt-For-Confirmation), and have rich [inline help](/PowerShell/Help/Inline-Help).
