@@ -52,3 +52,13 @@ We can use a process block to handle objects as they come in.
 If an object was piped into a [function](/PowerShell/Functions), it will be in the automatic [variable](/PowerShell/Variables) `$_`
 
 <pre><br/><span class='Verbose'>function</span>&nbsp;<span class='Verbose'>WhatDidIPipeAgain</span>&nbsp;<span class='Magenta'>{</span>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>process</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='Warning'>$_</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Magenta'>}</span><br/><span class='Magenta'>}</span><br/><br/><span class='Output'>1</span><span class='Magenta'>..</span><span class='Output'>2</span>&nbsp;<span class='Magenta'>|</span>&nbsp;<span class='Warning'>WhatDidIPipeAgain</span><br/></pre>
+
+## Don't Keep it Simple
+
+Simple [functions](/PowerShell/Functions) have their limited time and place.  If you want to handle input in an open-ended way, they may be for you.
+
+However, [the Object Pipeline](/PowerShell/Concepts/The-Object-Pipeline) is a wonderful thing, and only [advanced functions](/PowerShell/Functions/Advanced-Functions) can make full use of what it has to offer.
+
+[Advanced functions](/PowerShell/Functions/Advanced-Functions) also make it easy to [prompt for confirmation](/PowerShell/Concepts/Prompt-For-Confirmation), which can prevent you from shooting yourself in the foot.
+
+In closing, try not to keep it simple.  Use [advanced functions](/PowerShell/Functions/Advanced-Functions).
