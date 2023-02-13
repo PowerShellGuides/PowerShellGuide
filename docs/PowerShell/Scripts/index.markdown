@@ -1,9 +1,10 @@
 ---
 
+title: Scripts
 Alias: 
 - PowerShell Scripts
 - Scripts In PowerShell
-title: Scripts
+
 
 layout: default
 ---
