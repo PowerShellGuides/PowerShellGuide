@@ -20,7 +20,7 @@
 
 title: PowerShell Guide
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://powershellguide.com # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jamesbru
 github_username:  StartAutomating
 permalink: pretty
