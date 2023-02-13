@@ -1,10 +1,11 @@
 ---
 
+title: CmdletBinding Attribute
 Alias: 
 - Cmdlet Binding
 - CmdletBinding
 - Cmdlet Binding Attribute
-title: CmdletBinding Attribute
+
 
 layout: default
 ---
