@@ -1,7 +1,7 @@
 ---
 
-title: Arrays
 Alias: Array
+title: Arrays
 
 layout: default
 ---
