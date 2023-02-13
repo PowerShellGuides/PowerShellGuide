@@ -13,7 +13,7 @@ The first scripters saw this, and said it was not good.
 
 Thus, one of [PowerShell](/PowerShell) V2s many great leaps forward was the creation of the advanced [function](/PowerShell/Functions).
 
-Advanced [functions](/PowerShell/Functions) can do anything a Cmdlet can do, and more.
+[Advanced functions](/PowerShell/Functions/Advanced-Functions) can do anything a Cmdlet can do, and more.
 
 This makes simple [functions](/PowerShell/Functions) the exception, not the rule.
 
