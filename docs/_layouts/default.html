@@ -43,10 +43,10 @@
 
     {% if page.image %}
       <meta content="/{{ page.image }}" property="og:image" />
-      <meta content="/{{ page.image }}" property="twitter:image" />
+      <meta content="{{ site.url }}/{{ page.image }}" property="twitter:image:src" />
     {% elsif site.image %}
       <meta content="/{{ site.image }}" property="og:image" />
-      <meta content="/{{ site.image }}" property="twitter:image" />
+      <meta content="{{ site.url }}/{{ site.image }}" property="twitter:image:src" />
     {% endif %}
     {% if site.analyticsID %}
     <!-- Google tag (gtag.js) -->
