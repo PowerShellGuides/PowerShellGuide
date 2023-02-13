@@ -191,6 +191,11 @@
     "Link": "PowerShell/Types"
   },
   {
+    "Name": "Advanced Functions",
+    "Aliases": "Advanced Functions",
+    "Link": "PowerShell/Functions/Advanced-Functions"
+  },
+  {
     "Name": "Functions",
     "Aliases": [
       "Functions",
