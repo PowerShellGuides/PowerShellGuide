@@ -41,16 +41,18 @@
     {% endif %}
     {% if page.url %}
       <meta content="{{ site.url }}{{ page.url }}" property="og:url" />
-      <meta content="{{ site.url }}{{ page.url }}" name="twitter:url" />
-      <meta content="{{ site.url }}" name="twitter:domain" />
+      <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+      <meta name="twitter:domain" content="{{ site.url }}" />
     {% endif %}
 
     {% if page.image %}
       <meta content="/{{ page.image }}" property="og:image" />
-      <meta content="{{ site.url }}/{{ page.image }}" name="twitter:image:src" />
+      <meta name="twitter:image" content="{{ site.url }}/{{ page.image }}" />
+      <meta name="twitter:image:src" content="{{ site.url }}/{{ page.image }}"  />
     {% elsif site.image %}
       <meta content="{{ site.url }}/{{ site.image }}" property="og:image" />
-      <meta content="{{ site.url }}/{{ site.image }}" name="twitter:image:src" />
+      <meta name="twitter:image" content="{{ site.url }}/{{ site.image }}" />
+      <meta name="twitter:image:src" content="{{ site.url }}/{{ site.image }}" />
     {% endif %}
     {% if site.analyticsID %}
     <!-- Google tag (gtag.js) -->
