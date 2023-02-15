@@ -1,10 +1,9 @@
 ---
 
-title: Advanced Functions
 Alias: 
 - Script Cmdlets
 - Script Cmdlet
-
+title: Advanced Functions
 
 layout: default
 ---
