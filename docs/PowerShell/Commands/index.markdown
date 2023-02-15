@@ -1,11 +1,10 @@
 ---
 
-title: Commands
 Alias: 
 - Command
 - PowerShell Command
 - Commands in PowerShell
-
+title: Commands
 
 layout: default
 ---
