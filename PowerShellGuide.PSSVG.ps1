@@ -48,7 +48,7 @@ $guideLogoSquare =
 '@
 )
    
-    =<svg.Spiral> -Theta 42 -Alpha 50 -stroke '#4488ff' -Class foreground-stroke -Transform "translate(25, 50) scale(1.6,1) skewX(-10) skewY(-15)" -Opacity .5 -StrokeWidth 0.5
+    =<svg.Spiral> -Theta 42 -Alpha 52 -stroke '#4488ff' -Class foreground-stroke -Transform "translate(18 52) scale(1.6,1) skewX(-10) skewY(-15)" -Opacity .5 -StrokeWidth 0.5
     =<svg.symbol> -Id psChevron -Content @(
         =<svg.polygon> -Points (@(
             "40,20"
@@ -59,7 +59,7 @@ $guideLogoSquare =
             "55,50"
         ) -join ' ')
     ) -ViewBox 100, 100
-    =<svg.use> -Href '#psChevron' -Width 75% -Height 75% -Fill '#4488ff' -X 12.5% -Class foreground-fill -Y 12.5%
+    =<svg.use> -Href '#psChevron' -Width 90% -Height 90% -Fill '#4488ff' -X 5% -Class foreground-fill -Y 5%
     =<svg.text> -Content 'PowerShell' -DominantBaseline 'middle' -TextAnchor 'end' -X 50% -Y 50% -Fill '#4488ff' -Style "font-family: 'Righteous';"  -Class foreground-fill
     =<svg.text> -Content 'Guide' -DominantBaseline 'middle' -TextAnchor 'guide' -X 60% -Y 50% -Fill '#4488ff' -Style "font-family: 'Righteous';"  -Class foreground-fill
 ) -OutputPath (Join-Path $assetsRoot .\PowerShellGuideSquare.svg) 
