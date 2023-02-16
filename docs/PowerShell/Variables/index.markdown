@@ -1,7 +1,7 @@
 ---
 
-Alias: Variable
 title: Variables
+Alias: Variable
 
 layout: default
 ---
