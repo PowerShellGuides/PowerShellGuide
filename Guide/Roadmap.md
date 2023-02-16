@@ -39,3 +39,17 @@ Those who forget history are doomed to search online again.  Let us save them fr
 ## Privacy Expecations
 
 As we've just been talking about how to track what you're doing, please, rest assured, we don't have any interest in you or your data.  We want everyone to understand PowerShell and do not collect any information ourselves.  Shall we ever add advertisers, I'm sure they will have their own terms and conditions.
+
+## Service Workers / Installing as an App
+
+Not that we wish too much more pain upon ourselves, but we probably want to figure out how to be installable as a client app, which involves a somewhat misleadingly named web standard called a [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
+
+## Finer Control of Settings
+
+The color schems should be more customizable than they currently are, and should be remembered as you move from page to page.
+
+Also, any settings related to history or storage should be available in roughly the same place, lest you want to look up our addresses and brain us for poor web design.
+
+## Pretty Graphs and other Assetations.
+
+A picture can be worth a thousand words (or five thousand produced by GPT).  We we would love to have a few more graphs and photos throughout the site.
