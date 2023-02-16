@@ -60,3 +60,11 @@ Also, any settings related to history or storage should be available in roughly 
 ## Pretty Graphs and other Assetations.
 
 A picture can be worth a thousand words (or five thousand produced by GPT).  We we would love to have a few more graphs and photos throughout the site.
+
+## Possibly Centralized Examples
+
+In order to avoid insanity thru repetition, we should probably centralize our examples, so that we can reuse demos and examples throughout multiple topics.
+
+## Integration with other [module](/PowerShell/Modules)'s documentation.
+
+We'd love to be able to cohesively link to lots of other [modules](/PowerShell/Modules).  Figuring out how, exactly, might be a bit tricky.
