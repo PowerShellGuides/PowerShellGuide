@@ -1,11 +1,12 @@
 ---
 
+title: Parameters
 Alias: 
 - Parameter
 - PowerShell Parameters
 - PowerShell Parameter
 - Parameter in PowerShell
-title: Parameters
+
 
 layout: default
 ---
