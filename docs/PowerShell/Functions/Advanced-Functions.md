@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - Script Cmdlets
 - Script Cmdlet
 title: Advanced Functions
