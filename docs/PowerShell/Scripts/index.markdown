@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - PowerShell Scripts
 - Scripts In PowerShell
 title: Scripts
