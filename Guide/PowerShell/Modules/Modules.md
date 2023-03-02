@@ -31,7 +31,9 @@ There are many modules.  It's something of a popularity contest, though the most
 
 That stated, there are at least a few modules we here at the PowerShell Guide think you might want to know about.
 
-These fall into a few categories:
+These fall into a couple of categories:
 
 * The Modules That Make The PowerShell Guide
 * Modules We Like
+
+We strongly recommend you explore the many modules that exist out there.  The [PowerShell Gallery](https://powershellgallery.com) is a great place to start.  So is [Github](https://github.com).
