@@ -30,3 +30,13 @@ If we wanted to remove it after we've loaded it:
 <pre><br/><span class='Warning'>Remove-Module</span>&nbsp;<span class='Verbose'>PowerShellGuide</span><br/></pre>
 
 Hopefully we're getting it.  [Verb-noun pairing](/PowerShell/Concepts/Verb-Noun) can be rather obviously boring sometimes.
+
+
+There are many modules.  It's something of a popularity contest, though the most popular kids in this class are largely liked by robots.
+
+That stated, there are at least a few modules we here at the [PowerShell Guide](/PowerShell/Guide) think you might want to know about.
+
+These fall into a few categories:
+
+* The Modules That Make The [PowerShell Guide](/PowerShell/Guide)
+* Modules We Like
