@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - Extended Types System
 - types.ps1xml
 - types file
