@@ -1,4 +1,20 @@
-Write-FormatView -TypeName 'PowerShell Guide Topic File','PowerShell.Guide.Topic.File' -Property "TopicName"
+Write-FormatView -TypeName 'PowerShell Guide Topic File','PowerShell.Guide.Topic.File' -Action {
+    $topicMarkdown = @(
+        "# " + $_.TopicName
+        $_.Content
+    ) -join ([Environment]::NewLine * 2)
+    if ($ExecutionContext.SessionState.InvokeCommand.GetCommand('Show-Markdown', 'Cmdlet')) {
+        Show-Markdown -InputObject $topicMarkdown
+    } else {
+        $topicMarkdown
+    }
+}
+
+Write-FormatView -TypeName 'PowerShell Guide Topic File','PowerShell.Guide.Topic.File' -Property "TopicName", Content -VirtualProperty @{
+    Content = {
+        Show-Markdown -InputObject $_.Content        
+    }
+} -AsList
 
 Write-FormatView -TypeName 'PowerShell Guide Topic File','PowerShell.Guide.Topic.File' -Action {
     Write-FormatViewExpression -ScriptBlock {
@@ -52,6 +68,6 @@ PowerShell
             }) -join '') + 
             "</pre>")
         })
-        $host.UI | Add-Member NoteProperty SupportsHTML $hostSupportedHTML -Force                
+        $host.UI | Add-Member NoteProperty SupportsHTML $hostSupportedHTML -Force
     }
 } -Name 'Markdown'
