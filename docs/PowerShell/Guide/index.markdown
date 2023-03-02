@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - PowerShell Guide
 - PowerShellGuide
 title: PowerShell Guide
