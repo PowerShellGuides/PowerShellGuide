@@ -1,5 +1,7 @@
 ---
 
+title: Every Object Can Be Extended
+
 layout: default
 ---
 
