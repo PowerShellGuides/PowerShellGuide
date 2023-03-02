@@ -8,21 +8,51 @@
         <TypeName>PowerShell Guide Topic File</TypeName>
         <TypeName>PowerShell.Guide.Topic.File</TypeName>
       </ViewSelectedBy>
-      <TableControl>
-        <TableHeaders>
-          <TableColumnHeader>
-          </TableColumnHeader>
-        </TableHeaders>
-        <TableRowEntries>
-          <TableRowEntry>
-            <TableColumnItems>
-              <TableColumnItem>
+      <CustomControl>
+        <CustomEntries>
+          <CustomEntry>
+            <CustomItem>
+              <ExpressionBinding>
+                <ScriptBlock>
+    $topicMarkdown = @(
+        "# " + $_.TopicName
+        $_.Content
+    ) -join ([Environment]::NewLine * 2)
+    if ($ExecutionContext.SessionState.InvokeCommand.GetCommand('Show-Markdown', 'Cmdlet')) {
+        Show-Markdown -InputObject $topicMarkdown
+    } else {
+        $topicMarkdown
+    }
+</ScriptBlock>
+              </ExpressionBinding>
+            </CustomItem>
+          </CustomEntry>
+        </CustomEntries>
+      </CustomControl>
+    </View>
+    <View>
+      <Name>PowerShell Guide Topic FilePowerShell.Guide.Topic.File</Name>
+      <ViewSelectedBy>
+        <TypeName>PowerShell Guide Topic File</TypeName>
+        <TypeName>PowerShell.Guide.Topic.File</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
                 <PropertyName>TopicName</PropertyName>
-              </TableColumnItem>
-            </TableColumnItems>
-          </TableRowEntry>
-        </TableRowEntries>
-      </TableControl>
+              </ListItem>
+              <ListItem>
+                <Label>Content</Label>
+                <ScriptBlock>
+        Show-Markdown -InputObject $_.Content        
+    </ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
     </View>
     <View>
       <Name>Markdown</Name>
@@ -113,7 +143,7 @@ PowerShell
             }) -join '') + 
             "&lt;/pre&gt;")
         })
-        $host.UI | Add-Member NoteProperty SupportsHTML $hostSupportedHTML -Force                
+        $host.UI | Add-Member NoteProperty SupportsHTML $hostSupportedHTML -Force
     </ScriptBlock>
               </ExpressionBinding>
             </CustomItem>
