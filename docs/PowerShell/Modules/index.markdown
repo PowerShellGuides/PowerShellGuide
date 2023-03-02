@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - PowerShell Modules
 - PowerShell Modules
 - Module
