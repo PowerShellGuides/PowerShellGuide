@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - PowerShell
 - What Is PowerShell
 title: PowerShell
