@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - Cmdlet Binding
 - CmdletBinding
 - Cmdlet Binding Attribute
