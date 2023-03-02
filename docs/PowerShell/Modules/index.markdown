@@ -38,5 +38,5 @@ That stated, there are at least a few modules we here at the [PowerShell Guide](
 
 These fall into a few categories:
 
-* The Modules That Make The [PowerShell Guide](/PowerShell/Guide)
+* [The Modules That Make The PowerShell Guide](/PowerShell/Modules/The-Modules-That-Make-The-PowerShell-Guide)
 * Modules We Like
