@@ -1,6 +1,6 @@
 ---
 
-Alias: Low Level Language
+alias: Low Level Language
 title: Low Level Languages
 
 layout: default
