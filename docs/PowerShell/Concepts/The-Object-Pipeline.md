@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - Object Pipeline
 - Pipeline
 title: The Object Pipeline
