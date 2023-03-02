@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - ScriptBlocks
 - Script Block
 - Script Blocks
