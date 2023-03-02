@@ -1,6 +1,6 @@
 ---
 
-Alias: Array
+alias: Array
 title: Arrays
 
 layout: default
