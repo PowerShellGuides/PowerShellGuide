@@ -15,7 +15,10 @@
   },
   {
     "Name": "Modules We Like",
-    "Aliases": "Modules We Like",
+    "Aliases": [
+      "Modules We Like",
+      "Modules We Like"
+    ],
     "Link": "PowerShell/Modules/Modules-We-Like"
   },
   {
@@ -29,9 +32,12 @@
     "Link": "PowerShell/Modules"
   },
   {
-    "Name": "The Module That Make The PowerShell Guide",
-    "Aliases": "The Module That Make The PowerShell Guide",
-    "Link": "PowerShell/Modules/The-Module-That-Make-The-PowerShell-Guide"
+    "Name": "The Modules That Make The PowerShell Guide",
+    "Aliases": [
+      "The Modules That Make The PowerShell Guide",
+      "The Modules That Make The PowerShell Guide"
+    ],
+    "Link": "PowerShell/Modules/The-Modules-That-Make-The-PowerShell-Guide"
   },
   {
     "Name": "Conditionals",
