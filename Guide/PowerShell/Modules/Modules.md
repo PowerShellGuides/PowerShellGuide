@@ -27,3 +27,11 @@ Remove-Module PowerShellGuide
 Hopefully we're getting it.  Verb-noun pairing can be rather obviously boring sometimes.
 
 
+There are many modules.  It's something of a popularity contest, though the most popular kids in this class are largely liked by robots.
+
+That stated, there are at least a few modules we here at the PowerShell Guide think you might want to know about.
+
+These fall into a few categories:
+
+* The Modules That Make The PowerShell Guide
+* Modules We Like
