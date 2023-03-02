@@ -1,5 +1,6 @@
 ---
 
+alias: Modules We Like
 title: Modules We Like
 
 layout: default
