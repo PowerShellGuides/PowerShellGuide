@@ -24,6 +24,11 @@
     "Link": "PowerShell/Modules"
   },
   {
+    "Name": "The Module That Make The PowerShell Guide",
+    "Aliases": "The Module That Make The PowerShell Guide",
+    "Link": "PowerShell/Modules/The-Module-That-Make-The-PowerShell-Guide"
+  },
+  {
     "Name": "Conditionals",
     "Aliases": "Conditionals",
     "Link": "PowerShell/Conditionals"
