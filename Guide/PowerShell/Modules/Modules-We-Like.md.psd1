@@ -1,0 +1,3 @@
+@{
+    Alias = 'Modules We Like'
+}
