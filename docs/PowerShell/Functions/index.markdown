@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - Function
 - PowerShell Functions
 - Functions in PowerShell
