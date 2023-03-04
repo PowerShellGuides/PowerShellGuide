@@ -1,11 +1,254 @@
 [
   {
-    "Name": "Shells",
+    "Name": "Roadmap",
+    "Aliases": "Roadmap",
+    "Link": "Roadmap"
+  },
+  {
+    "Name": "PowerShell",
     "Aliases": [
-      "Shells",
-      "Shell"
+      "PowerShell",
+      "PowerShell",
+      "What Is PowerShell"
     ],
-    "Link": "Shells"
+    "Link": "PowerShell"
+  },
+  {
+    "Name": "Modules We Like",
+    "Aliases": [
+      "Modules We Like",
+      "Modules We Like"
+    ],
+    "Link": "PowerShell/Modules/Modules-We-Like"
+  },
+  {
+    "Name": "Modules",
+    "Aliases": [
+      "Modules",
+      "PowerShell Modules",
+      "PowerShell Modules",
+      "Module"
+    ],
+    "Link": "PowerShell/Modules"
+  },
+  {
+    "Name": "The Modules That Make The PowerShell Guide",
+    "Aliases": [
+      "The Modules That Make The PowerShell Guide",
+      "The Modules That Make The PowerShell Guide"
+    ],
+    "Link": "PowerShell/Modules/The-Modules-That-Make-The-PowerShell-Guide"
+  },
+  {
+    "Name": "Conditionals",
+    "Aliases": "Conditionals",
+    "Link": "PowerShell/Conditionals"
+  },
+  {
+    "Name": "Every Object Can Be Extended",
+    "Aliases": "Every Object Can Be Extended",
+    "Link": "PowerShell/Concepts/Every-Object-Can-Be-Extended"
+  },
+  {
+    "Name": "Everything Is An Object",
+    "Aliases": [
+      "Everything Is An Object",
+      "Everything in PowerShell is An Object"
+    ],
+    "Link": "PowerShell/Concepts/Everything-Is-An-Object"
+  },
+  {
+    "Name": "Prompt For Confirmation",
+    "Aliases": "Prompt For Confirmation",
+    "Link": "PowerShell/Concepts/Prompt-For-Confirmation"
+  },
+  {
+    "Name": "The Object Pipeline",
+    "Aliases": [
+      "The Object Pipeline",
+      "Object Pipeline",
+      "Pipeline"
+    ],
+    "Link": "PowerShell/Concepts/The-Object-Pipeline"
+  },
+  {
+    "Name": "Trinity Of Discoverability",
+    "Aliases": [
+      "Trinity Of Discoverability",
+      "Discoverability"
+    ],
+    "Link": "PowerShell/Concepts/Trinity-Of-Discoverability"
+  },
+  {
+    "Name": "Verb Noun",
+    "Aliases": [
+      "Verb Noun",
+      "Verb Noun Pairing"
+    ],
+    "Link": "PowerShell/Concepts/Verb-Noun"
+  },
+  {
+    "Name": "Parameters",
+    "Aliases": [
+      "Parameters",
+      "Parameter",
+      "PowerShell Parameters",
+      "PowerShell Parameter",
+      "Parameter in PowerShell"
+    ],
+    "Link": "PowerShell/Parameters"
+  },
+  {
+    "Name": "Guide",
+    "Aliases": [
+      "Guide",
+      "PowerShell Guide",
+      "PowerShellGuide"
+    ],
+    "Link": "PowerShell/Guide"
+  },
+  {
+    "Name": "Commands",
+    "Aliases": [
+      "Commands",
+      "Command",
+      "PowerShell Command",
+      "Commands in PowerShell"
+    ],
+    "Link": "PowerShell/Commands"
+  },
+  {
+    "Name": "Get Command",
+    "Aliases": "Get Command",
+    "Link": "PowerShell/Commands/Get-Command"
+  },
+  {
+    "Name": "Get Help",
+    "Aliases": "Get Help",
+    "Link": "PowerShell/Commands/Get-Help"
+  },
+  {
+    "Name": "Get Member",
+    "Aliases": "Get Member",
+    "Link": "PowerShell/Commands/Get-Member"
+  },
+  {
+    "Name": "Attributes",
+    "Aliases": "Attributes",
+    "Link": "PowerShell/Attributes"
+  },
+  {
+    "Name": "CmdletBinding Attribute",
+    "Aliases": [
+      "CmdletBinding Attribute",
+      "Cmdlet Binding",
+      "CmdletBinding",
+      "Cmdlet Binding Attribute"
+    ],
+    "Link": "PowerShell/Attributes/CmdletBinding-Attribute"
+  },
+  {
+    "Name": "About Topics",
+    "Aliases": "About Topics",
+    "Link": "PowerShell/Help/About-Topics"
+  },
+  {
+    "Name": "Inline Help",
+    "Aliases": "Inline Help",
+    "Link": "PowerShell/Help/Inline-Help"
+  },
+  {
+    "Name": "Variables",
+    "Aliases": [
+      "Variables",
+      "Variable"
+    ],
+    "Link": "PowerShell/Variables"
+  },
+  {
+    "Name": "ScriptBlock",
+    "Aliases": [
+      "ScriptBlock",
+      "ScriptBlocks",
+      "Script Block",
+      "Script Blocks",
+      "Script Blocks in PowerShell",
+      "PowerShell Script Blocks",
+      "PowerShell ScriptBlocks",
+      "PowerShell ScriptBlock"
+    ],
+    "Link": "PowerShell/ScriptBlock"
+  },
+  {
+    "Name": "Scripts",
+    "Aliases": [
+      "Scripts",
+      "PowerShell Scripts",
+      "Scripts In PowerShell"
+    ],
+    "Link": "PowerShell/Scripts"
+  },
+  {
+    "Name": "Advanced Functions",
+    "Aliases": [
+      "Advanced Functions",
+      "Script Cmdlets",
+      "Script Cmdlet"
+    ],
+    "Link": "PowerShell/Functions/Advanced-Functions"
+  },
+  {
+    "Name": "Functions",
+    "Aliases": [
+      "Functions",
+      "Function",
+      "PowerShell Functions",
+      "Functions in PowerShell"
+    ],
+    "Link": "PowerShell/Functions"
+  },
+  {
+    "Name": "Simple Functions",
+    "Aliases": "Simple Functions",
+    "Link": "PowerShell/Functions/Simple-Functions"
+  },
+  {
+    "Name": "Arrays",
+    "Aliases": [
+      "Arrays",
+      "Array"
+    ],
+    "Link": "PowerShell/Types/Arrays"
+  },
+  {
+    "Name": "Extending Types",
+    "Aliases": [
+      "Extending Types",
+      "Extended Types System",
+      "types.ps1xml",
+      "types file",
+      "Extending Types in PowerShell",
+      "Extend Types"
+    ],
+    "Link": "PowerShell/Types/Extending-Types"
+  },
+  {
+    "Name": "Lists",
+    "Aliases": "Lists",
+    "Link": "PowerShell/Types/Lists"
+  },
+  {
+    "Name": "Types",
+    "Aliases": [
+      "Types",
+      "Type"
+    ],
+    "Link": "PowerShell/Types"
+  },
+  {
+    "Name": "Loops",
+    "Aliases": "Loops",
+    "Link": "PowerShell/Loops"
   },
   {
     "Name": "High Level Languages",
@@ -40,191 +283,11 @@
     "Link": "Languages/Scripting-Languages"
   },
   {
-    "Name": "PowerShell",
+    "Name": "Shells",
     "Aliases": [
-      "PowerShell",
-      "PowerShell",
-      "What Is PowerShell"
+      "Shells",
+      "Shell"
     ],
-    "Link": "PowerShell"
-  },
-  {
-    "Name": "Modules",
-    "Aliases": [
-      "Modules",
-      "PowerShell Modules",
-      "PowerShell Modules",
-      "Module"
-    ],
-    "Link": "PowerShell/Modules"
-  },
-  {
-    "Name": "Every Object Can Be Extended",
-    "Aliases": "Every Object Can Be Extended",
-    "Link": "PowerShell/Concepts/Every-Object-Can-Be-Extended"
-  },
-  {
-    "Name": "Everything Is An Object",
-    "Aliases": [
-      "Everything Is An Object",
-      "Everything in PowerShell is An Object"
-    ],
-    "Link": "PowerShell/Concepts/Everything-Is-An-Object"
-  },
-  {
-    "Name": "The Object Pipeline",
-    "Aliases": [
-      "The Object Pipeline",
-      "Object Pipeline",
-      "Pipeline"
-    ],
-    "Link": "PowerShell/Concepts/The-Object-Pipeline"
-  },
-  {
-    "Name": "Trinity Of Discoverability",
-    "Aliases": [
-      "Trinity Of Discoverability",
-      "Discoverability"
-    ],
-    "Link": "PowerShell/Concepts/Trinity-Of-Discoverability"
-  },
-  {
-    "Name": "Verb Noun",
-    "Aliases": [
-      "Verb Noun",
-      "Verb Noun Pairing"
-    ],
-    "Link": "PowerShell/Concepts/Verb-Noun"
-  },
-  {
-    "Name": "ScriptBlock",
-    "Aliases": [
-      "ScriptBlock",
-      "ScriptBlocks",
-      "Script Block",
-      "Script Blocks",
-      "Script Blocks in PowerShell",
-      "PowerShell Script Blocks",
-      "PowerShell ScriptBlocks",
-      "PowerShell ScriptBlock"
-    ],
-    "Link": "PowerShell/ScriptBlock"
-  },
-  {
-    "Name": "Loops",
-    "Aliases": "Loops",
-    "Link": "PowerShell/Loops"
-  },
-  {
-    "Name": "Variables",
-    "Aliases": [
-      "Variables",
-      "Variable"
-    ],
-    "Link": "PowerShell/Variables"
-  },
-  {
-    "Name": "Parameters",
-    "Aliases": [
-      "Parameters",
-      "Parameter",
-      "PowerShell Parameters",
-      "PowerShell Parameter",
-      "Parameter in PowerShell"
-    ],
-    "Link": "PowerShell/Parameters"
-  },
-  {
-    "Name": "Scripts",
-    "Aliases": [
-      "Scripts",
-      "PowerShell Scripts",
-      "Scripts In PowerShell"
-    ],
-    "Link": "PowerShell/Scripts"
-  },
-  {
-    "Name": "Guide",
-    "Aliases": [
-      "Guide",
-      "PowerShell Guide",
-      "PowerShellGuide"
-    ],
-    "Link": "PowerShell/Guide"
-  },
-  {
-    "Name": "Extending Types",
-    "Aliases": [
-      "Extending Types",
-      "Extended Types System",
-      "types.ps1xml",
-      "types file",
-      "Extending Types in PowerShell",
-      "Extend Types"
-    ],
-    "Link": "PowerShell/Types/Extending-Types"
-  },
-  {
-    "Name": "Types",
-    "Aliases": [
-      "Types",
-      "Type"
-    ],
-    "Link": "PowerShell/Types"
-  },
-  {
-    "Name": "Functions",
-    "Aliases": [
-      "Functions",
-      "Function",
-      "PowerShell Functions",
-      "Functions in PowerShell"
-    ],
-    "Link": "PowerShell/Functions"
-  },
-  {
-    "Name": "Conditionals",
-    "Aliases": "Conditionals",
-    "Link": "PowerShell/Conditionals"
-  },
-  {
-    "Name": "Commands",
-    "Aliases": [
-      "Commands",
-      "Command",
-      "PowerShell Command",
-      "Commands in PowerShell"
-    ],
-    "Link": "PowerShell/Commands"
-  },
-  {
-    "Name": "Get Command",
-    "Aliases": "Get Command",
-    "Link": "PowerShell/Commands/Get-Command"
-  },
-  {
-    "Name": "Get Help",
-    "Aliases": "Get Help",
-    "Link": "PowerShell/Commands/Get-Help"
-  },
-  {
-    "Name": "Get Member",
-    "Aliases": "Get Member",
-    "Link": "PowerShell/Commands/Get-Member"
-  },
-  {
-    "Name": "About Topics",
-    "Aliases": "About Topics",
-    "Link": "PowerShell/Help/About-Topics"
-  },
-  {
-    "Name": "Inline Help",
-    "Aliases": "Inline Help",
-    "Link": "PowerShell/Help/Inline-Help"
-  },
-  {
-    "Name": "Attributes",
-    "Aliases": "Attributes",
-    "Link": "PowerShell/Attributes"
+    "Link": "Shells"
   }
 ]

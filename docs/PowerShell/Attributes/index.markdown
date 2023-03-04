@@ -1,5 +1,7 @@
 ---
 
+title: Attributes
+
 layout: default
 ---
 

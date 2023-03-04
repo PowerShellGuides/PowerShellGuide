@@ -1,6 +1,6 @@
 ---
 
-Alias: Programming Language
+alias: Programming Language
 title: Programming Languages
 
 layout: default

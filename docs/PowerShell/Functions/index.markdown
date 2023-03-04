@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - Function
 - PowerShell Functions
 - Functions in PowerShell
@@ -31,8 +31,8 @@ You can also declare [parameters](/PowerShell/Parameters) in a `param()` block
 
 <pre><br/><span class='Verbose'>function</span>&nbsp;<span class='Verbose'>Hello</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>param</span><span class='Magenta'>(</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Warning'>$Message</span>&nbsp;<span class='Magenta'>=</span>&nbsp;<span class='Verbose'>'Hello World'</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Magenta'>)</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Warning'>$Message</span><br/><span class='Magenta'>}</span><br/></pre>
 
-These are all examples of simple functions.
+These are all examples of [simple functions](/PowerShell/Functions/Simple-Functions).
 
 It's not meant to be snide, it's just that [PowerShell](/PowerShell) functions can get much more advanced.
 
-Functions can bind to anything in [the Object Pipeline](/PowerShell/Concepts/The-Object-Pipeline), Prompt for Confirmation, and have rich [inline help](/PowerShell/Help/Inline-Help).
+[Advanced Functions](/PowerShell/Functions/Advanced-Functions) can bind to anything in [the Object Pipeline](/PowerShell/Concepts/The-Object-Pipeline), [Prompt for Confirmation](/PowerShell/Concepts/Prompt-For-Confirmation), and have rich [inline help](/PowerShell/Help/Inline-Help).

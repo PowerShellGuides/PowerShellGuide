@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - PowerShell Modules
 - PowerShell Modules
 - Module
@@ -30,3 +30,15 @@ If we wanted to remove it after we've loaded it:
 <pre><br/><span class='Warning'>Remove-Module</span>&nbsp;<span class='Verbose'>PowerShellGuide</span><br/></pre>
 
 Hopefully we're getting it.  [Verb-noun pairing](/PowerShell/Concepts/Verb-Noun) can be rather obviously boring sometimes.
+
+
+There are many modules.  It's something of a popularity contest, though the most popular kids in this class are largely liked by robots.
+
+That stated, there are at least a few modules we here at the [PowerShell Guide](/PowerShell/Guide) think you might want to know about.
+
+These fall into a couple of categories:
+
+* [The Modules That Make The PowerShell Guide](/PowerShell/Modules/The-Modules-That-Make-The-PowerShell-Guide)
+* [Modules We Like](/PowerShell/Modules/Modules-We-Like)
+
+We strongly recommend you explore the many modules that exist out there.  The [PowerShell Gallery](https://powershellgallery.com) is a great place to start.  So is [Github](https://github.com).

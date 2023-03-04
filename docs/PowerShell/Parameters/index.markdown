@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - Parameter
 - PowerShell Parameters
 - PowerShell Parameter

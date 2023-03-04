@@ -1,6 +1,6 @@
 ---
 
-Alias: High Level Language
+alias: High Level Language
 title: High Level Languages
 
 layout: default

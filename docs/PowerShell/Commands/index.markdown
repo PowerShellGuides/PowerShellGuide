@@ -1,6 +1,6 @@
 ---
 
-Alias: 
+alias: 
 - Command
 - PowerShell Command
 - Commands in PowerShell

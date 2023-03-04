@@ -39,4 +39,4 @@ These are all examples of simple functions.
 
 It's not meant to be snide, it's just that PowerShell functions can get much more advanced.
 
-Functions can bind to anything in the Object Pipeline, Prompt for Confirmation, and have rich inline help.
+Advanced Functions can bind to anything in the Object Pipeline, Prompt for Confirmation, and have rich inline help.
