@@ -93,3 +93,24 @@ $AnotherList = [List[PSCustomObject]]::new()
 ~~~
 
 The big thing to remember is using statements must come before any other code in your script and cannot contain variables. 
+
+## Not everything is a class
+While classes are the most common object you'll work with like this they are not the only ones.
+
+Another common object type you wil use is the structure or Struct but for the most part you'll never notice (or really care) is an object is a Struct or a class. To give you an idea, I bet you didn't know DateTime is a Struct. And unless you are getting into lower-level programming languages you don't need to worry about. Just throw them on the heap and let the garbage be collected.
+
+Much like Eeyore, enumerations (enum) are often overlooked, but can be your best friend. Enumerations can be looks at like predefined lists. 
+
+For eaxmple, the enumeration DateTimeKind is used to specify if a date is local time, UTC, or not specified. By using an enum you can ensure that the right value is provided.
+
+And just for some added fun, there is a class named enum that can be used to show all of the values of an enum.
+
+~~~PowerShell
+[Enum]::GetNames([DateTimeKind])
+~~~
+
+Once you know the values you can set them using the double semi-colon.
+
+~~~PowerShell
+[DateTimeKind]::UTC
+~~~

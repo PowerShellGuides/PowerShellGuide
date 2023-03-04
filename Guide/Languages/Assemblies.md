@@ -6,6 +6,7 @@ You can think of assemblies in .NET in the same light. When there is something P
 
 Assemblies are .dll files that contain compiled C# code. Some are designed specifically for PowerShell. This is where cmdlets come from. Others are part of the .NET framework. While other still are custom code someone else might have written. In all cases these dll files can be imported directly into PowerShell, allowing you to use the classes and other objects directly in your scripts.
 
+## Assemblies in PowerShell
 Assemblies are imported into PowerShell using the Add-Type cmdlet. 
 
 ~~~PowerShell
