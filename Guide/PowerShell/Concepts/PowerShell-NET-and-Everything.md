@@ -77,7 +77,7 @@ For example, if you want to round a number to a specific decimal, you can use th
 You can call a class method the same way you call the new() method. Two colons after the class name in square brackets. [class]::MethodABC() or [class]::MethodABC('parameters').You will see these used all the time in PowerShell.
 ~~~PowerShell
 [math]::Round(3.14159265359, 5)
-[regex]::Replace("It can only be attributable to human error.","human","computer")
+[regex]::Replace('It can only be attributable to human error.','human','computer')
 [Web.HttpUtility]::UrlEncode($SomeUrl)
 ~~~
 
