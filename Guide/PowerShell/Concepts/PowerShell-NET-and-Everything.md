@@ -45,7 +45,7 @@ $MyString = New-Object -TypeName String -ArgumentList 'So Long, and Thanks for A
 
 The New-Object provides you the same functionality as using the new() method, but with the added benefit of making you type more. 
 
-So why use the New-Object cmdlet? The unoffical answer is, preference. The official answer is backwards capabilty. Prior to PowerShell 5 you had to use New-Object. However, the most effective way of dealing with anyone still running PowerShell 4 or older is to run away...terribly fast.
+So why use the New-Object cmdlet? The unoffical answer is, preference. The official answer is backwards capabilty. Prior to PowerShell 4 you had to use New-Object. However, the most effective way of dealing with anyone still running PowerShell 3 or older is to run away...terribly fast.
 
 # Load Assemblies
 The reason all the previous example worked is because the assembly and namespace containing the String class are loaded automatically by PowerShell. However, this is not the case for all classes. For instance, try running the code snippet below:
