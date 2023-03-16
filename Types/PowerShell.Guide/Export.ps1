@@ -67,7 +67,9 @@ foreach ($topic in $this.AllTopics) {
     Get-Item $topicMarkdownFile
 }
 
+# Get all the topics (we'll want them for later)
 $allTopics = $this.AllTopics
+# Group them by course name (sorted by level)
 $byCourseName = @($allTopics | 
     Group-Object {  $_.Metadata.CourseName } |
     Where-Object { $_.Name } |
@@ -81,12 +83,16 @@ $byCourseName = @($allTopics |
         }
     })
 
+# Write courses.json and output the file.
 $CoursesJson = ConvertTo-Json -Depth 10 -InputObject $byCourseName
 $CoursesPath = Join-Path $dataDir "courses.json"
 $CoursesJson | Set-Content -Path $CoursesPath 
 Get-Item $CoursesPath
 
-$topicMetadataPath = Join-Path $OutputPath -ChildPath "guide.json"
-$allTopicMetadata | ConvertTo-Json -Depth 100 |
-    Set-Content -Path $topicMetadataPath
-Get-Item $topicMetadataPath
+# Outputting the guide.json to _data (for Jekyll) and docs (for Javascript)
+$topicJson = $allTopicMetadata | ConvertTo-Json -Depth 100
+foreach ($rootPath in $OutputPath, $dataDir) {
+    $topicMetadataPath = Join-Path $rootPath -ChildPath "guide.json"
+    $topicJson | Set-Content -Path $topicMetadataPath
+    Get-Item $topicMetadataPath
+}
