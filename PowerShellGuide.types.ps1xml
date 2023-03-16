@@ -89,7 +89,7 @@ $byCourseName = @($allTopics |
     }, @{
         Name = 'Topics'
         Expression =  { 
-            ($_.Group | Sort-Object { $_.Metadata.Level }).TopicName
+            ($_.Group | Sort-Object { $_.Metadata.Level }, TopicName).TopicName
         }
     })
 
@@ -101,7 +101,7 @@ Get-Item $CoursesPath
 
 $topicsByLevel = @($allTopics | Sort-Object { 
     if ($_.Metadata.Level) { $_.Metadata.Level -as [int]} else { 1mb }
-} |
+}, TopicName |
     Select-Object TopicName, Link, ([Ordered]@{
         Name = 'Level'
         Expression = { $_.Metadata.Level }
