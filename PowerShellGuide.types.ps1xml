@@ -98,6 +98,20 @@ $CoursesPath = Join-Path $dataDir "courses.json"
 $CoursesJson | Set-Content -Path $CoursesPath 
 Get-Item $CoursesPath
 
+$topicsByLevel = @($allTopics | Sort-Object { 
+    if ($_.Metadata.Level) { $_.Metadata.Level -as [int]} else { 1mb }
+} |
+    Select-Object TopicName, Link, @{
+        Name = 'Level'
+        Expression = { $_.Metadata.Level }
+    })
+
+
+$TopicsJson = ConvertTo-Json -Depth 10 -InputObject $topicsByLevel
+$TopicsPath = Join-Path $dataDir "TopicsByLevel.json"
+$TopicsJson | Set-Content -Path $TopicsPath 
+Get-Item $TopicsPath
+
 # Outputting the guide.json to _data (for Jekyll) and docs (for Javascript)
 $topicJson = $allTopicMetadata | ConvertTo-Json -Depth 100
 foreach ($rootPath in $OutputPath, $dataDir) {
