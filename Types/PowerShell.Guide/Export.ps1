@@ -68,7 +68,7 @@ foreach ($topic in $this.AllTopics) {
 }
 
 # Get all the topics (we'll want them for later)
-$allTopics = $this.AllTopics
+$allTopics = $this.AllTopics | Sort-Object TopicName
 # Group them by course name (sorted by level)
 $byCourseName = @($allTopics | 
     Group-Object {  $_.Metadata.CourseName } |
@@ -92,10 +92,10 @@ Get-Item $CoursesPath
 $topicsByLevel = @($allTopics | Sort-Object { 
     if ($_.Metadata.Level) { $_.Metadata.Level -as [int]} else { 1mb }
 } |
-    Select-Object TopicName, Link, @{
+    Select-Object TopicName, Link, ([Ordered]@{
         Name = 'Level'
         Expression = { $_.Metadata.Level }
-    })
+    }))
 
 
 $TopicsJson = ConvertTo-Json -Depth 10 -InputObject $topicsByLevel
