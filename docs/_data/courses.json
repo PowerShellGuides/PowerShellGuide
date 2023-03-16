@@ -1,9 +1,11 @@
-{
-  "CourseName": "Understanding Languages",
-  "Topics": [
-    "High Level Languages",
-    "Low Level Languages",
-    "Programming Languages",
-    "Scripting Languages"
-  ]
-}
+[
+  {
+    "CourseName": "Understanding Languages",
+    "Topics": [
+      "High Level Languages",
+      "Low Level Languages",
+      "Programming Languages",
+      "Scripting Languages"
+    ]
+  }
+]
