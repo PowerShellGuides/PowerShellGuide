@@ -1,6 +1,8 @@
 ---
 
 alias: High Level Language
+coursename: Understanding Languages
+level: 101
 title: High Level Languages
 
 layout: default
