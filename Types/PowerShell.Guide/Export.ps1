@@ -68,7 +68,7 @@ foreach ($topic in $this.AllTopics) {
 }
 
 $allTopics = $this.AllTopics
-$byCourseName = $allTopics | 
+$byCourseName = @($allTopics | 
     Group-Object {  $_.Metadata.CourseName } |
     Where-Object { $_.Name } |
     Select-Object @{
@@ -76,12 +76,14 @@ $byCourseName = $allTopics |
         Expression = { $_.Name }
     }, @{
         Name = 'Topics'
-        Expression =  { $_.Group.TopicName }
-    }
+        Expression =  { 
+            ($_.Group | Sort-Object { $_.Metadata.Level }).TopicName
+        }
+    })
 
-$CoursesJson = $byCourseName | ConvertTo-Json -Depth 10
+$CoursesJson = ConvertTo-Json -Depth 10 -InputObject $byCourseName
 $CoursesPath = Join-Path $dataDir "courses.json"
-$CoursesJson | Set-Content -Path $CoursesPath
+$CoursesJson | Set-Content -Path $CoursesPath 
 Get-Item $CoursesPath
 
 $topicMetadataPath = Join-Path $OutputPath -ChildPath "guide.json"
