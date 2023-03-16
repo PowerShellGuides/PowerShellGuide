@@ -16,6 +16,12 @@ if (-not $OutputPath) {
             Join-Path -ChildPath 'docs'
 }
 
+$dataDir = Join-Path $OutputPath "_data"
+
+if (-not (Test-Path $dataDir)) {
+    $null = New-Item -ItemType Directory -Path $dataDir -Force
+}
+
 $allTopicMetadata = @()
 
 foreach ($topic in $this.AllTopics) {
@@ -60,6 +66,23 @@ foreach ($topic in $this.AllTopics) {
     
     Get-Item $topicMarkdownFile
 }
+
+$allTopics = $this.AllTopics
+$byCourseName = $allTopics | 
+    Group-Object {  $_.Metadata.CourseName } |
+    Where-Object { $_.Name } |
+    Select-Object @{
+        Name = 'CourseName'
+        Expression = { $_.Name }
+    }, @{
+        Name = 'Topics'
+        Expression =  { $_.Group.TopicName }
+    }
+
+$CoursesJson = $byCourseName | ConvertTo-Json -Depth 10
+$CoursesPath = Join-Path $dataDir "courses.json"
+$CoursesJson | Set-Content -Path $CoursesPath
+Get-Item $CoursesPath
 
 $topicMetadataPath = Join-Path $OutputPath -ChildPath "guide.json"
 $allTopicMetadata | ConvertTo-Json -Depth 100 |
