@@ -1,18 +1,13 @@
 [
   {
-    "TopicName": "High Level Languages",
-    "Link": "Languages/High-Level-Languages",
-    "Level": 101
-  },
-  {
     "TopicName": "Low Level Languages",
     "Link": "Languages/Low-Level-Languages",
     "Level": 101
   },
   {
-    "TopicName": "Programming Languages",
-    "Link": "Languages/Programming-Languages",
-    "Level": 102
+    "TopicName": "High Level Languages",
+    "Link": "Languages/High-Level-Languages",
+    "Level": 101
   },
   {
     "TopicName": "Scripting Languages",
@@ -20,78 +15,13 @@
     "Level": 102
   },
   {
-    "TopicName": "Roadmap",
-    "Link": "Roadmap",
-    "Level": null
-  },
-  {
-    "TopicName": "Advanced Functions",
-    "Link": "PowerShell/Functions/Advanced-Functions",
-    "Level": null
-  },
-  {
-    "TopicName": "Functions",
-    "Link": "PowerShell/Functions",
-    "Level": null
-  },
-  {
-    "TopicName": "Simple Functions",
-    "Link": "PowerShell/Functions/Simple-Functions",
-    "Level": null
-  },
-  {
-    "TopicName": "About Topics",
-    "Link": "PowerShell/Help/About-Topics",
-    "Level": null
-  },
-  {
-    "TopicName": "Inline Help",
-    "Link": "PowerShell/Help/Inline-Help",
-    "Level": null
-  },
-  {
-    "TopicName": "Scripts",
-    "Link": "PowerShell/Scripts",
-    "Level": null
-  },
-  {
-    "TopicName": "Lists",
-    "Link": "PowerShell/Types/Lists",
-    "Level": null
-  },
-  {
-    "TopicName": "Extending Types",
-    "Link": "PowerShell/Types/Extending-Types",
-    "Level": null
+    "TopicName": "Programming Languages",
+    "Link": "Languages/Programming-Languages",
+    "Level": 102
   },
   {
     "TopicName": "Get Member",
     "Link": "PowerShell/Commands/Get-Member",
-    "Level": null
-  },
-  {
-    "TopicName": "Types",
-    "Link": "PowerShell/Types",
-    "Level": null
-  },
-  {
-    "TopicName": "Variables",
-    "Link": "PowerShell/Variables",
-    "Level": null
-  },
-  {
-    "TopicName": "Guide",
-    "Link": "PowerShell/Guide",
-    "Level": null
-  },
-  {
-    "TopicName": "Attributes",
-    "Link": "PowerShell/Attributes",
-    "Level": null
-  },
-  {
-    "TopicName": "Arrays",
-    "Link": "PowerShell/Types/Arrays",
     "Level": null
   },
   {
@@ -100,8 +30,8 @@
     "Level": null
   },
   {
-    "TopicName": "Loops",
-    "Link": "PowerShell/Loops",
+    "TopicName": "Get Command",
+    "Link": "PowerShell/Commands/Get-Command",
     "Level": null
   },
   {
@@ -110,13 +40,63 @@
     "Level": null
   },
   {
-    "TopicName": "PowerShell",
-    "Link": "PowerShell",
+    "TopicName": "Variables",
+    "Link": "PowerShell/Variables",
     "Level": null
   },
   {
-    "TopicName": "Modules We Like",
-    "Link": "PowerShell/Modules/Modules-We-Like",
+    "TopicName": "About Topics",
+    "Link": "PowerShell/Help/About-Topics",
+    "Level": null
+  },
+  {
+    "TopicName": "Scripts",
+    "Link": "PowerShell/Scripts",
+    "Level": null
+  },
+  {
+    "TopicName": "CmdletBinding Attribute",
+    "Link": "PowerShell/Attributes/CmdletBinding-Attribute",
+    "Level": null
+  },
+  {
+    "TopicName": "Attributes",
+    "Link": "PowerShell/Attributes",
+    "Level": null
+  },
+  {
+    "TopicName": "Simple Functions",
+    "Link": "PowerShell/Functions/Simple-Functions",
+    "Level": null
+  },
+  {
+    "TopicName": "Functions",
+    "Link": "PowerShell/Functions",
+    "Level": null
+  },
+  {
+    "TopicName": "Advanced Functions",
+    "Link": "PowerShell/Functions/Advanced-Functions",
+    "Level": null
+  },
+  {
+    "TopicName": "Inline Help",
+    "Link": "PowerShell/Help/Inline-Help",
+    "Level": null
+  },
+  {
+    "TopicName": "Shells",
+    "Link": "Shells",
+    "Level": null
+  },
+  {
+    "TopicName": "Loops",
+    "Link": "PowerShell/Loops",
+    "Level": null
+  },
+  {
+    "TopicName": "ScriptBlock",
+    "Link": "PowerShell/ScriptBlock",
     "Level": null
   },
   {
@@ -125,8 +105,38 @@
     "Level": null
   },
   {
-    "TopicName": "The Modules That Make The PowerShell Guide",
-    "Link": "PowerShell/Modules/The-Modules-That-Make-The-PowerShell-Guide",
+    "TopicName": "PowerShell",
+    "Link": "PowerShell",
+    "Level": null
+  },
+  {
+    "TopicName": "Parameters",
+    "Link": "PowerShell/Parameters",
+    "Level": null
+  },
+  {
+    "TopicName": "Arrays",
+    "Link": "PowerShell/Types/Arrays",
+    "Level": null
+  },
+  {
+    "TopicName": "Extending Types",
+    "Link": "PowerShell/Types/Extending-Types",
+    "Level": null
+  },
+  {
+    "TopicName": "Lists",
+    "Link": "PowerShell/Types/Lists",
+    "Level": null
+  },
+  {
+    "TopicName": "Types",
+    "Link": "PowerShell/Types",
+    "Level": null
+  },
+  {
+    "TopicName": "Guide",
+    "Link": "PowerShell/Guide",
     "Level": null
   },
   {
@@ -140,13 +150,13 @@
     "Level": null
   },
   {
-    "TopicName": "Get Command",
-    "Link": "PowerShell/Commands/Get-Command",
+    "TopicName": "Prompt For Confirmation",
+    "Link": "PowerShell/Concepts/Prompt-For-Confirmation",
     "Level": null
   },
   {
-    "TopicName": "Prompt For Confirmation",
-    "Link": "PowerShell/Concepts/Prompt-For-Confirmation",
+    "TopicName": "The Object Pipeline",
+    "Link": "PowerShell/Concepts/The-Object-Pipeline",
     "Level": null
   },
   {
@@ -160,33 +170,23 @@
     "Level": null
   },
   {
-    "TopicName": "ScriptBlock",
-    "Link": "PowerShell/ScriptBlock",
-    "Level": null
-  },
-  {
     "TopicName": "Conditionals",
     "Link": "PowerShell/Conditionals",
     "Level": null
   },
   {
-    "TopicName": "Parameters",
-    "Link": "PowerShell/Parameters",
+    "TopicName": "Modules We Like",
+    "Link": "PowerShell/Modules/Modules-We-Like",
     "Level": null
   },
   {
-    "TopicName": "CmdletBinding Attribute",
-    "Link": "PowerShell/Attributes/CmdletBinding-Attribute",
+    "TopicName": "The Modules That Make The PowerShell Guide",
+    "Link": "PowerShell/Modules/The-Modules-That-Make-The-PowerShell-Guide",
     "Level": null
   },
   {
-    "TopicName": "The Object Pipeline",
-    "Link": "PowerShell/Concepts/The-Object-Pipeline",
-    "Level": null
-  },
-  {
-    "TopicName": "Shells",
-    "Link": "Shells",
+    "TopicName": "Roadmap",
+    "Link": "Roadmap",
     "Level": null
   }
 ]
