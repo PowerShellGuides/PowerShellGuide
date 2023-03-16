@@ -1,6 +1,8 @@
 ---
 
 alias: Scripting_Language
+coursename: Understanding Languages
+level: 102
 title: Scripting Languages
 
 layout: default
