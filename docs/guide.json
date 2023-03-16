@@ -5,6 +5,38 @@
     "Link": "Roadmap"
   },
   {
+    "Name": "High Level Languages",
+    "Aliases": [
+      "High Level Languages",
+      "High Level Language"
+    ],
+    "Link": "Languages/High-Level-Languages"
+  },
+  {
+    "Name": "Low Level Languages",
+    "Aliases": [
+      "Low Level Languages",
+      "Low Level Language"
+    ],
+    "Link": "Languages/Low-Level-Languages"
+  },
+  {
+    "Name": "Programming Languages",
+    "Aliases": [
+      "Programming Languages",
+      "Programming Language"
+    ],
+    "Link": "Languages/Programming-Languages"
+  },
+  {
+    "Name": "Scripting Languages",
+    "Aliases": [
+      "Scripting Languages",
+      "Scripting Language"
+    ],
+    "Link": "Languages/Scripting-Languages"
+  },
+  {
     "Name": "PowerShell",
     "Aliases": [
       "PowerShell",
@@ -38,11 +70,6 @@
       "The Modules That Make The PowerShell Guide"
     ],
     "Link": "PowerShell/Modules/The-Modules-That-Make-The-PowerShell-Guide"
-  },
-  {
-    "Name": "Conditionals",
-    "Aliases": "Conditionals",
-    "Link": "PowerShell/Conditionals"
   },
   {
     "Name": "Every Object Can Be Extended",
@@ -88,6 +115,25 @@
     "Link": "PowerShell/Concepts/Verb-Noun"
   },
   {
+    "Name": "ScriptBlock",
+    "Aliases": [
+      "ScriptBlock",
+      "ScriptBlocks",
+      "Script Block",
+      "Script Blocks",
+      "Script Blocks in PowerShell",
+      "PowerShell Script Blocks",
+      "PowerShell ScriptBlocks",
+      "PowerShell ScriptBlock"
+    ],
+    "Link": "PowerShell/ScriptBlock"
+  },
+  {
+    "Name": "Conditionals",
+    "Aliases": "Conditionals",
+    "Link": "PowerShell/Conditionals"
+  },
+  {
     "Name": "Parameters",
     "Aliases": [
       "Parameters",
@@ -99,13 +145,9 @@
     "Link": "PowerShell/Parameters"
   },
   {
-    "Name": "Guide",
-    "Aliases": [
-      "Guide",
-      "PowerShell Guide",
-      "PowerShellGuide"
-    ],
-    "Link": "PowerShell/Guide"
+    "Name": "Loops",
+    "Aliases": "Loops",
+    "Link": "PowerShell/Loops"
   },
   {
     "Name": "Commands",
@@ -133,62 +175,6 @@
     "Link": "PowerShell/Commands/Get-Member"
   },
   {
-    "Name": "Attributes",
-    "Aliases": "Attributes",
-    "Link": "PowerShell/Attributes"
-  },
-  {
-    "Name": "CmdletBinding Attribute",
-    "Aliases": [
-      "CmdletBinding Attribute",
-      "Cmdlet Binding",
-      "CmdletBinding",
-      "Cmdlet Binding Attribute"
-    ],
-    "Link": "PowerShell/Attributes/CmdletBinding-Attribute"
-  },
-  {
-    "Name": "About Topics",
-    "Aliases": "About Topics",
-    "Link": "PowerShell/Help/About-Topics"
-  },
-  {
-    "Name": "Inline Help",
-    "Aliases": "Inline Help",
-    "Link": "PowerShell/Help/Inline-Help"
-  },
-  {
-    "Name": "Variables",
-    "Aliases": [
-      "Variables",
-      "Variable"
-    ],
-    "Link": "PowerShell/Variables"
-  },
-  {
-    "Name": "ScriptBlock",
-    "Aliases": [
-      "ScriptBlock",
-      "ScriptBlocks",
-      "Script Block",
-      "Script Blocks",
-      "Script Blocks in PowerShell",
-      "PowerShell Script Blocks",
-      "PowerShell ScriptBlocks",
-      "PowerShell ScriptBlock"
-    ],
-    "Link": "PowerShell/ScriptBlock"
-  },
-  {
-    "Name": "Scripts",
-    "Aliases": [
-      "Scripts",
-      "PowerShell Scripts",
-      "Scripts In PowerShell"
-    ],
-    "Link": "PowerShell/Scripts"
-  },
-  {
     "Name": "Advanced Functions",
     "Aliases": [
       "Advanced Functions",
@@ -211,6 +197,25 @@
     "Name": "Simple Functions",
     "Aliases": "Simple Functions",
     "Link": "PowerShell/Functions/Simple-Functions"
+  },
+  {
+    "Name": "About Topics",
+    "Aliases": "About Topics",
+    "Link": "PowerShell/Help/About-Topics"
+  },
+  {
+    "Name": "Inline Help",
+    "Aliases": "Inline Help",
+    "Link": "PowerShell/Help/Inline-Help"
+  },
+  {
+    "Name": "Scripts",
+    "Aliases": [
+      "Scripts",
+      "PowerShell Scripts",
+      "Scripts In PowerShell"
+    ],
+    "Link": "PowerShell/Scripts"
   },
   {
     "Name": "Arrays",
@@ -246,41 +251,36 @@
     "Link": "PowerShell/Types"
   },
   {
-    "Name": "Loops",
-    "Aliases": "Loops",
-    "Link": "PowerShell/Loops"
+    "Name": "Variables",
+    "Aliases": [
+      "Variables",
+      "Variable"
+    ],
+    "Link": "PowerShell/Variables"
   },
   {
-    "Name": "High Level Languages",
+    "Name": "Guide",
     "Aliases": [
-      "High Level Languages",
-      "High Level Language"
+      "Guide",
+      "PowerShell Guide",
+      "PowerShellGuide"
     ],
-    "Link": "Languages/High-Level-Languages"
+    "Link": "PowerShell/Guide"
   },
   {
-    "Name": "Low Level Languages",
-    "Aliases": [
-      "Low Level Languages",
-      "Low Level Language"
-    ],
-    "Link": "Languages/Low-Level-Languages"
+    "Name": "Attributes",
+    "Aliases": "Attributes",
+    "Link": "PowerShell/Attributes"
   },
   {
-    "Name": "Programming Languages",
+    "Name": "CmdletBinding Attribute",
     "Aliases": [
-      "Programming Languages",
-      "Programming Language"
+      "CmdletBinding Attribute",
+      "Cmdlet Binding",
+      "CmdletBinding",
+      "Cmdlet Binding Attribute"
     ],
-    "Link": "Languages/Programming-Languages"
-  },
-  {
-    "Name": "Scripting Languages",
-    "Aliases": [
-      "Scripting Languages",
-      "Scripting Language"
-    ],
-    "Link": "Languages/Scripting-Languages"
+    "Link": "PowerShell/Attributes/CmdletBinding-Attribute"
   },
   {
     "Name": "Shells",
