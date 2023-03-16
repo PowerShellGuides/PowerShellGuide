@@ -23,8 +23,11 @@ if (-not (Test-Path $dataDir)) {
 }
 
 $allTopicMetadata = @()
+# Get all the topics (we'll want them for later)
+$allTopics = $this.AllTopics | Sort-Object TopicName
 
-foreach ($topic in $this.AllTopics) {
+
+foreach ($topic in $allTopics) {
     $relativePathParts = @($topic.RelativePath.Split([IO.Path]::DirectorySeparatorChar))
     $targetPathRoot = $OutputPath    
     if ($relativePathParts.Length -gt 1) {
@@ -67,8 +70,6 @@ foreach ($topic in $this.AllTopics) {
     Get-Item $topicMarkdownFile
 }
 
-# Get all the topics (we'll want them for later)
-$allTopics = $this.AllTopics | Sort-Object TopicName
 # Group them by course name (sorted by level)
 $byCourseName = @($allTopics | 
     Group-Object {  $_.Metadata.CourseName } |
