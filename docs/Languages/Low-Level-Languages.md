@@ -1,6 +1,8 @@
 ---
 
 alias: Low Level Language
+coursename: Understanding Languages
+level: 101
 title: Low Level Languages
 
 layout: default
