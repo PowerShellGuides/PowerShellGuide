@@ -1,12 +1,12 @@
 [
   {
-    "TopicName": "Low Level Languages",
-    "Link": "Languages/Low-Level-Languages",
+    "TopicName": "High Level Languages",
+    "Link": "Languages/High-Level-Languages",
     "Level": 101
   },
   {
-    "TopicName": "High Level Languages",
-    "Link": "Languages/High-Level-Languages",
+    "TopicName": "Low Level Languages",
+    "Link": "Languages/Low-Level-Languages",
     "Level": 101
   },
   {
@@ -20,88 +20,8 @@
     "Level": 102
   },
   {
-    "TopicName": "Modules We Like",
-    "Link": "PowerShell/Modules/Modules-We-Like",
-    "Level": null
-  },
-  {
-    "TopicName": "Parameters",
-    "Link": "PowerShell/Parameters",
-    "Level": null
-  },
-  {
-    "TopicName": "PowerShell",
-    "Link": "PowerShell",
-    "Level": null
-  },
-  {
-    "TopicName": "Prompt For Confirmation",
-    "Link": "PowerShell/Concepts/Prompt-For-Confirmation",
-    "Level": null
-  },
-  {
-    "TopicName": "Roadmap",
-    "Link": "Roadmap",
-    "Level": null
-  },
-  {
-    "TopicName": "ScriptBlock",
-    "Link": "PowerShell/ScriptBlock",
-    "Level": null
-  },
-  {
-    "TopicName": "Scripts",
-    "Link": "PowerShell/Scripts",
-    "Level": null
-  },
-  {
-    "TopicName": "Shells",
-    "Link": "Shells",
-    "Level": null
-  },
-  {
-    "TopicName": "Simple Functions",
-    "Link": "PowerShell/Functions/Simple-Functions",
-    "Level": null
-  },
-  {
-    "TopicName": "The Modules That Make The PowerShell Guide",
-    "Link": "PowerShell/Modules/The-Modules-That-Make-The-PowerShell-Guide",
-    "Level": null
-  },
-  {
-    "TopicName": "The Object Pipeline",
-    "Link": "PowerShell/Concepts/The-Object-Pipeline",
-    "Level": null
-  },
-  {
-    "TopicName": "Trinity Of Discoverability",
-    "Link": "PowerShell/Concepts/Trinity-Of-Discoverability",
-    "Level": null
-  },
-  {
-    "TopicName": "Types",
-    "Link": "PowerShell/Types",
-    "Level": null
-  },
-  {
-    "TopicName": "Modules",
-    "Link": "PowerShell/Modules",
-    "Level": null
-  },
-  {
     "TopicName": "About Topics",
     "Link": "PowerShell/Help/About-Topics",
-    "Level": null
-  },
-  {
-    "TopicName": "Loops",
-    "Link": "PowerShell/Loops",
-    "Level": null
-  },
-  {
-    "TopicName": "Lists",
-    "Link": "PowerShell/Types/Lists",
     "Level": null
   },
   {
@@ -177,6 +97,86 @@
   {
     "TopicName": "Inline Help",
     "Link": "PowerShell/Help/Inline-Help",
+    "Level": null
+  },
+  {
+    "TopicName": "Lists",
+    "Link": "PowerShell/Types/Lists",
+    "Level": null
+  },
+  {
+    "TopicName": "Loops",
+    "Link": "PowerShell/Loops",
+    "Level": null
+  },
+  {
+    "TopicName": "Modules",
+    "Link": "PowerShell/Modules",
+    "Level": null
+  },
+  {
+    "TopicName": "Modules We Like",
+    "Link": "PowerShell/Modules/Modules-We-Like",
+    "Level": null
+  },
+  {
+    "TopicName": "Parameters",
+    "Link": "PowerShell/Parameters",
+    "Level": null
+  },
+  {
+    "TopicName": "PowerShell",
+    "Link": "PowerShell",
+    "Level": null
+  },
+  {
+    "TopicName": "Prompt For Confirmation",
+    "Link": "PowerShell/Concepts/Prompt-For-Confirmation",
+    "Level": null
+  },
+  {
+    "TopicName": "Roadmap",
+    "Link": "Roadmap",
+    "Level": null
+  },
+  {
+    "TopicName": "ScriptBlock",
+    "Link": "PowerShell/ScriptBlock",
+    "Level": null
+  },
+  {
+    "TopicName": "Scripts",
+    "Link": "PowerShell/Scripts",
+    "Level": null
+  },
+  {
+    "TopicName": "Shells",
+    "Link": "Shells",
+    "Level": null
+  },
+  {
+    "TopicName": "Simple Functions",
+    "Link": "PowerShell/Functions/Simple-Functions",
+    "Level": null
+  },
+  {
+    "TopicName": "The Modules That Make The PowerShell Guide",
+    "Link": "PowerShell/Modules/The-Modules-That-Make-The-PowerShell-Guide",
+    "Level": null
+  },
+  {
+    "TopicName": "The Object Pipeline",
+    "Link": "PowerShell/Concepts/The-Object-Pipeline",
+    "Level": null
+  },
+  {
+    "TopicName": "Trinity Of Discoverability",
+    "Link": "PowerShell/Concepts/Trinity-Of-Discoverability",
+    "Level": null
+  },
+  {
+    "TopicName": "Types",
+    "Link": "PowerShell/Types",
     "Level": null
   },
   {
