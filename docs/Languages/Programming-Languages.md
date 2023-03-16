@@ -1,6 +1,8 @@
 ---
 
 alias: Programming Language
+coursename: Understanding Languages
+level: 102
 title: Programming Languages
 
 layout: default
