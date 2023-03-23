@@ -35,7 +35,7 @@ Features like:
   * Splatting which allows you to easily pass [parameters](/PowerShell/Parameters) around.
   * An Events Engine that lets you script asynchronously.
 
-PowerShell is written in C#, and anything in .NET can be used in PowerShell.
+PowerShell is written in C#, and anything in [.NET](/PowerShell/Concepts/PowerShell-NET-and-Everything) can be used in PowerShell.
 
 [PowerShell scripts](/PowerShell/Scripts) are written in `.ps1` files, and can be run inside or outside of the [shell](/Shells).
 
