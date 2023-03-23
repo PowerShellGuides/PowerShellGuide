@@ -275,6 +275,14 @@
     "Link": "PowerShell/Types"
   },
   {
+    "Name": "ValidateScript",
+    "Aliases": [
+      "ValidateScript",
+      "Validate Script"
+    ],
+    "Link": "PowerShell/Attributes/ValidateScript"
+  },
+  {
     "Name": "Variables",
     "Aliases": [
       "Variables",
