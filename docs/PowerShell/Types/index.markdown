@@ -22,9 +22,9 @@ It is often compiled into a file so that other programs and [scripts](/PowerShel
 
 Most object oriented [programming languages](/Languages/Programming-Languages) allow you to strongly define a type in a class.
 
-[PowerShell](/PowerShell) is built atop the .NET framework, and so, all .NET types can be used in [PowerShell](/PowerShell).
+[PowerShell](/PowerShell) is built atop the [.NET](/PowerShell/Concepts/PowerShell-NET-and-Everything) framework, and so, all [.NET](/PowerShell/Concepts/PowerShell-NET-and-Everything) types can be used in [PowerShell](/PowerShell).
 
-For instance, to see the .NET type for an integer, we just put the name in brackets:
+For instance, to see the [.NET](/PowerShell/Concepts/PowerShell-NET-and-Everything) type for an integer, we just put the name in brackets:
 
 <pre><br/><span class='Progress'>[int]</span><br/></pre>
 
@@ -42,7 +42,7 @@ This isn't the only way to strongly define a type in [PowerShell](/PowerShell).
 
 There is an older, more arcane power of [PowerShell](/PowerShell).
 
-You can dynamically compile .NET languages with Add-Type.
+You can dynamically compile [.NET](/PowerShell/Concepts/PowerShell-NET-and-Everything) languages with Add-Type.
 
 ## Weakly defined types
 
