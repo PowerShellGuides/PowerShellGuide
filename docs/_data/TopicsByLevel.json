@@ -1,5 +1,10 @@
 [
   {
+    "TopicName": "Attributes",
+    "Link": "PowerShell/Attributes",
+    "Level": 101
+  },
+  {
     "TopicName": "High Level Languages",
     "Link": "Languages/High-Level-Languages",
     "Level": 101
@@ -20,6 +25,11 @@
     "Level": 102
   },
   {
+    "TopicName": "CmdletBinding Attribute",
+    "Link": "PowerShell/Attributes/CmdletBinding-Attribute",
+    "Level": 201
+  },
+  {
     "TopicName": "ValidateScript",
     "Link": "PowerShell/Attributes/ValidateScript",
     "Level": 202
@@ -37,16 +47,6 @@
   {
     "TopicName": "Arrays",
     "Link": "PowerShell/Types/Arrays",
-    "Level": null
-  },
-  {
-    "TopicName": "Attributes",
-    "Link": "PowerShell/Attributes",
-    "Level": null
-  },
-  {
-    "TopicName": "CmdletBinding Attribute",
-    "Link": "PowerShell/Attributes/CmdletBinding-Attribute",
     "Level": null
   },
   {
