@@ -50,6 +50,11 @@
     "Level": null
   },
   {
+    "TopicName": "Assemblies",
+    "Link": "Languages/Assemblies",
+    "Level": null
+  },
+  {
     "TopicName": "Commands",
     "Link": "PowerShell/Commands",
     "Level": null
@@ -125,6 +130,11 @@
     "Level": null
   },
   {
+    "TopicName": "Namespace",
+    "Link": "Languages/Namespace",
+    "Level": null
+  },
+  {
     "TopicName": "Parameters",
     "Link": "PowerShell/Parameters",
     "Level": null
@@ -132,6 +142,11 @@
   {
     "TopicName": "PowerShell",
     "Link": "PowerShell",
+    "Level": null
+  },
+  {
+    "TopicName": "PowerShell NET and Everything",
+    "Link": "PowerShell/Concepts/PowerShell-NET-and-Everything",
     "Level": null
   },
   {
