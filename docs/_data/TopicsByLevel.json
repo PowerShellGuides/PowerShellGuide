@@ -20,6 +20,11 @@
     "Level": 102
   },
   {
+    "TopicName": "ValidateScript",
+    "Link": "PowerShell/Attributes/ValidateScript",
+    "Level": 202
+  },
+  {
     "TopicName": "About Topics",
     "Link": "PowerShell/Help/About-Topics",
     "Level": null
