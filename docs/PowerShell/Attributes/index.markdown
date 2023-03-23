@@ -1,5 +1,7 @@
 ---
 
+coursename: Working with Attributes
+level: 101
 title: Attributes
 
 layout: default
