@@ -16,9 +16,9 @@ Some posit that low level languages are so named for their proximity to machine 
 
 We tend to believe that low level languages are so named for their proximity to hell.
 
-The lowest of the low-level languages is Assembly.
+The lowest of the low-level languages is [Assembly](/Languages/Assemblies).
 
-If you find yourself dealing with assembly for more than four hours, consult your doctor.
+If you find yourself dealing with [assembly](/Languages/Assemblies) for more than four hours, consult your doctor.
 
 A much more common and prevalant low-level language is C.  Another quite common one in C++.
 
