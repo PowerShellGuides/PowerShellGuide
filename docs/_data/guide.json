@@ -22,6 +22,16 @@
     "Link": "PowerShell/Types/Arrays"
   },
   {
+    "Name": "Assemblies",
+    "Aliases": [
+      "Assemblies",
+      "assemblies",
+      "assembly",
+      "dll"
+    ],
+    "Link": "Languages/Assemblies"
+  },
+  {
     "Name": "Attributes",
     "Aliases": "Attributes",
     "Link": "PowerShell/Attributes"
@@ -160,6 +170,15 @@
     "Link": "PowerShell/Modules/Modules-We-Like"
   },
   {
+    "Name": "Namespace",
+    "Aliases": [
+      "Namespace",
+      "namespace",
+      "namespaces"
+    ],
+    "Link": "Languages/Namespace"
+  },
+  {
     "Name": "Parameters",
     "Aliases": [
       "Parameters",
@@ -178,6 +197,15 @@
       "What Is PowerShell"
     ],
     "Link": "PowerShell"
+  },
+  {
+    "Name": "PowerShell NET and Everything",
+    "Aliases": [
+      "PowerShell NET and Everything",
+      ".Net",
+      "NET"
+    ],
+    "Link": "PowerShell/Concepts/PowerShell-NET-and-Everything"
   },
   {
     "Name": "Programming Languages",
