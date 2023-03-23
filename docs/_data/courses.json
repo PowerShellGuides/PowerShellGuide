@@ -7,5 +7,9 @@
       "Programming Languages",
       "Scripting Languages"
     ]
+  },
+  {
+    "CourseName": "Working with Attributes",
+    "Topics": "ValidateScript"
   }
 ]
