@@ -1,0 +1,3 @@
+@{
+    Alias = 'assemblies', 'assembly', 'dll'
+}
