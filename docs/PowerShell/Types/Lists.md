@@ -31,7 +31,7 @@ To create a list you must declare the System.Collections.Generic.List class and 
 
 <pre><br/><span class='Warning'>$list</span>&nbsp;<span class='Magenta'>=</span>&nbsp;<span class='Progress'>[Collections.Generic.List[PSObject]]</span><span class='Magenta'>::</span><span class='Output'>new</span><span class='Magenta'>(</span><span class='Magenta'>)</span><br/></pre>
 
-If you want to save yourself some typing you can declare the System.Collections.Generic namespace at the beginning of your script. Then just refer directly to the List class.
+If you want to save yourself some typing you can declare the System.Collections.Generic [namespace](/Languages/Namespace) at the beginning of your script. Then just refer directly to the List class.
 
 <pre><br/><span class='Verbose'>using</span>&nbsp;<span class='Verbose'>namespace</span>&nbsp;<span class='Verbose'>System.Collections.Generic</span><br/><br/><span class='Warning'>$ListA</span>&nbsp;<span class='Magenta'>=</span>&nbsp;<span class='Progress'>[List[PSObject]]</span><span class='Magenta'>::</span><span class='Output'>new</span><span class='Magenta'>(</span><span class='Magenta'>)</span><br/><span class='Warning'>$ListB</span>&nbsp;<span class='Magenta'>=</span>&nbsp;<span class='Progress'>[List[string]]</span><span class='Magenta'>::</span><span class='Output'>new</span><span class='Magenta'>(</span><span class='Magenta'>)</span><br/></pre>
 
