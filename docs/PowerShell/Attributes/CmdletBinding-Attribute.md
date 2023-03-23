@@ -4,6 +4,8 @@ alias:
 - Cmdlet Binding
 - CmdletBinding
 - Cmdlet Binding Attribute
+coursename: Working with Attributes
+level: 201
 title: CmdletBinding Attribute
 
 layout: default
