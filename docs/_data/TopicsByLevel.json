@@ -55,6 +55,11 @@
     "Level": null
   },
   {
+    "TopicName": "Arithmetic",
+    "Link": "PowerShell/Operators/Arithmetic",
+    "Level": null
+  },
+  {
     "TopicName": "Arrays",
     "Link": "PowerShell/Types/Arrays",
     "Level": null
@@ -142,6 +147,11 @@
   {
     "TopicName": "Namespace",
     "Link": "Languages/Namespace",
+    "Level": null
+  },
+  {
+    "TopicName": "Operators",
+    "Link": "PowerShell/Operators",
     "Level": null
   },
   {
