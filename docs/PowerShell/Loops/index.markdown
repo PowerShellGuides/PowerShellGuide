@@ -67,8 +67,8 @@ If you run this, it will just keep printing out the message as fast as it can, u
 While loops are wonderful, just watch out to ensure that their condition can be false someday.
 
 ## do loops
-
-As an alternative to _while_, [PowerShell](/PowerShell) has one more [type](/PowerShell/Types) of loop.
+[
+As](/PowerShell/Operators/Type-Operators) an alternative to _while_, [PowerShell](/PowerShell) has one more [type](/PowerShell/Types) of loop.
 
 A _do_ loop.
 
