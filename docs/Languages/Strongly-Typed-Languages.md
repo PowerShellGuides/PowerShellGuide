@@ -21,3 +21,5 @@ To that end, you can think of programming in a strongly typed compiled language 
 Joke as we will, there is a place in the world for strongly typed languages, as well as for lawyers.
 
 One of the most strongly typed languages we can think of is C#.  In C#, about everything is explicitly typed, and you have to convert everything fairly explicitly.
+
+[PowerShell](/PowerShell) _is not_ a strongly typed language.  Instead, it's actually quite [type promiscuous](/Languages/Weakly-Typed-Languages).
