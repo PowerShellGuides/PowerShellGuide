@@ -4,7 +4,7 @@
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
   <head>
     <title>{{site.title}}{% if page.title %} - {{page.title}}  {% elsif page.stylesheet %} - {{page.stylesheet}}{% endif %}</title>
-    <meta content="{{ site.title }}" property="og:site_name">
+    <meta content="{{ site.title }}" property="og:site_name" />
     {% if page.title %}
     <meta content="{{ page.title }}" property="og:title" />
     {% elsif page.stylesheet %}
