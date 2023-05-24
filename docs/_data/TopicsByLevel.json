@@ -55,8 +55,8 @@
     "Level": null
   },
   {
-    "TopicName": "Arithmetic",
-    "Link": "PowerShell/Operators/Arithmetic",
+    "TopicName": "Arithmetic Operators",
+    "Link": "PowerShell/Operators/Arithmetic-Operators",
     "Level": null
   },
   {
@@ -212,6 +212,11 @@
   {
     "TopicName": "Trinity Of Discoverability",
     "Link": "PowerShell/Concepts/Trinity-Of-Discoverability",
+    "Level": null
+  },
+  {
+    "TopicName": "Type Operators",
+    "Link": "PowerShell/Operators/Type-Operators",
     "Level": null
   },
   {
