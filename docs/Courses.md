@@ -1,10 +1,22 @@
 ---
 layout: default
 ---
-<ul>
+
 {% for course in site.data.courses %}
-  <li>    
-    {{ course.CourseName }}    
-  </li>
+  <h2>    
+    {{ course.CourseName }}
+  </h2>
+
+  <table>
+    <tr>
+      <th>Topic</th>
+      <th>Level</th>
+    </tr>
+  {% for courseTopic in course.Topics %}
+    <tr>
+      <td><a href='{{ courseTopic.Link}}'>{{courseTopic.TopicName}}</a></td>
+      <td>{{courseTopic.Level}}</td>
+    </tr>
+  {% endfor %}  
+  </table>
 {% endfor %}
-</ul>
