@@ -1,6 +1,7 @@
 ---
 
-title: Arithmetic
+alias: Arithmetic Operators
+title: Arithmetic Operators
 
 layout: default
 ---
