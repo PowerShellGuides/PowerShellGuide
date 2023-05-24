@@ -15,7 +15,10 @@
   },
   {
     "Name": "Arithmetic",
-    "Aliases": "Arithmetic",
+    "Aliases": [
+      "Arithmetic",
+      "Arithmetic Operators"
+    ],
     "Link": "PowerShell/Operators/Arithmetic"
   },
   {
