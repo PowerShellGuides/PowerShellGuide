@@ -2,20 +2,56 @@
   {
     "CourseName": "Understanding Languages",
     "Topics": [
-      "High Level Languages",
-      "Low Level Languages",
-      "Programming Languages",
-      "Scripting Languages",
-      "Strongly Typed Languages",
-      "Weakly Typed Languages"
+      {
+        "TopicName": "High Level Languages",
+        "Link": "Languages/High-Level-Languages",
+        "Level": 101
+      },
+      {
+        "TopicName": "Low Level Languages",
+        "Link": "Languages/Low-Level-Languages",
+        "Level": 101
+      },
+      {
+        "TopicName": "Programming Languages",
+        "Link": "Languages/Programming-Languages",
+        "Level": 102
+      },
+      {
+        "TopicName": "Scripting Languages",
+        "Link": "Languages/Scripting-Languages",
+        "Level": 102
+      },
+      {
+        "TopicName": "Strongly Typed Languages",
+        "Link": "Languages/Strongly-Typed-Languages",
+        "Level": 103
+      },
+      {
+        "TopicName": "Weakly Typed Languages",
+        "Link": "Languages/Weakly-Typed-Languages",
+        "Level": 103
+      }
     ]
   },
   {
     "CourseName": "Working with Attributes",
     "Topics": [
-      "Attributes",
-      "CmdletBinding Attribute",
-      "ValidateScript"
+      {
+        "TopicName": "Attributes",
+        "Link": "PowerShell/Attributes",
+        "Level": 101
+      },
+      {
+        "TopicName": "CmdletBinding Attribute",
+        "Link": "PowerShell/Attributes/CmdletBinding-Attribute",
+        "Level": 201
+      },
+      {
+        "TopicName": "ValidateScript",
+        "Link": "PowerShell/Attributes/ValidateScript",
+        "Level": 202
+      }
     ]
   }
 ]
