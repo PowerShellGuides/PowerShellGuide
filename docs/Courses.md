@@ -5,10 +5,6 @@ title: Courses
 layout: default
 ---
 
----
-layout: default
----
-
 {% for course in site.data.courses %}
   <h2>    
     {{ course.CourseName }}
