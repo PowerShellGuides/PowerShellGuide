@@ -19,17 +19,17 @@ There are a lot of operators in [PowerShell](/PowerShell), and they can be group
 
 |Operator Type|Description|
 |-|-|
-| [Arithmetic Operators](/PowerShell/Operators/Arithmetic) | Mainly do basic math             |
+| [Arithmetic Operators](/PowerShell/Operators/Arithmetic-Operators) | Mainly do basic math             |
 | Assignment Operators | Do math and change values        |
 | Comparison Operators | Compare things                   |
 | Logical Operators    | Help with boolean logic          |
 | String Operators     | Help you work with strings       |
 | Bitwise Operators    | Do nitty-gritty stuff with bits  |
-| [Type](/PowerShell/Types) Operators       | Check or change [types](/PowerShell/Types)            |
+| [Type Operators](/PowerShell/Operators/Type-Operators)       | Check or change [types](/PowerShell/Types)            |
 | Unary Operators      | Increment or decrement digits    |
 
 
-## [Arithmetic Operators](/PowerShell/Operators/Arithmetic)
+## [Arithmetic Operators](/PowerShell/Operators/Arithmetic-Operators)
 
 Computers exist, at least partially, so we don't have to calculating by hand.
 
@@ -43,7 +43,7 @@ These operators are about the same as in any [programming language](/Languages/P
 
 Because [PowerShell](/PowerShell) is both a [shell](/Shells) and a [scripting language](/Languages/Scripting-Languages), it's operators avoid `>` and `<` (which look an awful lot like file redirection to shells).
 
-So, while [Arithmetic Operators](/PowerShell/Operators/Arithmetic) and Assignment Operators are mostly the same as in other languages, most operators in [PowerShell](/PowerShell) start with `-`.
+So, while [Arithmetic Operators](/PowerShell/Operators/Arithmetic-Operators) and Assignment Operators are mostly the same as in other languages, most operators in [PowerShell](/PowerShell) start with `-`.
 
 So, to compare two things in [PowerShell](/PowerShell), it's:
 
