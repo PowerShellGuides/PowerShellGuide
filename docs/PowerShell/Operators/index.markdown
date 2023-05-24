@@ -29,7 +29,7 @@ There are a lot of operators in [PowerShell](/PowerShell), and they can be group
 |Unary Operators     | Increment or decrement digits    |
 
 
-## [Arithmetic](/PowerShell/Operators/Arithmetic) Operators
+## [Arithmetic Operators](/PowerShell/Operators/Arithmetic)
 
 Computers exist, at least partially, so we don't have to calculating by hand.
 
@@ -43,7 +43,7 @@ These operators are about the same as in any [programming language](/Languages/P
 
 Because [PowerShell](/PowerShell) is both a [shell](/Shells) and a [scripting language](/Languages/Scripting-Languages), it's operators avoid `>` and `<` (which look an awful lot like file redirection to shells).
 
-So, while [Arithmetic](/PowerShell/Operators/Arithmetic) Operators and Assignment Operators are mostly the same as in other languages, most operators in [PowerShell](/PowerShell) start with `-`.
+So, while [Arithmetic Operators](/PowerShell/Operators/Arithmetic) and Assignment Operators are mostly the same as in other languages, most operators in [PowerShell](/PowerShell) start with `-`.
 
 So, to compare two things in [PowerShell](/PowerShell), it's:
 
