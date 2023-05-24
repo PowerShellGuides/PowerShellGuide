@@ -25,6 +25,16 @@
     "Level": 102
   },
   {
+    "TopicName": "Strongly Typed Languages",
+    "Link": "Languages/Strongly-Typed-Languages",
+    "Level": 103
+  },
+  {
+    "TopicName": "Weakly Typed Languages",
+    "Link": "Languages/Weakly-Typed-Languages",
+    "Level": 103
+  },
+  {
     "TopicName": "CmdletBinding Attribute",
     "Link": "PowerShell/Attributes/CmdletBinding-Attribute",
     "Level": 201
