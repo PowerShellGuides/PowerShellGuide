@@ -70,6 +70,11 @@
     "Link": "PowerShell/Conditionals"
   },
   {
+    "Name": "Courses",
+    "Aliases": "Courses",
+    "Link": "Courses"
+  },
+  {
     "Name": "Every Object Can Be Extended",
     "Aliases": "Every Object Can Be Extended",
     "Link": "PowerShell/Concepts/Every-Object-Can-Be-Extended"
