@@ -14,12 +14,12 @@
     "Link": "PowerShell/Functions/Advanced-Functions"
   },
   {
-    "Name": "Arithmetic",
+    "Name": "Arithmetic Operators",
     "Aliases": [
-      "Arithmetic",
+      "Arithmetic Operators",
       "Arithmetic Operators"
     ],
-    "Link": "PowerShell/Operators/Arithmetic"
+    "Link": "PowerShell/Operators/Arithmetic-Operators"
   },
   {
     "Name": "Arrays",
@@ -317,6 +317,16 @@
       "Discoverability"
     ],
     "Link": "PowerShell/Concepts/Trinity-Of-Discoverability"
+  },
+  {
+    "Name": "Type Operators",
+    "Aliases": [
+      "Type Operators",
+      " as",
+      " is",
+      " isnot"
+    ],
+    "Link": "PowerShell/Operators/Type-Operators"
   },
   {
     "Name": "Types",
