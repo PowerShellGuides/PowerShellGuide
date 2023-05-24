@@ -9,8 +9,8 @@ layout: default
 ---
 
 Programming languages are the languages we use to communicate with computers.
-
-As a general rule, programming languages are not as artful as natural languages.
+[
+As](/PowerShell/Operators/Type-Operators) a general rule, programming languages are not as artful as natural languages.
 
 In fact, they can often seem a little bit scary or arcane.  We remind you:  Don't panic.
 
