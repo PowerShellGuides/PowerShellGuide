@@ -8,6 +8,20 @@ foreach ($guideTopic in $PowerShellGuide.AllTopics) {
     }
 }
 
+$skipReference = @()
+if ($this.Metadata.SkipReference) {
+    $skipReference += $this.Metadata.SkipReference
+}
+if ($this.Metadata.SkipReferences) {
+    $skipReference += $this.Metadata.SkipReferences
+}
+if ($this.Metadata.NoReference) {
+    $skipReference += $this.Metadata.NoReference
+}
+if ($this.Metadata.NoReferences) {
+    $skipReference += $this.Metadata.NoReferences
+}
+
 $sortedKeys = $topicReference.Keys | Sort-Object Length, { $_ } -Descending
 
 
@@ -22,6 +36,13 @@ $anyMatches = [Regex]::new("(?<=[\s\>'`"_])(?>$(
 
 foreach ($match in $anyMatches.Matches($content)) {
     $topicAlias = $match -replace '[\s\-_]',' '
+    if ($skipReference -and (
+        $skipReference -contains $topicAlias -or 
+        $skipReference -contains $topicReference["$topicAlias"].TopicName)
+    ) {
+        continue
+    }
+    
     [PSCustomObject]@{
         PSTypeName = 'PowerShell.Guide.Reference'
         Match      = $match
