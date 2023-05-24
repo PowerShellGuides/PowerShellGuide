@@ -1,4 +1,4 @@
 @{
-    Alias = 'Arthmetic Operators'
-    Title = 'Arthmetic Operators'
+    Alias = 'Arithmetic Operators'
+    Title = 'Arithmetic Operators'
 }
