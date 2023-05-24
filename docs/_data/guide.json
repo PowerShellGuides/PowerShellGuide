@@ -270,6 +270,14 @@
     "Link": "PowerShell/Functions/Simple-Functions"
   },
   {
+    "Name": "Strongly Typed Languages",
+    "Aliases": [
+      "Strongly Typed Languages",
+      "Strongly Typed Language"
+    ],
+    "Link": "Languages/Strongly-Typed-Languages"
+  },
+  {
     "Name": "The Modules That Make The PowerShell Guide",
     "Aliases": [
       "The Modules That Make The PowerShell Guide",
@@ -325,5 +333,16 @@
       "Verb Noun Pairing"
     ],
     "Link": "PowerShell/Concepts/Verb-Noun"
+  },
+  {
+    "Name": "Weakly Typed Languages",
+    "Aliases": [
+      "Weakly Typed Languages",
+      "Weakly Typed Language",
+      "Type Promiscuous",
+      "Type Promiscuity",
+      "PowerShell is Promiscuous"
+    ],
+    "Link": "Languages/Weakly-Typed-Languages"
   }
 ]
