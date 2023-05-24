@@ -15,7 +15,7 @@ In [PowerShell](/PowerShell), as in many languages, a conditional is represented
 
 <pre><br/><span class='Verbose'>if</span>&nbsp;<span class='Magenta'>(</span><span class='Warning'>$ItsColdOutside</span><span class='Magenta'>)</span><br/><span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>"I just can't stay"</span><br/><span class='Magenta'>}</span><br/></pre>
 
-Coniditionals are a basic part of programming.  As in _if_ you don't learn conditionals, you'll never learn to code.
+Coniditionals are a basic part of programming. [ As](/PowerShell/Operators/Type-Operators) in _if_ you don't learn conditionals, you'll never learn to code.
 
 In [PowerShell](/PowerShell), If will be followed by a condition (in parenthesis), and an action (in curly braces).
 
