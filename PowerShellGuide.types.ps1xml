@@ -89,7 +89,10 @@ $byCourseName = @($allTopics |
     }, @{
         Name = 'Topics'
         Expression =  { 
-            ($_.Group | Sort-Object { $_.Metadata.Level }, TopicName).TopicName
+            ($_.Group | Sort-Object { $_.Metadata.Level }, TopicName) | Select-Object TopicName, Link, @{
+                Name='Level'
+                Expression = { $_.Metadata.Level}
+            } 
         }
     })
 
