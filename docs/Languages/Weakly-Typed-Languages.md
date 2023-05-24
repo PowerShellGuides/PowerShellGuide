@@ -59,7 +59,7 @@ You might be scratching your head a bit at the way that statement is written.
 
 It will make more sense when we consider how [lists](/PowerShell/Types/Lists) work in [PowerShell](/PowerShell)
 
-When a list is on the left side of an operator, most operators will run on every item in the list
+When a list is on the left side of an operator, most [operators](/PowerShell/Operators) will run on every item in the list
 
 <pre><br/><span class='Verbose'>if</span>&nbsp;<span class='Magenta'>(</span><span class='Verbose'>"duck"</span><span class='Magenta'>,</span>&nbsp;<span class='Verbose'>"duck"</span><span class='Magenta'>,</span>&nbsp;<span class='Verbose'>"goose"</span>&nbsp;<span class='Magenta'>-eq</span>&nbsp;<span class='Verbose'>"goose"</span><span class='Magenta'>)</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>"This is truthy because 'duck','duck','goose' has 'goose' in it."</span><br/><span class='Magenta'>}</span><br/></pre>
 
