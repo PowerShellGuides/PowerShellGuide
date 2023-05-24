@@ -32,7 +32,7 @@ We can use [Parameter](/PowerShell/Parameters) [attributes](/PowerShell/Attribut
 
 <pre><br/><span class='Verbose'>function</span>&nbsp;<span class='Verbose'>WhatDayOfTheWeek</span><span class='Magenta'>(</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Magenta'>[</span><span class='Output'>Parameter</span><span class='Magenta'>(</span><span class='Output'>Mandatory</span><span class='Magenta'>,</span><span class='Output'>ValueFromPipeline</span><span class='Magenta'>)</span><span class='Magenta'>]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Progress'>[DateTime]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Warning'>$DateTime</span><br/><span class='Magenta'>)</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>process</span>&nbsp;<span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='Warning'>$DateTime</span><span class='Magenta'>.</span><span class='Output'>DayOfWeek</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Magenta'>}</span><br/><span class='Magenta'>}</span><br/></pre>
 
-Because [PowerShell](/PowerShell) is [type](/PowerShell/Types) promiscuous, we can just supply a string with a date and [PowerShell](/PowerShell) will turn it into a DateTime.
+Because [PowerShell](/PowerShell) is [type promiscuous](/Languages/Weakly-Typed-Languages), we can just supply a string with a date and [PowerShell](/PowerShell) will turn it into a DateTime.
 
 <pre><br/><span class='Verbose'>"12/31/2000"</span>&nbsp;<span class='Magenta'>|</span>&nbsp;<span class='Warning'>WhatDayOfTheWeek</span><br/></pre>
 
