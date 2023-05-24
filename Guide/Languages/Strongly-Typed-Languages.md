@@ -12,8 +12,4 @@ Joke as we will, there is a place in the world for strongly typed languages, as 
 
 One of the most strongly typed languages we can think of is C#.  In C#, about everything is explicitly typed, and you have to convert everything fairly explicitly.
 
-
-
-
-
-
+PowerShell _is not_ a strongly typed language.  Instead, it's actually quite type promiscuous.
