@@ -14,7 +14,7 @@ layout: default
     </tr>
   {% for courseTopic in course.Topics %}
     <tr>
-      <td><a href='{{ courseTopic.Link}}'>{{courseTopic.TopicName}}</a></td>
+      <td><a href='/{{ courseTopic.Link}}'>{{courseTopic.TopicName}}</a></td>
       <td>{{courseTopic.Level}}</td>
     </tr>
   {% endfor %}  
