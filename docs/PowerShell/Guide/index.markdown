@@ -8,7 +8,7 @@ title: PowerShell Guide
 layout: default
 ---
 
-<span style='font-size:1.3em'>PowerShell</span> is <span style='font-size:1.2em'>big</span>.
+<span style='font-size:1.3em'>PowerShell</span>[ is](/PowerShell/Operators/Type-Operators) <span style='font-size:1.2em'>big</span>.
 
 _Really_ <span style='font-size:1.25em'>big</span>.
 
