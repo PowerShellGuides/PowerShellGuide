@@ -25,7 +25,7 @@ If you ran that, you might notice it didn't output anything.
 
 That's because declaring a ScriptBlock does not run the ScriptBlock.
 
-You can call a ScriptBlock with either of the call operators (`&` or `.`)
+You can call a ScriptBlock with either of the call [operators](/PowerShell/Operators) (`&` or `.`)
 
 <pre><br/><span class='Warning'>$DontPanic</span>&nbsp;<span class='Magenta'>=</span>&nbsp;<span class='Magenta'>{</span>&nbsp;<span class='Verbose'>"Don't Panic!"</span>&nbsp;<span class='Magenta'>}</span><br/><span class='Magenta'>&</span>&nbsp;<span class='Warning'>$DontPanic</span><br/></pre>
 
