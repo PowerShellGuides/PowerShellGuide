@@ -5,7 +5,9 @@
       "High Level Languages",
       "Low Level Languages",
       "Programming Languages",
-      "Scripting Languages"
+      "Scripting Languages",
+      "Strongly Typed Languages",
+      "Weakly Typed Languages"
     ]
   },
   {
