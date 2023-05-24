@@ -11,14 +11,14 @@ There are a lot of operators in PowerShell, and they can be grouped in somewhat 
 
 |Operator Type|Description|
 |-|-|
-|Arithmetic Operators| Mainly do basic math             |
-|Assignment Operators| Do math and change values        |
-|Comparison Operators| Compare things                   |
-|Logical Operators   | Help with boolean logic          |
-|String Operators    | Help you work with strings       |
-|Bitwise Operators   | Do nitty-gritty stuff with bits  |
-|Type Operators      | Check or change types            |
-|Unary Operators     | Increment or decrement digits    |
+| Arithmetic Operators | Mainly do basic math             |
+| Assignment Operators | Do math and change values        |
+| Comparison Operators | Compare things                   |
+| Logical Operators    | Help with boolean logic          |
+| String Operators     | Help you work with strings       |
+| Bitwise Operators    | Do nitty-gritty stuff with bits  |
+| Type Operators       | Check or change types            |
+| Unary Operators      | Increment or decrement digits    |
 
 
 ## Arithmetic Operators
