@@ -80,6 +80,11 @@
     "Level": null
   },
   {
+    "TopicName": "Courses",
+    "Link": "Courses",
+    "Level": null
+  },
+  {
     "TopicName": "Every Object Can Be Extended",
     "Link": "PowerShell/Concepts/Every-Object-Can-Be-Extended",
     "Level": null
