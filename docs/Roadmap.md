@@ -28,8 +28,8 @@ We should be able to see all of the topics hierarchically.  Not that we love pec
 We'd love to present the concepts in the [guide](/PowerShell/Guide) at various levels of knowledge.  For example, when we're introducing the concept of a [programming language](/Languages/Programming-Languages), we doubt you're far beyond 100 level of knowledge.
 
 ## Solid Social Media Integration
-
-As much as we all may dislike it, people spend time on social media.  Therefore, the [PowerShell Guide](/PowerShell/Guide) should excel at integration into various social media sites.  At least in theory.  In practice, we'll see which ones exist in a few months.
+[
+As](/PowerShell/Operators/Type-Operators) much as we all may dislike it, people spend time on social media.  Therefore, the [PowerShell Guide](/PowerShell/Guide) should excel at integration into various social media sites.  At least in theory.  In practice, we'll see which ones exist in a few months.
 
 ## Local Version
 
@@ -44,8 +44,8 @@ We should be able to determine when content is published or updated, and use thi
 Those who forget history are doomed to search online again.  Let us save them from this fate by using some HTML5 local storage to help keep track of what has been read.
 
 ## Privacy Expecations
-
-As we've just been talking about how to track what you're doing, please, rest assured, we don't have any interest in you or your data.  We want everyone to understand [PowerShell](/PowerShell) and do not collect any information ourselves.  Shall we ever add advertisers, I'm sure they will have their own terms and conditions.
+[
+As](/PowerShell/Operators/Type-Operators) we've just been talking about how to track what you're doing, please, rest assured, we don't have any interest in you or your data.  We want everyone to understand [PowerShell](/PowerShell) and do not collect any information ourselves.  Shall we ever add advertisers, I'm sure they will have their own terms and conditions.
 
 ## Service Workers / Installing as an App
 
