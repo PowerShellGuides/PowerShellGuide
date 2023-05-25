@@ -8,13 +8,13 @@ title: Scripting Languages
 layout: default
 ---
 
-Scripting languages are [programming languages](/Languages/Programming-Languages) that are interpreted when they run.
+Scripting [languages](/Languages) are [programming languages](/Languages/Programming-Languages) that are interpreted when they run.
 
 This is unlike a compiled [programming language](/Languages/Programming-Languages), which is turned into machine code and run.
 
 Nobody ever wants to deal with machine code.
 
-Scripting Languages offer some distinct advantages to their compiled kin, such as:
+Scripting [Languages](/Languages) offer some distinct advantages to their compiled kin, such as:
 
 * Generally being easier to read
 * Requiring fewer references
