@@ -381,6 +381,26 @@ if ($index -lt $content.Length) {
                     </GetScriptBlock>
       </ScriptProperty>
       <ScriptProperty>
+        <Name>CourseName</Name>
+        <GetScriptBlock>
+                        @(
+    if ($this.Metadata.coursename) {
+        $this.Metadata.coursename -replace '[_-]', ' '
+    }   
+)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>Level</Name>
+        <GetScriptBlock>
+                        @(
+    if ($this.Metadata.level) {
+        $this.Metadata.level -replace '[_-]', ' '
+    }   
+)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
         <Name>Link</Name>
         <GetScriptBlock>
                         $link = $this.RelativePath -replace '[\-_\s]', '-' -replace '\.md$', ''
@@ -699,6 +719,26 @@ if ($index -lt $content.Length) {
         <Name>Content</Name>
         <GetScriptBlock>
                         [IO.File]::ReadAllText($this.Fullname)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>CourseName</Name>
+        <GetScriptBlock>
+                        @(
+    if ($this.Metadata.coursename) {
+        $this.Metadata.coursename -replace '[_-]', ' '
+    }   
+)
+                    </GetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
+        <Name>Level</Name>
+        <GetScriptBlock>
+                        @(
+    if ($this.Metadata.level) {
+        $this.Metadata.level -replace '[_-]', ' '
+    }   
+)
                     </GetScriptBlock>
       </ScriptProperty>
       <ScriptProperty>
