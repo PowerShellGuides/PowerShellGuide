@@ -47,7 +47,7 @@ If a [function](/PowerShell/Functions) does not have any named blocks, the body 
 
 Named blocks let even a simple [function](/PowerShell/Functions) handle the [pipeline](/PowerShell/Concepts/The-Object-Pipeline) more properly.
 
-We can use a process block to handle objects as they come in.
+We can use a [process block](/PowerShell/ScriptBlock/Process-Block) to handle objects as they come in.
 
 If an object was piped into a [function](/PowerShell/Functions), it will be in the automatic [variable](/PowerShell/Variables) `$_`
 
