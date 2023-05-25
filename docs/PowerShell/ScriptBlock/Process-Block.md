@@ -14,7 +14,7 @@ By way of the simplest example, below is what is sometimes called a "fast Foreac
 
 <pre><br/><span class='Output'>1</span><span class='Magenta'>,</span><span class='Output'>2</span><span class='Magenta'>,</span><span class='Output'>3</span>&nbsp;<span class='Magenta'>|</span>&nbsp;<span class='Success'># We pipe whatever we would like into a scriptblock with a process block</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Magenta'>&</span>&nbsp;<span class='Magenta'>{</span>&nbsp;<span class='Verbose'>process</span>&nbsp;<span class='Magenta'>{</span>&nbsp;<span class='Warning'>$_</span>&nbsp;<span class='Magenta'>}</span>&nbsp;<span class='Magenta'>}</span>&nbsp;<span class='Success'># (and this is several times faster that piping to Foreach-Object)</span><br/></pre>
 
-## Process Block and [Pipeline](/PowerShell/Concepts/The-Object-Pipeline) [Parameters](/PowerShell/Parameters)
+## Process Block and [Pipeline Parameters](/PowerShell/Parameters/Pipeline-Parameters)
 
 If your [ScriptBlock](/PowerShell/ScriptBlock) had pipelined [parameters](/PowerShell/Parameters), they will be mapped each time.
 
