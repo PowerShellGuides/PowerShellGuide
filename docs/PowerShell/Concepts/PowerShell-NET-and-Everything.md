@@ -13,7 +13,7 @@ It is a mistake to think you can solve all your problems just with [PowerShell](
 With our powers combined, we become Captain ~Planet~ PowerShell!!! With the ability to solve any problem in a single ~bound~ script.
 
 There are some concepts you need to be aware of, which I've covered briefly below. You can also click on each one for a more in-depth explanation.
-- [Assemblies](/Languages/Assemblies) - The files that contain the .NET [namespaces](/Languages/Namespace) (dll).
+- [Assemblies](/Languages/Assemblies) - The files that contain the .NET [namespaces](/Languages/Namespace) ([dll](/Languages/Assemblies)).
 - [Namespaces](/Languages/Namespace) - A collection of different classes and other .NET objects. Think [Modules](/PowerShell/Modules) in [PowerShell](/PowerShell) terms.
 - Classes - Same as in [PowerShell](/PowerShell). It is a predefined set of properties and methods
 - Methods - Similar to a [function](/PowerShell/Functions), they let you perform predefined actions
