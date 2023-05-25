@@ -41,7 +41,7 @@ We should be able to determine when content is published or updated, and use thi
 
 ## History
 
-Those who forget history are doomed to search online again.  Let us save them from this fate by using some HTML5 local storage to help keep track of what has been read.
+Those who forget history are doomed to search online again.  Let us save them from this fate by using some HTML5 local storage to [help](/PowerShell/Help) keep track of what has been read.
 
 ## Privacy Expecations
 
