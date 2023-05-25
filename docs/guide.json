@@ -134,6 +134,11 @@
     "Link": "PowerShell/Guide"
   },
   {
+    "Name": "Help",
+    "Aliases": "Help",
+    "Link": "PowerShell/Help"
+  },
+  {
     "Name": "High Level Languages",
     "Aliases": [
       "High Level Languages",
