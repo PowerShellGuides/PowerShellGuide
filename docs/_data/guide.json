@@ -45,6 +45,11 @@
     "Link": "PowerShell/Attributes"
   },
   {
+    "Name": "Begin Block",
+    "Aliases": "Begin Block",
+    "Link": "PowerShell/ScriptBlock/Begin-Block"
+  },
+  {
     "Name": "CmdletBinding Attribute",
     "Aliases": [
       "CmdletBinding Attribute",
@@ -73,6 +78,11 @@
     "Name": "Courses",
     "Aliases": "Courses",
     "Link": "Courses"
+  },
+  {
+    "Name": "End Block",
+    "Aliases": "End Block",
+    "Link": "PowerShell/ScriptBlock/End-Block"
   },
   {
     "Name": "Every Object Can Be Extended",
@@ -237,6 +247,11 @@
       "NET"
     ],
     "Link": "PowerShell/Concepts/PowerShell-NET-and-Everything"
+  },
+  {
+    "Name": "Process Block",
+    "Aliases": "Process Block",
+    "Link": "PowerShell/ScriptBlock/Process-Block"
   },
   {
     "Name": "Programming Languages",
