@@ -190,6 +190,11 @@
     "Level": null
   },
   {
+    "TopicName": "Pipeline Parameters",
+    "Link": "PowerShell/Parameters/Pipeline-Parameters",
+    "Level": null
+  },
+  {
     "TopicName": "PowerShell",
     "Link": "PowerShell",
     "Level": null
