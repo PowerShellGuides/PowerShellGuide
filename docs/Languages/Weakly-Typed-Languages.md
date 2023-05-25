@@ -24,7 +24,7 @@ Some people have moral judgements about this [type](/PowerShell/Types) of behavi
 
 ## Automatic Casting
 
-[PowerShell](/PowerShell) is very good at converting things, and will happily help you make one [type](/PowerShell/Types) into another, if it can determine how.
+[PowerShell](/PowerShell) is very good at converting things, and will happily [help](/PowerShell/Help) you make one [type](/PowerShell/Types) into another, if it can determine how.
 
 This is especially helpful in handling [parameters](/PowerShell/Parameters).  A simple example is providing a `[DateTime]` parameter:
 
@@ -73,4 +73,4 @@ In case you want to see how [PowerShell](/PowerShell) would handle conversion, y
 
 <pre><br/><span class='Progress'>[System.Management.Automation.LanguagePrimitives]</span><span class='Magenta'>::</span><span class='Output'>ConvertTo</span><span class='Magenta'>(</span><span class='Verbose'>"5:00 PM"</span><span class='Magenta'>,</span>&nbsp;<span class='Progress'>[DateTime]</span><span class='Magenta'>)</span><br/></pre>
 
-This can help you see exactly how [PowerShell](/PowerShell) would convert any object.  Try this out a few ways and see just how strong a weakly typed language can be.
+This can [help](/PowerShell/Help) you see exactly how [PowerShell](/PowerShell) would convert any object.  Try this out a few ways and see just how strong a weakly typed language can be.
