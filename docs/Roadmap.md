@@ -19,7 +19,7 @@ Here some thing we'd like to do:
 
 Search should be available on any page.  In case you're not quite sure what you want (like most of the human race)
 
-## Sitemap
+## [Sitemap](/Sitemap)
 
 We should be able to see all of the topics hierarchically.  Not that we love pecking orders, but, filesystems are somewhat build atop them.
 
