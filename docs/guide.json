@@ -231,6 +231,11 @@
     "Link": "PowerShell/Parameters"
   },
   {
+    "Name": "Pipeline Parameters",
+    "Aliases": "Pipeline Parameters",
+    "Link": "PowerShell/Parameters/Pipeline-Parameters"
+  },
+  {
     "Name": "PowerShell",
     "Aliases": [
       "PowerShell",
