@@ -15,6 +15,11 @@
     "Level": 101
   },
   {
+    "TopicName": "ValidateSet",
+    "Link": "PowerShell/Attributes/ValidateSet",
+    "Level": 101
+  },
+  {
     "TopicName": "Programming Languages",
     "Link": "Languages/Programming-Languages",
     "Level": 102
