@@ -147,6 +147,11 @@
     "Link": "PowerShell/Help/Inline-Help"
   },
   {
+    "Name": "Languages",
+    "Aliases": "Languages",
+    "Link": "Languages"
+  },
+  {
     "Name": "Lists",
     "Aliases": "Lists",
     "Link": "PowerShell/Types/Lists"
