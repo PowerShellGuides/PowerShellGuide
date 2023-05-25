@@ -6,7 +6,7 @@ title: Operators
 layout: default
 ---
 
-All languages have at least a few operators.
+All [languages](/Languages) have at least a few operators.
 
 [PowerShell](/PowerShell) has so many operators one looses count.  We mean this seriously.  
 
@@ -43,7 +43,7 @@ These operators are about the same as in any [programming language](/Languages/P
 
 Because [PowerShell](/PowerShell) is both a [shell](/Shells) and a [scripting language](/Languages/Scripting-Languages), it's operators avoid `>` and `<` (which look an awful lot like file redirection to shells).
 
-So, while [Arithmetic Operators](/PowerShell/Operators/Arithmetic-Operators) and Assignment Operators are mostly the same as in other languages, most operators in [PowerShell](/PowerShell) start with `-`.
+So, while [Arithmetic Operators](/PowerShell/Operators/Arithmetic-Operators) and Assignment Operators are mostly the same as in other [languages](/Languages), most operators in [PowerShell](/PowerShell) start with `-`.
 
 So, to compare two things in [PowerShell](/PowerShell), it's:
 
