@@ -125,6 +125,11 @@
     "Level": null
   },
   {
+    "TopicName": "Help",
+    "Link": "PowerShell/Help",
+    "Level": null
+  },
+  {
     "TopicName": "Inline Help",
     "Link": "PowerShell/Help/Inline-Help",
     "Level": null
