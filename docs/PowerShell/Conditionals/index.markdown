@@ -37,7 +37,7 @@ In a given _if_, you can have as many _elseif_ conditions as you'd like.
 
 ## Switching it up
 
-If isn't the only conditional in [PowerShell](/PowerShell) (or most languages).
+If isn't the only conditional in [PowerShell](/PowerShell) (or most [languages](/Languages)).
 
 [PowerShell](/PowerShell) also has a _switch_ keyword.
 
