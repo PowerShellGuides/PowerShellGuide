@@ -42,7 +42,7 @@ This isn't the only way to strongly define a type in [PowerShell](/PowerShell).
 
 There is an older, more arcane power of [PowerShell](/PowerShell).
 
-You can dynamically compile [.NET](/PowerShell/Concepts/PowerShell-NET-and-Everything) languages with Add-Type.
+You can dynamically compile [.NET](/PowerShell/Concepts/PowerShell-NET-and-Everything) [languages](/Languages) with Add-Type.
 
 ## Weakly defined types
 
