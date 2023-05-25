@@ -5,7 +5,7 @@ title: Simple Functions
 layout: default
 ---
 
-In the beginning (of PowerShell), there was the Cmdlet, the [Function](/PowerShell/Functions), and the Filter.
+In the beginning (of [PowerShell](/PowerShell)), there was the Cmdlet, the [Function](/PowerShell/Functions), and the Filter.
 
 Cmdlets are compiled by developers and could do more than the simple [functions](/PowerShell/Functions) of [PowerShell](/PowerShell) V1.
 
