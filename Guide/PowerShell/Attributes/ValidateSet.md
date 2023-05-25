@@ -9,13 +9,9 @@ Much like a multiple choice test a ValidateSet set gives the user a defined set 
 To create a ValidateSet you can simply add the attribute to a parameter, and provide a list of acceptable values.
 
 ~~~PowerShell
-Function New-SuperAwesomeFile{
-    param(
-        [ValidateSet('json','csv','txt')]
-        $FileType
-    )
+function New-SuperAwesomeFile {
+    param([ValidateSet('json','csv','txt')]$FileType)
 }
-
 New-SuperAwesomeFile -FileType csv
 ~~~
 
