@@ -11,7 +11,7 @@ For instance, _if_ it's cold outside, you might wear a coat.
 
 Every language has conditionals.
 
-In [PowerShell](/PowerShell), as in many languages, a conditional is represented by the keyword "if".
+In [PowerShell](/PowerShell), as in many [languages](/Languages), a conditional is represented by the keyword "if".
 
 <pre><br/><span class='Verbose'>if</span>&nbsp;<span class='Magenta'>(</span><span class='Warning'>$ItsColdOutside</span><span class='Magenta'>)</span><br/><span class='Magenta'>{</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Verbose'>"I just can't stay"</span><br/><span class='Magenta'>}</span><br/></pre>
 
