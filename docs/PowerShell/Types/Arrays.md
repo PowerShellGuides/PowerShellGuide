@@ -6,7 +6,7 @@ title: Arrays
 layout: default
 ---
 
-Arrays are found in any language worth dealing with (including PowerShell).
+Arrays are found in any language worth dealing with (including [PowerShell](/PowerShell)).
 
 An array is a sequence of stuff, normally lined up in memory so that you can access it one by one.
 
