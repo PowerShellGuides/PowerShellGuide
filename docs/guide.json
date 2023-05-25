@@ -360,6 +360,14 @@
     "Link": "PowerShell/Attributes/ValidateScript"
   },
   {
+    "Name": "ValidateSet",
+    "Aliases": [
+      "ValidateSet",
+      "Validate Set"
+    ],
+    "Link": "PowerShell/Attributes/ValidateSet"
+  },
+  {
     "Name": "Variables",
     "Aliases": [
       "Variables",
