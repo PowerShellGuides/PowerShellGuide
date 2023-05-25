@@ -22,7 +22,7 @@ For instance, let's get all [commands](/PowerShell/Commands), pick a random one,
 
 <pre><br/><span class='Warning'>Get-Command</span>&nbsp;<span class='Magenta'>|</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Warning'>Get-Random</span>&nbsp;<span class='Magenta'>|</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Warning'>Get-Help</span><br/></pre> 
 
-[PowerShell](/PowerShell) includes many built-in -Object [commands](/PowerShell/Commands) that will help you manipulate any object, no matter what produced it.
+[PowerShell](/PowerShell) includes many built-in -Object [commands](/PowerShell/Commands) that will [help](/PowerShell/Help) you manipulate any object, no matter what produced it.
 
 You'll probably use two of these more than any other:  Foreach-Object (aliased to `%`) and Where-Object (aliased to `?`).
 
