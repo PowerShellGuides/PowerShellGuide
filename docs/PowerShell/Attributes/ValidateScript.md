@@ -48,7 +48,7 @@ If you want to make sure a [parameter](/PowerShell/Parameters) is exactly what y
 
 If you want, there a few other [attributes](/PowerShell/Attributes) that can validate a [parameter](/PowerShell/Parameters).
 
-They are:  ValidatePattern, ValidateRange, ValidateSet.
+They are:  ValidatePattern, ValidateRange, [ValidateSet](/PowerShell/Attributes/ValidateSet).
 
 ## Validating [Commands](/PowerShell/Commands)
 
