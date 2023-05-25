@@ -41,7 +41,7 @@ These operators are about the same as in any [programming language](/Languages/P
 
 ### A Quick Note on [PowerShell](/PowerShell) Operator Convention
 
-Because [PowerShell](/PowerShell) is both a [shell](/Shells) and a [scripting language](/Languages/Scripting-Languages), it's operators avoid `>` and `<` (which look an awful lot like file redirection to shells).
+Because [PowerShell](/PowerShell) is both a [shell](/Shells) and a [scripting language](/Languages/Scripting-Languages), it's operators avoid `>` and `<` (which look an awful lot like file redirection to [shells](/Shells)).
 
 So, while [Arithmetic Operators](/PowerShell/Operators/Arithmetic-Operators) and Assignment Operators are mostly the same as in other [languages](/Languages), most operators in [PowerShell](/PowerShell) start with `-`.
 
