@@ -9,8 +9,9 @@ layout: default
 ---
 
 The ValidateSet attribute serves two very equal yet different purposes. 
+
 1. It prevents unexpected values from being passed to your code.
-1. It prevents you from having to [type](/PowerShell/Types) as much.
+2. It prevents you from having to [type](/PowerShell/Types) as much.
 
 Much like a multiple choice test a ValidateSet set gives the user a defined set of answers to choose from, and they can only choose from those answers. 
 
