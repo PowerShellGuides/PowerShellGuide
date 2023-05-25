@@ -11,7 +11,7 @@ title: Extending Types
 layout: default
 ---
 
-In most languages, [types](/PowerShell/Types) are somewhat set in stone.
+In most [languages](/Languages), [types](/PowerShell/Types) are somewhat set in stone.
 
 Not so in [PowerShell](/PowerShell).
 
