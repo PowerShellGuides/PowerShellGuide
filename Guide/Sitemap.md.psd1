@@ -1,0 +1,3 @@
+@{
+    excerpt = "All Pages"
+}
