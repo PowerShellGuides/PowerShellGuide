@@ -26,11 +26,11 @@ $sortedKeys = $topicReference.Keys | Sort-Object Length, { $_ } -Descending
 
 
 
-$anyMatches = [Regex]::new("(?<=[\s\>'`"_])(?>$(
+$anyMatches = [Regex]::new("(?<=[\s\>'`"_\(])(?>$(
     @(foreach ($k in $sortedKeys) {
         [Regex]::Escape($k) -replace '\\\s', '[\s\-_]'
     }) -join '|'
-))(?=[\s\>'`"_\.,])", 'IgnoreCase')
+))(?=[\s\>'`"_\.,\)])", 'IgnoreCase')
 
 
 
