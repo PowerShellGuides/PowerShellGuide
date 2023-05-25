@@ -301,11 +301,11 @@ $sortedKeys = $topicReference.Keys | Sort-Object Length, { $_ } -Descending
 
 
 
-$anyMatches = [Regex]::new("(?&lt;=[\s\&gt;'`"_])(?&gt;$(
+$anyMatches = [Regex]::new("(?&lt;=[\s\&gt;'`"_\(])(?&gt;$(
     @(foreach ($k in $sortedKeys) {
         [Regex]::Escape($k) -replace '\\\s', '[\s\-_]'
     }) -join '|'
-))(?=[\s\&gt;'`"_\.,])", 'IgnoreCase')
+))(?=[\s\&gt;'`"_\.,\)])", 'IgnoreCase')
 
 
 
@@ -642,11 +642,11 @@ $sortedKeys = $topicReference.Keys | Sort-Object Length, { $_ } -Descending
 
 
 
-$anyMatches = [Regex]::new("(?&lt;=[\s\&gt;'`"_])(?&gt;$(
+$anyMatches = [Regex]::new("(?&lt;=[\s\&gt;'`"_\(])(?&gt;$(
     @(foreach ($k in $sortedKeys) {
         [Regex]::Escape($k) -replace '\\\s', '[\s\-_]'
     }) -join '|'
-))(?=[\s\&gt;'`"_\.,])", 'IgnoreCase')
+))(?=[\s\&gt;'`"_\.,\)])", 'IgnoreCase')
 
 
 
