@@ -35,7 +35,7 @@ This is an elegantly simple way to script.
 
 It certainly beats the alternative.
 
-Some languages, like Bash, include a text based pipeline.
+Some [languages](/Languages), like Bash, include a text based pipeline.
 
 In this sort of a pipeline, each step has to figure out how to extract useful information from the text in the previous step.
 
