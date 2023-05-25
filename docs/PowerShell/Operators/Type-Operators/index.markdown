@@ -1,9 +1,5 @@
 ---
 
-alias: 
-- -as
-- -is
-- -isnot
 skipreference: 
 - Type
 - Types
