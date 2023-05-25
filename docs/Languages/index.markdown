@@ -23,4 +23,4 @@ Then we wanted to run those languages interactively, so we built [scripting lang
 
 It's one of the more [high level languages](/Languages/High-Level-Languages) around, meaning it's designed to be closer to natural language than most.
 
-While we could pontificate for ages on the nature of languages, we'd prefer to help you understand [PowerShell](/PowerShell) and programming.
+While we could pontificate for ages on the nature of languages, we'd prefer to [help](/PowerShell/Help) you understand [PowerShell](/PowerShell) and programming.
