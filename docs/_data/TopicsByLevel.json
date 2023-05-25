@@ -75,6 +75,11 @@
     "Level": null
   },
   {
+    "TopicName": "Begin Block",
+    "Link": "PowerShell/ScriptBlock/Begin-Block",
+    "Level": null
+  },
+  {
     "TopicName": "Commands",
     "Link": "PowerShell/Commands",
     "Level": null
@@ -87,6 +92,11 @@
   {
     "TopicName": "Courses",
     "Link": "Courses",
+    "Level": null
+  },
+  {
+    "TopicName": "End Block",
+    "Link": "PowerShell/ScriptBlock/End-Block",
     "Level": null
   },
   {
@@ -187,6 +197,11 @@
   {
     "TopicName": "PowerShell NET and Everything",
     "Link": "PowerShell/Concepts/PowerShell-NET-and-Everything",
+    "Level": null
+  },
+  {
+    "TopicName": "Process Block",
+    "Link": "PowerShell/ScriptBlock/Process-Block",
     "Level": null
   },
   {
