@@ -296,6 +296,11 @@
     "Link": "PowerShell/Functions/Simple-Functions"
   },
   {
+    "Name": "Sitemap",
+    "Aliases": "Sitemap",
+    "Link": "Sitemap"
+  },
+  {
     "Name": "Strongly Typed Languages",
     "Aliases": [
       "Strongly Typed Languages",
