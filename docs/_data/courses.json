@@ -43,6 +43,11 @@
         "Level": 101
       },
       {
+        "TopicName": "ValidateSet",
+        "Link": "PowerShell/Attributes/ValidateSet",
+        "Level": 101
+      },
+      {
         "TopicName": "CmdletBinding Attribute",
         "Link": "PowerShell/Attributes/CmdletBinding-Attribute",
         "Level": 201
