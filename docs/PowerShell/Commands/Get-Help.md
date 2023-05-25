@@ -11,21 +11,21 @@ It exposes [inline help](/PowerShell/Help/Inline-Help) for [commands](/PowerShel
 
 Get-Help is part of the [trinity of discoverability](/PowerShell/Concepts/Trinity-Of-Discoverability).
 
-## General Help
+## General [Help](/PowerShell/Help)
 
-To get general help about [PowerShell](/PowerShell), we can use:
+To get general [help](/PowerShell/Help) about [PowerShell](/PowerShell), we can use:
 
 <pre><br/><span class='Warning'>Get-Help</span><br/></pre>
 
-## [Command](/PowerShell/Commands) Help
+## [Command](/PowerShell/Commands) [Help](/PowerShell/Help)
 
-To get help about a particular [command](/PowerShell/Commands), we can use:
+To get [help](/PowerShell/Help) about a particular [command](/PowerShell/Commands), we can use:
 
 <pre><br/><span class='Warning'>Get-Help</span>&nbsp;<span class='Verbose'>Get-Help</span><br/></pre>
 
-## Online Help
+## Online [Help](/PowerShell/Help)
 
-If a [command](/PowerShell/Commands) has a .Link, the first link will give you online help.
+If a [command](/PowerShell/Commands) has a .Link, the first link will give you online [help](/PowerShell/Help).
 
 <pre><br/><span class='Warning'>Get-Help</span>&nbsp;<span class='Verbose'>Get-Command</span>&nbsp;<span class='Magenta'>-Online</span><br/></pre>
 
@@ -33,6 +33,6 @@ This will bring you to [microsoft's get-command help](https://learn.microsoft.co
 
 ## [About Topics](/PowerShell/Help/About-Topics)
 
-To get help about a particular topic, we can use:
+To get [help](/PowerShell/Help) about a particular topic, we can use:
 
 <pre><br/><span class='Warning'>Get-Help</span>&nbsp;<span class='Verbose'>about_Variables</span><br/></pre>
