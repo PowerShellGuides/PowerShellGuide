@@ -15,7 +15,7 @@ Namepaces exist in multiple different [programming languages](/Languages/Program
 Namespaces are used to organize different item into related collections. I think a much more flexible version of the dewey decimal system. Or like how this [guide](/PowerShell/Guide) is broken up into topics and those topics contain related infromation. I mean just imaging if you where learning about a topic and someone goes off in a completely unrelated topic that breaks your consentration on the matter at hand. Now where were we?
 
 ## Namespaces in [PowerShell](/PowerShell)
-In the [.NET](/PowerShell/Concepts/PowerShell-NET-and-Everything) framework, and by extension [PowerShell](/PowerShell), namespaces can contain classes, delegates, enumerations, structures, [modules](/PowerShell/Modules) (not PowerShell modules), interfaces, and even other namespaces.
+In the [.NET](/PowerShell/Concepts/PowerShell-NET-and-Everything) framework, and by extension [PowerShell](/PowerShell), namespaces can contain classes, delegates, enumerations, structures, [modules](/PowerShell/Modules) (not [PowerShell modules](/PowerShell/Modules)), interfaces, and even other namespaces.
 
 You can preload a namespace at the beginning of a script, allowing you to call the classes using their short name. However, this is not required. You can call a class using the full path.
 
