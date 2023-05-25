@@ -8,9 +8,9 @@ title: Programming Languages
 layout: default
 ---
 
-Programming languages are the languages we use to communicate with computers.
+Programming [languages](/Languages) are the [languages](/Languages) we use to communicate with computers.
 [
-As](/PowerShell/Operators/Type-Operators) a general rule, programming languages are not as artful as natural languages.
+As](/PowerShell/Operators/Type-Operators) a general rule, programming [languages](/Languages) are not as artful as natural [languages](/Languages).
 
 In fact, they can often seem a little bit scary or arcane.  We remind you:  Don't panic.
 
@@ -25,7 +25,7 @@ If it's the only one you know, you may potentially die happpy (not that we have 
 Here are a few of the reasons we believe that [PowerShell](/PowerShell) is quite a programming language:
 
 * It's a [Scripting Language](/Languages/Scripting-Languages) with a [Shell](/Shells), which makes it easy to try
-* It has things other languages lack (like the object pipeline)
-* It talks to many other languages easily
+* It has things other [languages](/Languages) lack (like the object pipeline)
+* It talks to many other [languages](/Languages) easily
 * You can use [PowerShell](/PowerShell) as a very [high level language](/Languages/High-Level-Languages)
 * You can write low level code in [PowerShell](/PowerShell) when you need to.
