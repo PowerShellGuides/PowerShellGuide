@@ -20,7 +20,7 @@ We can run [Get-Command](/PowerShell/Commands/Get-Command) to give us a list of 
 
 <pre><br/><span class='Success'># Get all currently loaded commands:</span><br/><span class='Warning'>Get-Command</span><br/></pre>
 
-We can run [Get-Help](/PowerShell/Commands/Get-Help) to give us help about a command:
+We can run [Get-Help](/PowerShell/Commands/Get-Help) to give us [help](/PowerShell/Help) about a command:
 
 <pre><br/><span class='Success'># Get-Help about Get-Command:</span><br/><span class='Warning'>Get-Help</span>&nbsp;<span class='Verbose'>Get-Command</span><br/></pre>
 
