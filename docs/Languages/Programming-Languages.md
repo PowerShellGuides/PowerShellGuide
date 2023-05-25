@@ -9,8 +9,8 @@ layout: default
 ---
 
 Programming [languages](/Languages) are the [languages](/Languages) we use to communicate with computers.
-[
-As](/PowerShell/Operators/Type-Operators) a general rule, programming [languages](/Languages) are not as artful as natural [languages](/Languages).
+
+As a general rule, programming [languages](/Languages) are not as artful as natural [languages](/Languages).
 
 In fact, they can often seem a little bit scary or arcane.  We remind you:  Don't panic.
 
