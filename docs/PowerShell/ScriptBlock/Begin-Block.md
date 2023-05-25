@@ -16,8 +16,8 @@ we'd create a [variable](/PowerShell/Variables) to count objects in begin and se
 
 begin blocks, process blocks, and end blocks are fairly handy once you get the hang of them, and a feature not found in many [programming languages](/Languages/Programming-Languages).
 
-## Begin blocks and [Pipeline](/PowerShell/Concepts/The-Object-Pipeline) [parameters](/PowerShell/Parameters)
+## Begin blocks and [Pipeline parameters](/PowerShell/Parameters/Pipeline-Parameters)
 
 One quick thing to note - Any [parameters](/PowerShell/Parameters) you provide without [the object pipeline](/PowerShell/Concepts/The-Object-Pipeline) (by name or positionally) will be available as [variables](/PowerShell/Variables) in begin
 
-Any [pipeline](/PowerShell/Concepts/The-Object-Pipeline) [parameters](/PowerShell/Parameters) will not be mapped in the begin block - they will be mapped in the [process block](/PowerShell/ScriptBlock/Process-Block).
+Any [pipeline parameters](/PowerShell/Parameters/Pipeline-Parameters) will not be mapped in the begin block - they will be mapped in the [process block](/PowerShell/ScriptBlock/Process-Block).
