@@ -19,4 +19,4 @@ These are:
 * [PSSVG](https://github.com/StartAutomating/PSSVG) (this makes a pretty picture or two)
 * [EZOut](https://github.com/StartAutomating/EZOut) (this makes the [guide](/PowerShell/Guide) work and look pretty)
 * [PipeScript](https://github.com/StartAutomating/PipeScript) (this makes dynamic content within the guide)
-* [HelpOut](https://github.com/StartAutomating/HelpOut) (this generates help content)
+* [HelpOut](https://github.com/StartAutomating/HelpOut) (this generates [help](/PowerShell/Help) content)
