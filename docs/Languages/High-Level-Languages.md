@@ -8,7 +8,7 @@ title: High Level Languages
 layout: default
 ---
 
-High level languages are [programming languages](/Languages/Programming-Languages) that at least try to be understandable.
+High level [languages](/Languages) are [programming languages](/Languages/Programming-Languages) that at least try to be understandable.
 
 Unfortunately, there's quite a bit of variation on how much they succeed.
 
