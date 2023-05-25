@@ -37,7 +37,7 @@ You have The [PowerShell](/PowerShell) Guide.
 The [PowerShell](/PowerShell) Guide aims to be the standard repository for all knowledge and wisdom.
 <br/> <span style='font-size:.9em'>(or at least all knowledge and wisdom related to [PowerShell](/PowerShell), you'll have to ask someone else about life, the universe, and everything)</span>
 
-Here are some topics that may help you get started:
+Here are some topics that may [help](/PowerShell/Help) you get started:
 
 * [What Is PowerShell](/PowerShell)
 * [Variables](/PowerShell/Variables)
