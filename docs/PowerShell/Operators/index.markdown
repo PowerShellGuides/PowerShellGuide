@@ -22,8 +22,8 @@ There are a lot of operators in [PowerShell](/PowerShell), and they can be group
 | [Arithmetic Operators](/PowerShell/Operators/Arithmetic-Operators) | Mainly do basic math             |
 | Assignment Operators | Do math and change values        |
 | Comparison Operators | Compare things                   |
-| Logical Operators    | Help with boolean logic          |
-| String Operators     | Help you work with strings       |
+| Logical Operators    | [Help](/PowerShell/Help) with boolean logic          |
+| String Operators     | [Help](/PowerShell/Help) you work with strings       |
 | Bitwise Operators    | Do nitty-gritty stuff with bits  |
 | [Type Operators](/PowerShell/Operators/Type-Operators)       | Check or change [types](/PowerShell/Types)            |
 | Unary Operators      | Increment or decrement digits    |
