@@ -63,7 +63,7 @@ But now what are you going to do when you have a reusable bag or just individual
 
 To prevent this, why don’t we just throw the contents of the bags into a bin and let them get added to the pantry one at a time using the Add() spell. It’s not as fast as having all paper bags, but when you don’t have control over the bag [types](/PowerShell/Types) it is faster and safer than trying to convert an unknown number of different [types](/PowerShell/Types).
 
-To help with this [PowerShell](/PowerShell) comes with the great spell combination of the [pipeline](/PowerShell/Concepts/The-Object-Pipeline) and Foreach-Object.
+To [help](/PowerShell/Help) with this [PowerShell](/PowerShell) comes with the great spell combination of the [pipeline](/PowerShell/Concepts/The-Object-Pipeline) and Foreach-Object.
 
 By piping an object to a Foreach-Object, [PowerShell](/PowerShell) will process each entry individually. It doesn’t matter if it is a list, [array](/PowerShell/Types/Arrays). Arraylist, string, int, or any other object [type](/PowerShell/Types). It just takes them one at a time and adds them to the list.
 
