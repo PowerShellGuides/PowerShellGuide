@@ -330,12 +330,7 @@
   },
   {
     "Name": "Type Operators",
-    "Aliases": [
-      "Type Operators",
-      " as",
-      " is",
-      " isnot"
-    ],
+    "Aliases": "Type Operators",
     "Link": "PowerShell/Operators/Type-Operators"
   },
   {
